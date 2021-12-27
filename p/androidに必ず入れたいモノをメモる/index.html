@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='自分が入れているアプリやモジュール等々'><title>Androidに必ず入れたいモノをメモる</title>
+
+<link rel='canonical' href='https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8B/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Androidに必ず入れたいモノをメモる'>
+<meta property='og:description' content='自分が入れているアプリやモジュール等々'>
+<meta property='og:url' content='https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8B/'>
+<meta property='og:site_name' content='Nothing There'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Android' /><meta property='article:tag' content='Magisk' /><meta property='article:tag' content='Xposed' /><meta property='article:published_time' content='2021-11-06T23:08:18&#43;09:00'/><meta property='article:modified_time' content='2021-11-06T23:08:18&#43;09:00'/>
+<meta name="twitter:title" content="Androidに必ず入れたいモノをメモる">
+<meta name="twitter:description" content="自分が入れているアプリやモジュール等々">
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>前のページ</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/android/" >
+                Android
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8B/">Androidに必ず入れたいモノをメモる</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        自分が入れているアプリやモジュール等々
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Nov 06, 2021</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    読了時間: 1分
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <h3 id="目次">目次</h3>
+<blockquote>
+<p>前置き</p>
+<ul>
+<li>Magisk関連</li>
+<li>Xposedモジュール</li>
+<li>ブラウザ</li>
+<li>その他</li>
+</ul>
+</blockquote>
+<h3 id="前置き">前置き</h3>
+<p>初期化する度に入れていたアプリ等々を思い出すのも面倒なので自分用にまとめます。<br>
+・環境<br>
+機種: Huawei P30<br>
+OS: Android11(DotOS 5.2 arm64 Vanilla)</p>
+<h3 id="magisk関連">Magisk関連</h3>
+<h4 id="magiskhttpsgithubcomtopjohnwumagiskreleases"><a class="link" href="https://github.com/topjohnwu/Magisk/releases"  target="_blank" rel="noopener"
+    >Magisk</a></h4>
+<p>これがないと何も始まらない。</p>
+<h3 id="モジュール">モジュール</h3>
+<ul>
+<li>
+<p><a class="link" href="https://www.androidacy.com/downloads/?fm_rdme_links=&amp;view=%2540Magisk-Modules%2540Busybox_for_Android_NDK"  target="_blank" rel="noopener"
+    >Busybox for Android NDK</a><br>
+これが必要なアプリがいくつかあるので(後述)</p>
+</li>
+<li>
+<p><a class="link" href="https://www.androidacy.com/downloads/?fm_rdme_links=&amp;view=%2540Magisk-Modules%2540Font_Manager"  target="_blank" rel="noopener"
+    >Font Manager</a><br>
+システムの絵文字をTwemojiに変更するのに使用。</p>
+</li>
+<li>
+<p><a class="link" href="https://github.com/AndroPlus-org/magisk-module-koruri-font/releases"  target="_blank" rel="noopener"
+    >Koruri Font</a><br>
+見やすいので愛用しています。</p>
+</li>
+<li>
+<p><a class="link" href="https://sourceforge.net/projects/magiskgapps/files/r/Core/"  target="_blank" rel="noopener"
+    >Magisk GApps Core</a><br>
+使用しているROMがVanillaなのでGMSを使用するために使用。(Android R限定)</p>
+</li>
+<li>
+<p><a class="link" href="https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases"  target="_blank" rel="noopener"
+    >MagiskHide Props Config</a><br>
+出来ることが多くて何を書けばいいのか分からない。</p>
+</li>
+<li>
+<p><a class="link" href="https://github.com/RikkaApps/Riru/releases"  target="_blank" rel="noopener"
+    >Riru</a><br>
+LSPosedやHide My Applist(後述)を使用するために入れている。Zygiskなるものが出たので今後は不要になるかもしれない。</p>
+</li>
+<li>
+<p>Riru - Hide My Applist<br>
+Hide My Applistのアプリからインストールできるやつ。</p>
+</li>
+<li>
+<p><a class="link" href="https://github.com/Magisk-Modules-Repo/riru_lsposed/releases"  target="_blank" rel="noopener"
+    >Riru - LSPosed</a><br>
+Xposedの後継。今後はZygisk版を使うかもしれない。</p>
+</li>
+<li>
+<p><a class="link" href="https://www.androidacy.com/downloads/?fm_rdme_links=&amp;view=%2540Magisk-Modules%2540Sony_Music_Player"  target="_blank" rel="noopener"
+    >Sony Music Player</a><br>
+Sony Music Playerを使うために入れている。<br>
+でも最近はYoutube Musicを使っているので必要ないかもしれない。</p>
+</li>
+<li>
+<p><a class="link" href="https://github.com/kdrag0n/safetynet-fix/releases"  target="_blank" rel="noopener"
+    >Universal SafetyNet Fix</a><br>
+おま環かもしれないがDotOSは初期状態でもSafetyNetが通るので必要ないと思うが一応。</p>
+</li>
+</ul>
+<h3 id="root権限が必要なアプリ">Root権限が必要なアプリ</h3>
+<ul>
+<li><a class="link" href="https://vancedapp.com/"  target="_blank" rel="noopener"
+    >Vanced Manager</a><br>
+広告ブロックとかそういうのを抜いても優秀なクライアントなので愛用。<br>
+自分はMusicのオフライン再生のためだけにプレミアムに加入しているのでお得感半減だけど😂</li>
+<li><a class="link" href="https://drive.google.com/file/d/1g6PZ_H1FlH92BRr5DCqwNAKUkhDczioA"  target="_blank" rel="noopener"
+    >Pakage Disabler</a><br>
+邪魔なアプリは全部これで無効化している。</li>
+<li><a class="link" href="https://www.luckypatchers.com/download/"  target="_blank" rel="noopener"
+    >Lucky Patcher</a><br>
+万能Patcher。自分は主に邪魔な広告を<del>潰す</del>消すのに使用している。</li>
+<li><a class="link" href="https://github.com/oasisfeng/island/releases"  target="_blank" rel="noopener"
+    >Island</a><br>
+早い話EMUIで言うツインアプリだったりOne UIで言うデュアルメッセンジャーみたいなもの。</li>
+</ul>
+<h3 id="xposedモジュール">Xposedモジュール</h3>
+<ul>
+<li><a class="link" href="https://github.com/LSPosed/CorePatch/releases"  target="_blank" rel="noopener"
+    >Core Patch</a><br>
+署名検証を無効にしてくれる。<br>
+アプリのダウングレードなどができるようになる。</li>
+<li><a class="link" href="https://github.com/Dr-TSNG/Hide-My-Applist/releases"  target="_blank" rel="noopener"
+    >Hide My Applist</a><br>
+XposedモジュールやLSPosed、LPを隠すのに使っています。</li>
+<li><a class="link" href="https://github.com/ppawel/twitter-ad-eater/releases"  target="_blank" rel="noopener"
+    >Twitter Ad Eater</a><br>
+プロモツイートを非表示にしてくれる。でもタイムラインがバグるのであまり使ってない。</li>
+</ul>
+<h3 id="ブラウザ">ブラウザ</h3>
+<ul>
+<li><a class="link" href="https://brave.com/ja/"  target="_blank" rel="noopener"
+    >Brave</a><br>
+筆者が愛用していたブラウザ。<br>
+簡単にweb上の広告をブロックしたりオンラインのプライバシーを保護出来たりと優秀。<br>
+かなり軽いのでPC、Androidともにおすすめできる。</li>
+<li><a class="link" href="https://play.google.com/store/apps/details?id=org.mozilla.fenix"  target="_blank" rel="noopener"
+    >Firefox Nightly</a><br>
+筆者が最近使い始めたメインブラウザ。<br>
+条件付きではあるがPC版と同じ拡張機能が使えるので重宝している。 <br>
+<del>翻訳系の拡張機能も使えるので英語弱者な自分でも安心</del><br>
+PC版はかなり軽かったのだがAndroid版はそうでもなかった。</li>
+</ul>
+<h3 id="firefox-アドオンhttpsaddonsmozillaorgjafirefoxcollections17097905my-addon"><a class="link" href="https://addons.mozilla.org/ja/firefox/collections/17097905/my-addon/"  target="_blank" rel="noopener"
+    >Firefox アドオン</a></h3>
+<ul>
+<li><a class="link" href="https://addons.mozilla.org/ja/firefox/addon/ublock-origin/"  target="_blank" rel="noopener"
+    >uBlock Origin</a>
+軽量広告ブロッカー。道端で**漫画広告に出会いたくない人は使おう。</li>
+<li><a class="link" href="https://addons.mozilla.org/ja/firefox/addon/traduzir-paginas-web/"  target="_blank" rel="noopener"
+    >ウェブページを翻訳</a>
+英語弱者にはうれしい翻訳くん。Chromiumブラウザ向けの拡張機能版Google翻訳より有能。</li>
+</ul>
+<h3 id="その他">その他</h3>
+<ul>
+<li><a class="link" href="https://bitwarden.com/"  target="_blank" rel="noopener"
+    >Bitwarden</a><br>
+オープンソースなパスワードマネージャー(基本無料)<br>
+パスワード生成、支払情報の保存、パスワードが漏洩していないかの確認、セキュアメモ等々、<br>
+無料なのに機能が多くとても有能。</li>
+</ul>
+<h4 id="10年な有料プランに入るとotpや1gbの暗号化ストレージが付いてくるぞ">$10/年な有料プランに入るとOTPや1GBの暗号化ストレージが付いてくるぞ！</h4>
+<p>ちなみにPCのクライアントやブラウザ版もあるのでスマホが急死しても安心。</p>
+<ul>
+<li><a class="link" href="https://github.com/WSTxda/QP-Gallery-Releases"  target="_blank" rel="noopener"
+    >QuickPic Gallery</a><br>
+Android初期の頃にあったQuickPicの改造版らしい。使いやすい。</li>
+<li><a class="link" href="https://es-file-explorer.jp.uptodown.com/android"  target="_blank" rel="noopener"
+    >ES file explorer</a><br>
+昔から愛用しているもの。Google playから消えてからは怪しい広告などが絶えないのでLPで消している。<br>
+移行先が見つかればなと思いつつも探すのも面倒。</li>
+</ul>
+<p>↓特に特筆するほどでもないもの</p>
+<p>AliExpress<br>
+Amazon<br>
+ChMate<br>
+F-Droid<br>
+Gmail<br>
+Google pay<br>
+Googleフォト<br>
+LINE<br>
+NordVPN<br>
+みんなの銀行<br>
+Kyash<br>
+PayPay<br>
+Playゲーム<br>
+Proton Mail<br>
+Simeji<br>
+Termux<br>
+ToDo リスト</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/android/">Android</a>
+        
+            <a href="/tags/magisk/">Magisk</a>
+        
+            <a href="/tags/xposed/">Xposed</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>© j7b3y All rights reserved.</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">関連するコンテンツ</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/p/magisk%E3%81%A8gapps%E3%82%92%E5%85%A5%E3%82%8A%E3%81%AEwsawindows-subsystem-for-android%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E8%A9%B1/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">MagiskとGappsを入りのWSA(Windows Subsystem for Android)をインストールする話。</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/xperia-zr%E7%94%A8%E3%81%AElineage-18.1%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%9F/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Xperia ZR用のLineage 18.1をビルドした</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/zenfone-5z%E3%82%92%E8%B2%B7%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7evolution-x%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Zenfone 5Zを買ったのでEvolution Xを入れてみる</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/huawei-p30-ele-l29-%E3%81%AEsystem%E9%A0%98%E5%9F%9F%E3%82%92%E6%8B%A1%E5%BC%B5%E3%81%97%E3%81%9F%E8%A9%B1-%E3%81%9D%E3%81%AE1/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Huawei P30 (ELE-L29) のsystem領域を拡張した話 その1</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/huawei-p30%E3%81%ABlineageos-18.1%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E8%A9%B1/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Huawei P30にlineageOS 18.1をインストールした話</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2021 Nothing There
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">目次</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#目次">目次</a></li>
+        <li><a href="#前置き">前置き</a></li>
+        <li><a href="#magisk関連">Magisk関連</a>
+          <ol>
+            <li><a href="#magiskhttpsgithubcomtopjohnwumagiskreleases"><a href="https://github.com/topjohnwu/Magisk/releases">Magisk</a></a></li>
+          </ol>
+        </li>
+        <li><a href="#モジュール">モジュール</a></li>
+        <li><a href="#root権限が必要なアプリ">Root権限が必要なアプリ</a></li>
+        <li><a href="#xposedモジュール">Xposedモジュール</a></li>
+        <li><a href="#ブラウザ">ブラウザ</a></li>
+        <li><a href="#firefox-アドオンhttpsaddonsmozillaorgjafirefoxcollections17097905my-addon"><a href="https://addons.mozilla.org/ja/firefox/collections/17097905/my-addon/">Firefox アドオン</a></a></li>
+        <li><a href="#その他">その他</a>
+          <ol>
+            <li><a href="#10年な有料プランに入るとotpや1gbの暗号化ストレージが付いてくるぞ">$10/年な有料プランに入るとOTPや1GBの暗号化ストレージが付いてくるぞ！</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

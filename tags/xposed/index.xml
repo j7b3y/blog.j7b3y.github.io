@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xposed on Nothing There</title>
+    <link>https://blog.j7b3y.com/tags/xposed/</link>
+    <description>Recent content in Xposed on Nothing There</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Nov 2021 23:08:18 +0900</lastBuildDate><atom:link href="https://blog.j7b3y.com/tags/xposed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Androidに必ず入れたいモノをメモる</title>
+      <link>https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8B/</link>
+      <pubDate>Sat, 06 Nov 2021 23:08:18 +0900</pubDate>
+      
+      <guid>https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8B/</guid>
+      <description>目次  前置き
+ Magisk関連 Xposedモジュール ブラウザ その他   前置き 初期化する度に入れていたアプリ等々を思い出すのも面倒なので自分用にまとめます。
+・環境
+機種: Huawei P30
+OS: Android11(DotOS 5.2 arm64 Vanilla)
+Magisk関連 Magisk これがないと何も始まらない。
+モジュール   Busybox for Android NDK
+これが必要なアプリがいくつかあるので(後述)
+  Font Manager
+システムの絵文字をTwemojiに変更するのに使用。
+  Koruri Font
+見やすいので愛用しています。
+  Magisk GApps Core
+使用しているROMがVanillaなのでGMSを使用するために使用。(Android R限定)
+  MagiskHide Props Config
+出来ることが多くて何を書けばいいのか分からない。
+  Riru
+LSPosedやHide My Applist(後述)を使用するために入れている。Zygiskなるものが出たので今後は不要になるかもしれない。
+  Riru - Hide My Applist
+Hide My Applistのアプリからインストールできるやつ。</description>
+    </item>
+    
+  </channel>
+</rss>

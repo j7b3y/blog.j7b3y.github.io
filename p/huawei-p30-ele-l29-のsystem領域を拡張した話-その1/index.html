@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='system領域が小さいので拡張してみる。'><title>Huawei P30 (ELE-L29) のsystem領域を拡張した話 その1</title>
+
+<link rel='canonical' href='https://blog.j7b3y.com/p/huawei-p30-ele-l29-%E3%81%AEsystem%E9%A0%98%E5%9F%9F%E3%82%92%E6%8B%A1%E5%BC%B5%E3%81%97%E3%81%9F%E8%A9%B1-%E3%81%9D%E3%81%AE1/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Huawei P30 (ELE-L29) のsystem領域を拡張した話 その1'>
+<meta property='og:description' content='system領域が小さいので拡張してみる。'>
+<meta property='og:url' content='https://blog.j7b3y.com/p/huawei-p30-ele-l29-%E3%81%AEsystem%E9%A0%98%E5%9F%9F%E3%82%92%E6%8B%A1%E5%BC%B5%E3%81%97%E3%81%9F%E8%A9%B1-%E3%81%9D%E3%81%AE1/'>
+<meta property='og:site_name' content='Nothing There'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Android' /><meta property='article:tag' content='カスタムROM' /><meta property='article:published_time' content='2021-10-17T17:31:45&#43;09:00'/><meta property='article:modified_time' content='2021-10-17T17:31:45&#43;09:00'/>
+<meta name="twitter:title" content="Huawei P30 (ELE-L29) のsystem領域を拡張した話 その1">
+<meta name="twitter:description" content="system領域が小さいので拡張してみる。">
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>前のページ</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/android/" >
+                Android
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/huawei-p30-ele-l29-%E3%81%AEsystem%E9%A0%98%E5%9F%9F%E3%82%92%E6%8B%A1%E5%BC%B5%E3%81%97%E3%81%9F%E8%A9%B1-%E3%81%9D%E3%81%AE1/">Huawei P30 (ELE-L29) のsystem領域を拡張した話 その1</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        system領域が小さいので拡張してみる。
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Oct 17, 2021</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    読了時間: 5分
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <h3 id="目次">目次</h3>
+<blockquote>
+<p>0.前置きと注意<br>
+1.前提条件<br>
+2.準備<br>
+3.TWRPをflashする<br>
+4.下準備
+5.拡張<br>
+6.ROMをflashしよう</p>
+</blockquote>
+<h3 id="0前置きと注意">0.前置きと注意</h3>
+<h2 id="huawei-p30にlineageos-181をインストールした話post2021-10-11-installing-lineageos-on-huawei-p30の続きです"><a class="link" href="/post/2021-10-11-installing-lineageos-on-huawei-p30/" >Huawei P30にlineageOS 18.1をインストールした話</a>の続きです。</h2>
+<p>P30にGSIなカスタムROMをflashしようとしたところ<br>
+system領域が小さい！と怒られて大敗北しました。<br>
+今回はsystem領域の拡張に成功したのでメモ帳代わりにまとめることにしました。</p>
+<h2 id="注意">⚠注意</h2>
+<h2 id="この作業に取り掛かる前に必ずデータのバックアップを取ってください">この作業に取り掛かる前に必ずデータのバックアップを取ってください。</h2>
+<h2 id="またここに書いてることを真似する場合は自己責任でお願いします">また、ここに書いてることを真似する場合は自己責任でお願いします。</h2>
+<h2 id="この記事の内容を実践して生じた損害等の一切の責任を負いかねますのでご了承ください">この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。</h2>
+<p><del>あなたの大切なスマホが文鎮になっても私は責任を取れません。</del><br>
+また、この方法で拡張した場合はeRecoveryを使ってsystemの修復を際にパーティションを元に戻さないとエラーを吐くので注意してください。</p>
+<h3 id="1前提条件">1.前提条件</h3>
+<ul>
+<li>BootloaderがunlockされているHuawei P30(自分はDC-Unlockerのライセンスを購入して解除しました。 )</li>
+<li>fastbootコマンドが使用できる環境</li>
+<li>USB Type C to USB A 変換アダプタ</li>
+<li>USBマウス</li>
+</ul>
+<p>P30はEMUI9.1にしておいてください。(EMUI10以降はfastbootコマンドが使えない&amp;強制的にBootloaderにロックがかけられるため。)<br>
+eRecoveryを使用すると強制的にEMUI10にされますが、HisuiteでEMUI9.1に戻すとbootloaderがアンロックされた状態に戻るはずなので慌てないでください。<br>
+(自分の場合はちゃんと戻りました)</p>
+<h3 id="2準備">2.準備</h3>
+<ul>
+<li><a class="link" href="https://androidfilehost.com/?fid=11410963190603905658"  target="_blank" rel="noopener"
+    >Mate20 XのTWRP</a></li>
+<li>P30のRecovery_ramdisk</li>
+<li><a class="link" href="https://forum.xda-developers.com/attachments/parted_gdisk_fdisk_mkfs-ext4-aarch64-zip.4494670/"  target="_blank" rel="noopener"
+    >parted_gdisk_fdisk_mkfs-ext4-aarch64-zip</a></li>
+<li>flashするROM(今回は<a class="link" href="https://droidontime.com/devices/arm64"  target="_blank" rel="noopener"
+    >DotOS</a>を選択しました)</li>
+<li>P30(<del>当たり前ですね</del>)</li>
+</ul>
+<h3 id="3twrpをflashする">3.TWRPをflashする</h3>
+<p>Mate20 XのTWRPイメージがあるディレクトリでターミナルを開いてください。<br>
+開いたら</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">$ fastboot flash recovery_ramdisk twrp-3.2.1-0-everest-unofficial-v3.img
+</code></pre></div><p>と入力してTWRPをflashしましょう。</p>
+<h3 id="4-下準備">4. 下準備</h3>
+<p>再起動してTWRPを起動しましょう。(電源+Volume Up)<br>
+タッチ操作は出来ないのでUSBマウスを接続して操作します。<br>
+作業が長引くかもしれないのでスリープを無効にして画面の明るさを最低にしましょう。</p>
+<p>マウスの接続を解除してPCに接続してください。<br>
+接続したら一度</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">$ adb devices
+</code></pre></div><p>と入力してちゃんと接続されているかを確認しましょう。</p>
+<p>接続が確認出来たらpartedとgdiskをP30にコピーしましょう。<br>
+parted_gdisk_fdisk_mkfs.ext4-AARCH64.zipを展開してターミナルで開きましょう</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">$ adb push parted /
+$ adb push gdisk /
+</code></pre></div><p>コピーが終わったら端末のシェルを起動します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">$ adb shell
+</code></pre></div><p>シェルを起動したらpartedとgdiskがコピーされているかを確認してください。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">~ #  ls
+acc                         　　 init                        patch_hw                      splash2
+acct                        　   init.rc                     plat_file_contexts          storage
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+file_contexts.bin           parted                      sec_storage
+gdisk                           patch                       sepolicy
+</code></pre></div><p>partedとgdiskがあることを確認したら実行権限を付与しましょう。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">~ # chmod +x parted
+~ # chmod +x gdisk
+</code></pre></div><h2 id="5拡張">5.拡張</h2>
+<p>ここまで来たらあと一息！<br>
+パーティションを操作しましょう。<br>
+partedでsddを開きます。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">/parted /dev/block/sdd
+GNU Parted 3.2
+Using /dev/block/sdd
+Welcome to GNU Parted! Type &#39;help&#39; to view a list of commands.
+</code></pre></div><p>まずはパーティションテーブルを確認しましょう。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">(</span>parted<span class="p">)</span> unit MiB
+<span class="p">(</span>parted<span class="p">)</span> p
+Error: The backup GPT table is corrupt, but the primary appears OK, so that will
+be used.
+OK/Cancel? ok
+Model: HISI SS6100GBCV100MBD (scsi)
+Disk /dev/block/sdd: 122000MiB
+Sector size (logical/physical): 4096B/4096B
+Partition Table: gpt
+Disk Flags:
+
+Number  Start    End        Size       File system  Name                 Flags
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+62      2928MiB  3016MiB    88.0MiB                 cust_a               msftdata
+63      3016MiB  5328MiB    2312MiB    ext4         system_a             msftdata
+64      5328MiB  7480MiB    2152MiB                 product_a            msftdata
+65      7480MiB  8056MiB    576MiB                  version_a            msftdata
+66      8056MiB  9200MiB    1144MiB                 preload_a            msftdata
+67      9200MiB  122000MiB  112800MiB  ext4         userdata             msftdata
+</code></pre></div><p>確認ができたら適当なテキストファイルにコピペしておきましょう。<br>
+メモを忘れた人用に自分のパーティションテーブルを貼っておきます。<a class="link" href="https://drive.google.com/file/d/1udu6zJOhqdF3KGqjez9y3yI2fYaiY6Vx/view"  target="_blank" rel="noopener"
+    >Google Drive</a><br>
+今回はproduct_aとsystem_aを削除して新しくsystem_aを作成します。
+この記事の場合は63,64ですね。</p>
+<h2 id="注意-1">⚠注意</h2>
+<h2 id="ここで間違ったパーティションを削除してしまうと再起不可になってしまう可能性があるので必ず手作業でやるようにしましょう">ここで間違ったパーティションを削除してしまうと再起不可になってしまう可能性があるので必ず手作業でやるようにしましょう。</h2>
+<p>コピペはしないようにね。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">(</span>parted<span class="p">)</span> rm
+Partition number? 63
+<span class="p">(</span>parted<span class="p">)</span> rm
+Partition number? 64
+</code></pre></div><p>削除が終わったらgdiskに移動します。<br>
+一度partedを閉じてから</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">~ # /gdisk /dev/block/sdd
+GPT fdisk (gdisk) version 1.0.3
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+
+Command (? for help):
+</code></pre></div><p>ここからパーティションを追加します。<br>
+この記事の場合は63ですね。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">Command (? for help): n
+Partition number (63-128, default 63): 63
+First sector (34-1914879, default = 772096) or {+-}size{KMGTP}:
+Last sector (772096-1914879, default = 1914879) or {+-}size{KMGTP}: +4464MiB
+Current type is &#39;Linux filesystem&#39;
+Hex code or GUID (L to show codes, Enter = 8300): 0700
+Changed type of partition to &#39;Microsoft basic data&#39;
+
+Command (? for help):
+</code></pre></div><p>作成したパーティションの名前を変更します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">Command (? for help): c
+Partition number (1-67): 63
+Enter name: system_a
+</code></pre></div><p>作業が終わったら書き込みをする前に一度変更後のパーティションテーブルを確認しましょう。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">Command (? for help): p
+Disk /dev/block/sdd: 31232000 sectors, 119.1 GiB
+Sector size (logical/physical): 4096/4096 bytes
+Disk identifier (GUID): F9F21FFF-A8D4-5F0E-9746-594869AEC34E
+Partition table holds up to 128 entries
+Main partition table begins at sector 2 and ends at sector 5
+First usable sector is 34, last usable sector is 31231999
+Partitions will be aligned on 128-sector boundaries
+Total free space is 94 sectors (376.0 KiB)
+
+Number  Start (sector)    End (sector)  Size       Code  Name
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  62          749568          772095   88.0 MiB    0700  cust_a
+  63          772096         1914879   4.4 GiB     0700  system_a
+  65         1914880         2062335   576.0 MiB   0700  version_a
+  66         2062336         2355199   1.1 GiB     0700  preload_a
+  67         2355200        31231999   110.2 GiB   0700  userdata
+</code></pre></div><p>確認して大丈夫だったらパーティション情報の書き込みをしましょう。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">Command (? for help): w
+
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): Y
+OK; writing new GUID partition table (GPT) to /dev/block/sdd.
+Warning: The kernel is still using the old partition table.
+The new table will be used at the next reboot or after you
+run partprobe(8) or kpartx(8)
+The operation has completed successfully.
+</code></pre></div><p>書き込みが終わったらgdiskを閉じてpartedを開いてください。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">~ # /parted /dev/block/sdd
+GNU Parted 3.2
+Using /dev/block/sdd
+Welcome to GNU Parted! Type &#39;help&#39; to view a list of commands.
+<span class="p">(</span>parted<span class="p">)</span>
+</code></pre></div><p>Flagの設定</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">(</span>parted<span class="p">)</span> <span class="k">set</span> <span class="nv">63</span>
+Flag to Invert? msftdata
+New state?  on/[off]? on
+</code></pre></div><p>ext4にフォーマット</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">~ # make_ext4fs /dev/block/sdd63
+Creating filesystem with parameters:
+    Size: 3472883712
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 8160
+    Inode size: 256
+    Journal blocks: 13248
+    Label:
+    Blocks: 847872
+    Block groups: 26
+    Reserved block group size: 207
+Created filesystem with 11/212160 inodes and 28026/847872 blocks
+</code></pre></div><p>変更がちゃんとできているかの確認</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">~ # /parted /dev/block/sdd
+GNU Parted 3.2
+Using /dev/block/sdd
+Welcome to GNU Parted! Type &#39;help&#39; to view a list of commands.
+<span class="p">(</span>parted<span class="p">)</span> p
+Model: HISI SS6100GBCV100MBD (scsi)
+Disk /dev/block/sdd: 128GB
+Sector size (logical/physical): 4096B/4096B
+Partition Table: gpt
+Disk Flags:
+
+Number  Start   End     Size    File system  Name                 Flags
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+62      3070MB  3163MB  92.3MB               cust_a               msftdata
+63      3163MB  7843MB  4681MB  ext4         system_a             msftdata
+65      7843MB  8447MB  604MB                version_a            msftdata
+66      8447MB  9647MB  1200MB               preload_a            msftdata
+67      9647MB  128GB   118GB                userdata             msftdata
+</code></pre></div><p>これで拡張作業はおしまい。</p>
+<h3 id="6romをflashしよう">6.ROMをflashしよう</h3>
+<p>これでようやく好きなROMが焼けるはず&hellip;。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">fastboot --disable-verity --disable-verification flash system dotOS-R-v5.2-arm64-ab-GAPPS-OFFICIAL.img
+Sending sparse &#39;system&#39; 1/8 (458752 KB)            OKAY [  3.193s]
+Writing &#39;system&#39;                                   OKAY [  1.051s]
+Sending sparse &#39;system&#39; 2/8 (458752 KB)            OKAY [  9.784s]
+Writing &#39;system&#39;                                   OKAY [  1.050s]
+Sending sparse &#39;system&#39; 3/8 (458752 KB)            OKAY [  9.894s]
+Writing &#39;system&#39;                                   OKAY [  1.051s]
+Sending sparse &#39;system&#39; 4/8 (458752 KB)            OKAY [  9.541s]
+Writing &#39;system&#39;                                   OKAY [  1.789s]
+Sending sparse &#39;system&#39; 5/8 (458752 KB)            OKAY [  9.920s]
+Writing &#39;system&#39;                                   OKAY [  4.190s]
+Sending sparse &#39;system&#39; 6/8 (458752 KB)            OKAY [  9.487s]
+Writing &#39;system&#39;                                   OKAY [  4.602s]
+Sending sparse &#39;system&#39; 7/8 (458752 KB)            OKAY [  9.500s]
+Writing &#39;system&#39;                                   OKAY [  1.034s]
+Sending sparse &#39;system&#39; 8/8 (233220 KB)            OKAY [  4.879s]
+Writing &#39;system&#39;                                   OKAY [  0.807s]
+Finished. Total time: 81.857s
+</code></pre></div><p>わーい。
+この後初期化するので一度stock recoveryに戻してください。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">fastboot flash recovery_ramdisk recovery_ramdiS.img
+Sending &#39;recovery_ramdisk&#39; (32768 KB)              OKAY [  0.232s]
+Writing &#39;recovery_ramdisk&#39;                         OKAY [  0.077s]
+Finished. Total time: 0.341s
+</code></pre></div><p>リカバリーを起動してファクトリーリセットをしたらいよいよ起動！</p>
+<h3 id="7いよいよ起動">7.いよいよ起動</h3>
+<p>まぁ普通に起動するはずです。<br>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">P30にDotOS降臨<br>ばいばいP20lite😭 <a href="https://t.co/iNxlIEgnJz">pic.twitter.com/iNxlIEgnJz</a></p>&mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) <a href="https://twitter.com/j7b3y/status/1449644900442464258?ref_src=twsrc%5Etfw">October 17, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br>
+後はmagiskを入れるなりなんなりで自由にやっちゃってください！<br>
+<del>USB接続してもWindowsが認識できない不具合(?)はこちらでも残ってました</del></p>
+<h3 id="8参考にした記事">8.参考にした記事</h3>
+<ul>
+<li><a class="link" href="https://ysss.hateblo.jp/entry/20200425/1587793352#parted%E3%81%A8gdisk%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89"  target="_blank" rel="noopener"
+    >Android端末にカスタムROMを焼くにシステム領域が足りないためパーティションを拡張する</a></li>
+<li><a class="link" href="https://android.stackexchange.com/questions/216123/android-how-to-increase-system-partition-and-decrease-data-partition"  target="_blank" rel="noopener"
+    >Android: how to increase system partition and decrease data partition?</a></li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/android/">Android</a>
+        
+            <a href="/tags/%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0rom/">カスタムROM</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>© j7b3y All rights reserved.</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">関連するコンテンツ</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/p/xperia-zr%E7%94%A8%E3%81%AElineage-18.1%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%9F/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Xperia ZR用のLineage 18.1をビルドした</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/zenfone-5z%E3%82%92%E8%B2%B7%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7evolution-x%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Zenfone 5Zを買ったのでEvolution Xを入れてみる</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/huawei-p30%E3%81%ABlineageos-18.1%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E8%A9%B1/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Huawei P30にlineageOS 18.1をインストールした話</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/magisk%E3%81%A8gapps%E3%82%92%E5%85%A5%E3%82%8A%E3%81%AEwsawindows-subsystem-for-android%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E8%A9%B1/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">MagiskとGappsを入りのWSA(Windows Subsystem for Android)をインストールする話。</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8B/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Androidに必ず入れたいモノをメモる</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2021 Nothing There
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">目次</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#目次">目次</a></li>
+        <li><a href="#0前置きと注意">0.前置きと注意</a></li>
+      </ol>
+    </li>
+    <li><a href="#huawei-p30にlineageos-181をインストールした話post2021-10-11-installing-lineageos-on-huawei-p30の続きです"><a href="/post/2021-10-11-installing-lineageos-on-huawei-p30/">Huawei P30にlineageOS 18.1をインストールした話</a>の続きです。</a></li>
+    <li><a href="#注意">⚠注意</a></li>
+    <li><a href="#この作業に取り掛かる前に必ずデータのバックアップを取ってください">この作業に取り掛かる前に必ずデータのバックアップを取ってください。</a></li>
+    <li><a href="#またここに書いてることを真似する場合は自己責任でお願いします">また、ここに書いてることを真似する場合は自己責任でお願いします。</a></li>
+    <li><a href="#この記事の内容を実践して生じた損害等の一切の責任を負いかねますのでご了承ください">この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。</a>
+      <ol>
+        <li><a href="#1前提条件">1.前提条件</a></li>
+        <li><a href="#2準備">2.準備</a></li>
+        <li><a href="#3twrpをflashする">3.TWRPをflashする</a></li>
+        <li><a href="#4-下準備">4. 下準備</a></li>
+      </ol>
+    </li>
+    <li><a href="#5拡張">5.拡張</a></li>
+    <li><a href="#注意-1">⚠注意</a></li>
+    <li><a href="#ここで間違ったパーティションを削除してしまうと再起不可になってしまう可能性があるので必ず手作業でやるようにしましょう">ここで間違ったパーティションを削除してしまうと再起不可になってしまう可能性があるので必ず手作業でやるようにしましょう。</a>
+      <ol>
+        <li><a href="#6romをflashしよう">6.ROMをflashしよう</a></li>
+        <li><a href="#7いよいよ起動">7.いよいよ起動</a></li>
+        <li><a href="#8参考にした記事">8.参考にした記事</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

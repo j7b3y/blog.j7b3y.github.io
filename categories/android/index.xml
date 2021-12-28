@@ -13,13 +13,11 @@
       <pubDate>Sat, 18 Dec 2021 21:23:05 +0900</pubDate>
       
       <guid>https://blog.j7b3y.com/p/xperia-zr%E7%94%A8%E3%81%AElineage-18.1%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%9F/</guid>
-      <description>目次  0.前置きと注意
-1.リンク
- 0.前置きと注意 実機を持ってないので動作確認してません。
+      <description>前置きと注意 実機を持ってないので動作確認してません。
 Xperia ZR用のLineageOS 18.1です。
 自分でビルドしたい人はローカルmanifestを公開しているのでこちらを参考にしてください。
 ※こちらのromはXperia ZR用なのでSO-04eでは使用出来ません。
-1.リンク Lineage-18.1-dogo</description>
+リンク Lineage-18.1-dogo</description>
     </item>
     
     <item>
@@ -28,22 +26,23 @@ Xperia ZR用のLineageOS 18.1です。
       <pubDate>Thu, 09 Dec 2021 08:16:58 +0900</pubDate>
       
       <guid>https://blog.j7b3y.com/p/zenfone-5z%E3%82%92%E8%B2%B7%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7evolution-x%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
-      <description>目次  0.前置きと注意
-1.前提条件
-2.ダウンロードするもの
-3.下準備
-4.TWRPを焼く 5.ROMをflash 6.最後に
- 0.前置き Asus関連の項目が邪魔だったのでカスタムROMを使おう！というのが動機。
+      <description>前置き Asus関連の項目が邪魔だったのでカスタムROMを使おう！というのが動機。
 なかなかブートロゴにお目にかかれなかったりブートロゴでスタックしたりとで自分的にかなり詰まったのでまとめます。
 この記事は公式アンロックなZenfone 5ZにOFFICIALなEvolution Xをインストールする人向けなので他のROMを焼くのであればこちらを参考にした方が絶対に良いです。
-⚠注意 この作業に取り掛かる前に必ずデータのバックアップを取ってください。 また、ここに書いてることを真似する場合は自己責任でお願いします。 この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。 あなたの大切なスマホが文鎮になっても私は責任を取れません。
-1.前提条件  BootloaderがunlockされているZenfone5Z(この記事は公式アンロックな端末向けに書かれています。 ) fastbootコマンドが使用できる環境。  2.ダウンロードするもの  EvolutionX_5.8_Z01R evolution_Z01R-ota q_vbmeta.img Encrypted Vendor ABL.zip dfe.zip twrp-3.4.0-0-Z01RD.img twrp-installer-3.4.0-0-Z01RD.zip  多分こんな感じになっていると思います。
+⚠注意
+この作業に取り掛かる前に必ずデータのバックアップを取ってください。
+また、ここに書いてることを真似する場合は自己責任でお願いします。
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。
+あなたの大切なスマホが文鎮になっても私は責任を取れません。
+前提条件  BootloaderがunlockされているZenfone5Z(この記事は公式アンロックな端末向けに書かれています。 ) fastbootコマンドが使用できる環境。  ダウンロードするもの  EvolutionX_5.8_Z01R evolution_Z01R-ota q_vbmeta.img Encrypted Vendor ABL.zip dfe.zip twrp-3.4.0-0-Z01RD.img twrp-installer-3.4.0-0-Z01RD.zip  多分こんな感じになっていると思います。
 よく確認しておきましょう。
- 3.下準備 電源+volume upでbootloaderを起動してPCと接続。
+ 下準備 電源+volume upでbootloaderを起動してPCと接続。
 そしてダウンロードしたフォルダのある場所でターミナルを開いて以下のコマンドを実行し、ユーザーデータを削除した後にvbmetaをflash。
 $ fastboot -w $ fastboot --disable-verity --disable-verification flash vbmeta q_vbmeta.img コマンドの実行が完了したらここで1回画面の方にご注目！
 ACTIVE SLOTの項目を確認してください。
-#アクティブなスロットがaなら $ fastboot set_active b #bの場合は fastboot set_active a #そしてbootloaderを再起動 $ fastboot reboot bootloader ACTIVE SLOTが先ほどとは別のスロットに変更されているはずです。</description>
+#アクティブなスロットがaなら $ fastboot set_active b #bの場合は fastboot set_active a #そしてbootloaderを再起動 $ fastboot reboot bootloader ACTIVE SLOTが先ほどとは別のスロットに変更されているはずです。
+TWRPを焼く 以下のコマンドを実行した後リカバリーモードに移行。
+$ fastboot flash boot twrp-3.</description>
     </item>
     
     <item>
@@ -52,31 +51,33 @@ ACTIVE SLOTの項目を確認してください。
       <pubDate>Tue, 09 Nov 2021 05:12:15 +0900</pubDate>
       
       <guid>https://blog.j7b3y.com/p/magisk%E3%81%A8gapps%E3%82%92%E5%85%A5%E3%82%8A%E3%81%AEwsawindows-subsystem-for-android%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E8%A9%B1/</guid>
-      <description>目次  0.前置きと注意
-1.必要なもの
-2.下準備
-3.必要なファイルの用意
-4.WSAをインストール 5.いざ起動 6.Magisk Managerをインストール
-7.Unable to start Windows Subsystem for Androidと言われて動かない！
-8.後書き
-9.参考にした記事
- 0.前置きと注意と筆者の環境 Win11の発表時からWSAを楽しみにしていたのにお預けをくらって待ちきれなかったのでネットサーフィンをしていたら、
+      <description>##前置きと注意と筆者の環境
+Win11の発表時からWSAを楽しみにしていたのにお預けをくらって待ちきれなかったのでネットサーフィンをしていたら、
 なんか凄そうなのを発見したので実行してみました。
-⚠注意 ここに書いてることを真似する場合は自己責任でお願いします。 この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。 無いとは思うけど万が一Windowsが吹っ飛んだ時のために
+⚠注意 ここに書いてることを真似する場合は自己責任でお願いします。
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。
+無いとは思うけど万が一Windowsが吹っ飛んだ時のために
 不安ならバックアップを取っておこうね。
 また、Hyper-Vを有効にするためMemuやBS5 32bit等々のエミュレーターが動作しなくなります、ご注意を。
-筆者の環境 CPU: Ryzen5 3600
+ 筆者の環境
+CPU: Ryzen5 3600
 GPU: GTX1060 6GB
-RAM: DDR4 4GB×2 16GB×1 OS: Windows 11 Pro 21H2 22000.282
-1.必要なもの Windows11
+RAM: DDR4 4GB×2 16GB×1 OS: Windows 11 Pro 21H2 22000.282  必要なもの Windows11
 Githubのアカウント
 仮想化支援機能に対応したCPU
  あると嬉しい
 ADBが使用できる環境  (試していないので真偽は不明ですがプレビュービルドでなくてもできるそうです。誰か人柱になって)
-2.下準備  Windowsの機能の有効化または無効化からHyper-V、Windows ハイパーバイザー プラットフォーム、仮想マシンプラットフォームを有効にして再起動する。
+下準備  Windowsの機能の有効化または無効化からHyper-V、Windows ハイパーバイザー プラットフォーム、仮想マシンプラットフォームを有効にして再起動する。
 これ↓
-  Biosの設定から仮想化支援機能を有効にする。(マザーボードのメーカーによってBiosの入り方等々が異なるので割愛)  3.必要なファイルの用意 MagiskOnWSAのリポジトリをForkしてActionsを開きましょう。
-Workflowsの中にあるMagiskの項目を選択して  Run workflowを開いてRun workflowのボタンを押します。</description>
+  Biosの設定から仮想化支援機能を有効にする。(マザーボードのメーカーによってBiosの入り方等々が異なるので割愛)  必要なファイルの用意 MagiskOnWSAのリポジトリをForkしてActionsを開きましょう。
+Workflowsの中にあるMagiskの項目を選択して  Run workflowを開いてRun workflowのボタンを押します。
+ (この時にGappsの種類を選べるのでnoneのところを入れたいGappsの種類に書き換えてあげましょう)
+自分でやるのが面倒！って人はGapps nanoが入ったものをビルドしているので私がForkしたリポジトリからDLしてください。
+ビルドが終わったらWorkflowを開いてArtifactsの一覧にあるWSA-with-Magisk-GApps-〇〇_x64をDLしましょう。
+ WSAをインストール DLが終わったら自分の好きな場所に展開してください。 展開している間にWindows設定から開発者モードを有効にしてあげましょう。
+プライバシーとセキュリティ &amp;gt; 開発者向け と開いて一番上にある
+&amp;ldquo;圧縮されていないファイルも含め、任意のソースからのアプリをインストールします。&amp;rdquo;
+のスイッチをオンにしましょう。</description>
     </item>
     
     <item>
@@ -85,12 +86,13 @@ Workflowsの中にあるMagiskの項目を選択して  Run workflowを開いて
       <pubDate>Sat, 06 Nov 2021 23:08:18 +0900</pubDate>
       
       <guid>https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8B/</guid>
-      <description>目次  前置き
- Magisk関連 Xposedモジュール ブラウザ その他   前置き 初期化する度に入れていたアプリ等々を思い出すのも面倒なので自分用にまとめます。
+      <description>##前置き
+初期化する度に入れていたアプリ等々を思い出すのも面倒なので自分用にまとめます。
 ・環境
 機種: Huawei P30
 OS: Android11(DotOS 5.2 arm64 Vanilla)
-Magisk関連 Magisk これがないと何も始まらない。
+Magisk関連 Magisk
+これがないと何も始まらない。
 モジュール   Busybox for Android NDK
 これが必要なアプリがいくつかあるので(後述)
   Font Manager
@@ -104,7 +106,10 @@ Magisk関連 Magisk これがないと何も始まらない。
   Riru
 LSPosedやHide My Applist(後述)を使用するために入れている。Zygiskなるものが出たので今後は不要になるかもしれない。
   Riru - Hide My Applist
-Hide My Applistのアプリからインストールできるやつ。</description>
+Hide My Applistのアプリからインストールできるやつ。
+  Riru - LSPosed
+Xposedの後継。今後はZygisk版を使うかもしれない。
+  Sony Music Player</description>
     </item>
     
     <item>
@@ -113,29 +118,31 @@ Hide My Applistのアプリからインストールできるやつ。</descripti
       <pubDate>Sun, 17 Oct 2021 17:31:45 +0900</pubDate>
       
       <guid>https://blog.j7b3y.com/p/huawei-p30-ele-l29-%E3%81%AEsystem%E9%A0%98%E5%9F%9F%E3%82%92%E6%8B%A1%E5%BC%B5%E3%81%97%E3%81%9F%E8%A9%B1-%E3%81%9D%E3%81%AE1/</guid>
-      <description>目次  0.前置きと注意
-1.前提条件
-2.準備
-3.TWRPをflashする
-4.下準備 5.拡張
-6.ROMをflashしよう
- 0.前置きと注意 Huawei P30にlineageOS 18.1をインストールした話の続きです。 P30にGSIなカスタムROMをflashしようとしたところ
+      <description>前置きと注意 Huawei P30にlineageOS 18.1をインストールした話の続きです。
+P30にGSIなカスタムROMをflashしようとしたところ
 system領域が小さい！と怒られて大敗北しました。
 今回はsystem領域の拡張に成功したのでメモ帳代わりにまとめることにしました。
-⚠注意 この作業に取り掛かる前に必ずデータのバックアップを取ってください。 また、ここに書いてることを真似する場合は自己責任でお願いします。 この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。 あなたの大切なスマホが文鎮になっても私は責任を取れません。
+⚠注意
+この作業に取り掛かる前に必ずデータのバックアップを取ってください。
+また、ここに書いてることを真似する場合は自己責任でお願いします。
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。
+あなたの大切なスマホが文鎮になっても私は責任を取れません。
 また、この方法で拡張した場合はeRecoveryを使ってsystemの修復を際にパーティションを元に戻さないとエラーを吐くので注意してください。
-1.前提条件  BootloaderがunlockされているHuawei P30(自分はDC-Unlockerのライセンスを購入して解除しました。 ) fastbootコマンドが使用できる環境 USB Type C to USB A 変換アダプタ USBマウス  P30はEMUI9.1にしておいてください。(EMUI10以降はfastbootコマンドが使えない&amp;amp;強制的にBootloaderにロックがかけられるため。)
+前提条件  BootloaderがunlockされているHuawei P30(自分はDC-Unlockerのライセンスを購入して解除しました。 ) fastbootコマンドが使用できる環境 USB Type C to USB A 変換アダプタ USBマウス  P30はEMUI9.1にしておいてください。(EMUI10以降はfastbootコマンドが使えない&amp;amp;強制的にBootloaderにロックがかけられるため。)
 eRecoveryを使用すると強制的にEMUI10にされますが、HisuiteでEMUI9.1に戻すとbootloaderがアンロックされた状態に戻るはずなので慌てないでください。
 (自分の場合はちゃんと戻りました)
-2.準備  Mate20 XのTWRP P30のRecovery_ramdisk parted_gdisk_fdisk_mkfs-ext4-aarch64-zip flashするROM(今回はDotOSを選択しました) P30(当たり前ですね)  3.TWRPをflashする Mate20 XのTWRPイメージがあるディレクトリでターミナルを開いてください。
+準備  Mate20 XのTWRP P30のRecovery_ramdisk parted_gdisk_fdisk_mkfs-ext4-aarch64-zip flashするROM(今回はDotOSを選択しました) P30(当たり前ですね)  TWRPをflashする Mate20 XのTWRPイメージがあるディレクトリでターミナルを開いてください。
 開いたら
 $ fastboot flash recovery_ramdisk twrp-3.2.1-0-everest-unofficial-v3.img と入力してTWRPをflashしましょう。
-4. 下準備 再起動してTWRPを起動しましょう。(電源+Volume Up)
+下準備 再起動してTWRPを起動しましょう。(電源+Volume Up)
 タッチ操作は出来ないのでUSBマウスを接続して操作します。
 作業が長引くかもしれないのでスリープを無効にして画面の明るさを最低にしましょう。
 マウスの接続を解除してPCに接続してください。
 接続したら一度
-$ adb devices と入力してちゃんと接続されているかを確認しましょう。</description>
+$ adb devices と入力してちゃんと接続されているかを確認しましょう。
+接続が確認出来たらpartedとgdiskをP30にコピーしましょう。
+parted_gdisk_fdisk_mkfs.ext4-AARCH64.zipを展開してターミナルで開きましょう
+$ adb push parted / $ adb push gdisk / コピーが終わったら端末のシェルを起動します。</description>
     </item>
     
     <item>
@@ -144,15 +151,14 @@ $ adb devices と入力してちゃんと接続されているかを確認しま
       <pubDate>Mon, 11 Oct 2021 10:12:31 +0900</pubDate>
       
       <guid>https://blog.j7b3y.com/p/huawei-p30%E3%81%ABlineageos-18.1%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E8%A9%B1/</guid>
-      <description>目次  0.前置きと注意
-1.前提条件
-2.romの選択とダウンロード
-3.romをflashする
-4.実際に使ってみる
- 0.前置き 再起動する度に画面の明るさ自動調整が勝手にONになるのが地味に面倒だなと感じたので、別にEMUIを使う理由もないということでカスタムROMを焼こうとなりました。
-⚠注意 この作業に取り掛かる前に必ずデータのバックアップを取ってください。 また、ここに書いてることを真似する場合は自己責任でお願いします。 この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。 あなたの大切なスマホが文鎮になっても私は責任を取れません。
-1.前提条件  BootloaderがunlockされているHuawei P30(自分はDC-Unlockerのライセンスを購入して解除しました。 ) fastbootコマンドが使用できる環境。  P30はEMUI9.1にしておいてください。(EMUI10以降はfastbootコマンドが使えなくされているためです。ふざけんな)
-2.romの選択とダウンロード 今回使用するromを選びましょう。
+      <description>前置き 再起動する度に画面の明るさ自動調整が勝手にONになるのが地味に面倒だなと感じたので、別にEMUIを使う理由もないということでカスタムROMを焼こうとなりました。
+⚠注意
+この作業に取り掛かる前に必ずデータのバックアップを取ってください。
+ここに書いていることを真似する場合は自己責任でお願いします。
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。
+あなたの大切なスマホが文鎮になっても私は責任を取れません。
+前提条件  BootloaderがunlockされているHuawei P30(自分はDC-Unlockerのライセンスを購入して解除しました。 ) fastbootコマンドが使用できる環境。  P30はEMUI9.1にしておいてください。(EMUI10以降はfastbootコマンドが使えなくされているためです。ふざけんな)
+romの選択とダウンロード 今回使用するromを選びましょう。
 私はLineageOS 18.1にしました。
 本当はOctaviOSを使用したかったのですが自分の環境ではflash出来なかったので断念しました。
 P30のsystemパーティションよりOctaviOSのイメージの方が大きかったのでsystem領域を拡張しようと思ったのですが
@@ -160,11 +166,14 @@ delete-logical-partitionを実行しようとしても
 $ fastboot delete-logical-partition product Deleting &amp;#39;product&amp;#39; FAILED (remote: &amp;#39;Command not allowed&amp;#39;) fastboot: error: Command failed とエラーを吐いてしまい素人な自分ではどうにもならなかったからです。たすけて
 自分だけなのか他の人もこうなってるのかはわからないですが、
 そもそもの話P30をBLUしている人が少数なので全く情報が無かったです。
-system領域の拡張が上手く行ったので近いうちにまとめます。 追記 そもそもfastbootdに対応していなかったってオチでした。
+system領域の拡張が上手く行ったので近いうちにまとめました。
+追記
+そもそもfastbootdに対応していなかったってオチでした。
 ちゃんと文章は読もうねというお話
 よく読め pic.twitter.com/HToiVz7lDm
 &amp;mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) October 15, 2021  system領域は2.25GBくらいでした。 😩 pic.twitter.com/wyMwMLW1Wt
-&amp;mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) October 15, 2021  flashするROMの候補としては</description>
+&amp;mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) October 15, 2021  flashするROMの候補としては
+ CAOS11 LineageOS 18.1 AOSP 11.0 v313(system-roar-arm64-ab-vndklite-vanilla.</description>
     </item>
     
   </channel>

@@ -110,7 +110,7 @@
 
 
                 <time class="article-time--reading">
-                    読了時間: 1分
+                    Reading Time: 1分
                 </time>
             </div>
         
@@ -120,32 +120,22 @@
 </header>
 
     <section class="article-content">
-    <h3 id="目次">目次</h3>
-<blockquote>
-<p>0.前置きと注意<br>
-1.前提条件<br>
-2.ダウンロードするもの<br>
-3.下準備<br>
-4.TWRPを焼く
-5.ROMをflash <br>
-6.最後に</p>
-</blockquote>
-<h3 id="0前置き">0.前置き</h3>
+    <h2 id="前置き">前置き</h2>
 <p>Asus関連の項目が邪魔だったのでカスタムROMを使おう！というのが動機。<br>
 なかなかブートロゴにお目にかかれなかったりブートロゴでスタックしたりとで自分的にかなり詰まったのでまとめます。<br>
 この記事は公式アンロックなZenfone 5ZにOFFICIALなEvolution Xをインストールする人向けなので他のROMを焼くのであれば<a class="link" href="https://forum.xda-developers.com/t/guide-noob-friendly-custom-rom-flashing-guide.3944849/"  target="_blank" rel="noopener"
     >こちら</a>を参考にした方が絶対に良いです。</p>
-<h2 id="注意">⚠注意</h2>
-<h2 id="この作業に取り掛かる前に必ずデータのバックアップを取ってください">この作業に取り掛かる前に必ずデータのバックアップを取ってください。</h2>
-<h2 id="またここに書いてることを真似する場合は自己責任でお願いします">また、ここに書いてることを真似する場合は自己責任でお願いします。</h2>
-<h2 id="この記事の内容を実践して生じた損害等の一切の責任を負いかねますのでご了承ください">この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。</h2>
-<p><del>あなたの大切なスマホが文鎮になっても私は責任を取れません。</del></p>
-<h3 id="1前提条件">1.前提条件</h3>
+<p>⚠注意<br>
+この作業に取り掛かる前に必ずデータのバックアップを取ってください。<br>
+また、ここに書いてることを真似する場合は自己責任でお願いします。<br>
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。<br>
+<del>あなたの大切なスマホが文鎮になっても私は責任を取れません。</del></p>
+<h2 id="前提条件">前提条件</h2>
 <ul>
 <li>BootloaderがunlockされているZenfone5Z(この記事は公式アンロックな端末向けに書かれています。 )</li>
 <li>fastbootコマンドが使用できる環境。</li>
 </ul>
-<h3 id="2ダウンロードするもの">2.ダウンロードするもの</h3>
+<h2 id="ダウンロードするもの">ダウンロードするもの</h2>
 <ul>
 <li><a class="link" href="https://sourceforge.net/projects/evolution-x/files/Z01R/EvolutionX_5.8_Z01R-11-20210612-0637-OFFICIAL.zip/download"  target="_blank" rel="noopener"
     >EvolutionX_5.8_Z01R</a></li>
@@ -169,7 +159,7 @@
 <figure><img src="https://drive.google.com/uc?export=view&amp;id=1aEBKbHMsxVQckCXh_oDsuqf3JiOIVmrH"/>
 </figure>
 </p>
-<h3 id="3下準備">3.下準備</h3>
+<h2 id="下準備">下準備</h2>
 <p>電源+volume upでbootloaderを起動してPCと接続。<br>
 そしてダウンロードしたフォルダのある場所でターミナルを開いて以下のコマンドを実行し、ユーザーデータを削除した後にvbmetaをflash。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">$ fastboot -w
@@ -185,10 +175,10 @@ fastboot set_active a
 #そしてbootloaderを再起動
 $ fastboot reboot bootloader
 </code></pre></div><p>ACTIVE SLOTが先ほどとは別のスロットに変更されているはずです。</p>
-<h3 id="4twrpを焼く">4.TWRPを焼く</h3>
+<h2 id="twrpを焼く">TWRPを焼く</h2>
 <p>以下のコマンドを実行した後リカバリーモードに移行。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">$ fastboot flash boot twrp-3.4.0-0-Z01RD.img
-</code></pre></div><h3 id="5romをflash">5.ROMをflash</h3>
+</code></pre></div><h2 id="romをflash">ROMをflash</h2>
 <p>リカバリーが起動したら、「Wipe」&gt;「ADVANCED WIPE」と進んでsystem、Dalvik(Cache)、DataをWipeしてください。<br>
 完了したら、</p>
 <ul>
@@ -208,8 +198,8 @@ $ fastboot reboot bootloader
 Encrypted Vendor &gt; ABL.zip &gt; dfe.zip<br>
 の順番でファイルをflashしてください。
 完了したらsystemを再起動、Evolution Xのロゴが表示された後セットアップ画面が出てくるはずです。</p>
-<h3 id="6最後に">6.最後に</h3>
-<p>GSIと違ってVolteも生きてて安定もしているのでいいですね。</p>
+<h2 id="最後に">最後に</h2>
+<p>Volteが不安定ですが全体的に動作も良好なので使いやすいですね。</p>
 
 </section>
 
@@ -475,25 +465,13 @@ Encrypted Vendor &gt; ABL.zip &gt; dfe.zip<br>
                 <div class="widget--toc">
                     <nav id="TableOfContents">
   <ol>
-    <li>
-      <ol>
-        <li><a href="#目次">目次</a></li>
-        <li><a href="#0前置き">0.前置き</a></li>
-      </ol>
-    </li>
-    <li><a href="#注意">⚠注意</a></li>
-    <li><a href="#この作業に取り掛かる前に必ずデータのバックアップを取ってください">この作業に取り掛かる前に必ずデータのバックアップを取ってください。</a></li>
-    <li><a href="#またここに書いてることを真似する場合は自己責任でお願いします">また、ここに書いてることを真似する場合は自己責任でお願いします。</a></li>
-    <li><a href="#この記事の内容を実践して生じた損害等の一切の責任を負いかねますのでご了承ください">この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。</a>
-      <ol>
-        <li><a href="#1前提条件">1.前提条件</a></li>
-        <li><a href="#2ダウンロードするもの">2.ダウンロードするもの</a></li>
-        <li><a href="#3下準備">3.下準備</a></li>
-        <li><a href="#4twrpを焼く">4.TWRPを焼く</a></li>
-        <li><a href="#5romをflash">5.ROMをflash</a></li>
-        <li><a href="#6最後に">6.最後に</a></li>
-      </ol>
-    </li>
+    <li><a href="#前置き">前置き</a></li>
+    <li><a href="#前提条件">前提条件</a></li>
+    <li><a href="#ダウンロードするもの">ダウンロードするもの</a></li>
+    <li><a href="#下準備">下準備</a></li>
+    <li><a href="#twrpを焼く">TWRPを焼く</a></li>
+    <li><a href="#romをflash">ROMをflash</a></li>
+    <li><a href="#最後に">最後に</a></li>
   </ol>
 </nav>
                 </div>

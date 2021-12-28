@@ -13,31 +13,33 @@
       <pubDate>Tue, 09 Nov 2021 05:12:15 +0900</pubDate>
       
       <guid>https://blog.j7b3y.com/p/magisk%E3%81%A8gapps%E3%82%92%E5%85%A5%E3%82%8A%E3%81%AEwsawindows-subsystem-for-android%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E8%A9%B1/</guid>
-      <description>目次  0.前置きと注意
-1.必要なもの
-2.下準備
-3.必要なファイルの用意
-4.WSAをインストール 5.いざ起動 6.Magisk Managerをインストール
-7.Unable to start Windows Subsystem for Androidと言われて動かない！
-8.後書き
-9.参考にした記事
- 0.前置きと注意と筆者の環境 Win11の発表時からWSAを楽しみにしていたのにお預けをくらって待ちきれなかったのでネットサーフィンをしていたら、
+      <description>##前置きと注意と筆者の環境
+Win11の発表時からWSAを楽しみにしていたのにお預けをくらって待ちきれなかったのでネットサーフィンをしていたら、
 なんか凄そうなのを発見したので実行してみました。
-⚠注意 ここに書いてることを真似する場合は自己責任でお願いします。 この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。 無いとは思うけど万が一Windowsが吹っ飛んだ時のために
+⚠注意 ここに書いてることを真似する場合は自己責任でお願いします。
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。
+無いとは思うけど万が一Windowsが吹っ飛んだ時のために
 不安ならバックアップを取っておこうね。
 また、Hyper-Vを有効にするためMemuやBS5 32bit等々のエミュレーターが動作しなくなります、ご注意を。
-筆者の環境 CPU: Ryzen5 3600
+ 筆者の環境
+CPU: Ryzen5 3600
 GPU: GTX1060 6GB
-RAM: DDR4 4GB×2 16GB×1 OS: Windows 11 Pro 21H2 22000.282
-1.必要なもの Windows11
+RAM: DDR4 4GB×2 16GB×1 OS: Windows 11 Pro 21H2 22000.282  必要なもの Windows11
 Githubのアカウント
 仮想化支援機能に対応したCPU
  あると嬉しい
 ADBが使用できる環境  (試していないので真偽は不明ですがプレビュービルドでなくてもできるそうです。誰か人柱になって)
-2.下準備  Windowsの機能の有効化または無効化からHyper-V、Windows ハイパーバイザー プラットフォーム、仮想マシンプラットフォームを有効にして再起動する。
+下準備  Windowsの機能の有効化または無効化からHyper-V、Windows ハイパーバイザー プラットフォーム、仮想マシンプラットフォームを有効にして再起動する。
 これ↓
-  Biosの設定から仮想化支援機能を有効にする。(マザーボードのメーカーによってBiosの入り方等々が異なるので割愛)  3.必要なファイルの用意 MagiskOnWSAのリポジトリをForkしてActionsを開きましょう。
-Workflowsの中にあるMagiskの項目を選択して  Run workflowを開いてRun workflowのボタンを押します。</description>
+  Biosの設定から仮想化支援機能を有効にする。(マザーボードのメーカーによってBiosの入り方等々が異なるので割愛)  必要なファイルの用意 MagiskOnWSAのリポジトリをForkしてActionsを開きましょう。
+Workflowsの中にあるMagiskの項目を選択して  Run workflowを開いてRun workflowのボタンを押します。
+ (この時にGappsの種類を選べるのでnoneのところを入れたいGappsの種類に書き換えてあげましょう)
+自分でやるのが面倒！って人はGapps nanoが入ったものをビルドしているので私がForkしたリポジトリからDLしてください。
+ビルドが終わったらWorkflowを開いてArtifactsの一覧にあるWSA-with-Magisk-GApps-〇〇_x64をDLしましょう。
+ WSAをインストール DLが終わったら自分の好きな場所に展開してください。 展開している間にWindows設定から開発者モードを有効にしてあげましょう。
+プライバシーとセキュリティ &amp;gt; 開発者向け と開いて一番上にある
+&amp;ldquo;圧縮されていないファイルも含め、任意のソースからのアプリをインストールします。&amp;rdquo;
+のスイッチをオンにしましょう。</description>
     </item>
     
     <item>
@@ -46,12 +48,13 @@ Workflowsの中にあるMagiskの項目を選択して  Run workflowを開いて
       <pubDate>Sat, 06 Nov 2021 23:08:18 +0900</pubDate>
       
       <guid>https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8B/</guid>
-      <description>目次  前置き
- Magisk関連 Xposedモジュール ブラウザ その他   前置き 初期化する度に入れていたアプリ等々を思い出すのも面倒なので自分用にまとめます。
+      <description>##前置き
+初期化する度に入れていたアプリ等々を思い出すのも面倒なので自分用にまとめます。
 ・環境
 機種: Huawei P30
 OS: Android11(DotOS 5.2 arm64 Vanilla)
-Magisk関連 Magisk これがないと何も始まらない。
+Magisk関連 Magisk
+これがないと何も始まらない。
 モジュール   Busybox for Android NDK
 これが必要なアプリがいくつかあるので(後述)
   Font Manager
@@ -65,7 +68,10 @@ Magisk関連 Magisk これがないと何も始まらない。
   Riru
 LSPosedやHide My Applist(後述)を使用するために入れている。Zygiskなるものが出たので今後は不要になるかもしれない。
   Riru - Hide My Applist
-Hide My Applistのアプリからインストールできるやつ。</description>
+Hide My Applistのアプリからインストールできるやつ。
+  Riru - LSPosed
+Xposedの後継。今後はZygisk版を使うかもしれない。
+  Sony Music Player</description>
     </item>
     
   </channel>

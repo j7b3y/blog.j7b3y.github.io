@@ -110,7 +110,7 @@
 
 
                 <time class="article-time--reading">
-                    読了時間: 5分
+                    Reading Time: 4分
                 </time>
             </div>
         
@@ -120,28 +120,18 @@
 </header>
 
     <section class="article-content">
-    <h3 id="目次">目次</h3>
-<blockquote>
-<p>0.前置きと注意<br>
-1.前提条件<br>
-2.準備<br>
-3.TWRPをflashする<br>
-4.下準備
-5.拡張<br>
-6.ROMをflashしよう</p>
-</blockquote>
-<h3 id="0前置きと注意">0.前置きと注意</h3>
-<h2 id="huawei-p30にlineageos-181をインストールした話post2021-10-11-installing-lineageos-on-huawei-p30の続きです"><a class="link" href="/post/2021-10-11-installing-lineageos-on-huawei-p30/" >Huawei P30にlineageOS 18.1をインストールした話</a>の続きです。</h2>
-<p>P30にGSIなカスタムROMをflashしようとしたところ<br>
+    <h2 id="前置きと注意">前置きと注意</h2>
+<p><a class="link" href="/p/2021-10-11-installing-lineageos-on-huawei-p30/" >Huawei P30にlineageOS 18.1をインストールした話</a>の続きです。<br>
+P30にGSIなカスタムROMをflashしようとしたところ<br>
 system領域が小さい！と怒られて大敗北しました。<br>
 今回はsystem領域の拡張に成功したのでメモ帳代わりにまとめることにしました。</p>
-<h2 id="注意">⚠注意</h2>
-<h2 id="この作業に取り掛かる前に必ずデータのバックアップを取ってください">この作業に取り掛かる前に必ずデータのバックアップを取ってください。</h2>
-<h2 id="またここに書いてることを真似する場合は自己責任でお願いします">また、ここに書いてることを真似する場合は自己責任でお願いします。</h2>
-<h2 id="この記事の内容を実践して生じた損害等の一切の責任を負いかねますのでご了承ください">この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。</h2>
-<p><del>あなたの大切なスマホが文鎮になっても私は責任を取れません。</del><br>
+<p>⚠注意<br>
+この作業に取り掛かる前に必ずデータのバックアップを取ってください。<br>
+また、ここに書いてることを真似する場合は自己責任でお願いします。<br>
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。<br>
+<del>あなたの大切なスマホが文鎮になっても私は責任を取れません。</del><br>
 また、この方法で拡張した場合はeRecoveryを使ってsystemの修復を際にパーティションを元に戻さないとエラーを吐くので注意してください。</p>
-<h3 id="1前提条件">1.前提条件</h3>
+<h2 id="前提条件">前提条件</h2>
 <ul>
 <li>BootloaderがunlockされているHuawei P30(自分はDC-Unlockerのライセンスを購入して解除しました。 )</li>
 <li>fastbootコマンドが使用できる環境</li>
@@ -151,7 +141,7 @@ system領域が小さい！と怒られて大敗北しました。<br>
 <p>P30はEMUI9.1にしておいてください。(EMUI10以降はfastbootコマンドが使えない&amp;強制的にBootloaderにロックがかけられるため。)<br>
 eRecoveryを使用すると強制的にEMUI10にされますが、HisuiteでEMUI9.1に戻すとbootloaderがアンロックされた状態に戻るはずなので慌てないでください。<br>
 (自分の場合はちゃんと戻りました)</p>
-<h3 id="2準備">2.準備</h3>
+<h2 id="準備">準備</h2>
 <ul>
 <li><a class="link" href="https://androidfilehost.com/?fid=11410963190603905658"  target="_blank" rel="noopener"
     >Mate20 XのTWRP</a></li>
@@ -162,12 +152,12 @@ eRecoveryを使用すると強制的にEMUI10にされますが、HisuiteでEMUI
     >DotOS</a>を選択しました)</li>
 <li>P30(<del>当たり前ですね</del>)</li>
 </ul>
-<h3 id="3twrpをflashする">3.TWRPをflashする</h3>
+<h2 id="twrpをflashする">TWRPをflashする</h2>
 <p>Mate20 XのTWRPイメージがあるディレクトリでターミナルを開いてください。<br>
 開いたら</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">$ fastboot flash recovery_ramdisk twrp-3.2.1-0-everest-unofficial-v3.img
 </code></pre></div><p>と入力してTWRPをflashしましょう。</p>
-<h3 id="4-下準備">4. 下準備</h3>
+<h2 id="下準備">下準備</h2>
 <p>再起動してTWRPを起動しましょう。(電源+Volume Up)<br>
 タッチ操作は出来ないのでUSBマウスを接続して操作します。<br>
 作業が長引くかもしれないのでスリープを無効にして画面の明るさを最低にしましょう。</p>
@@ -191,7 +181,7 @@ gdisk                           patch                       sepolicy
 </code></pre></div><p>partedとgdiskがあることを確認したら実行権限を付与しましょう。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">~ # chmod +x parted
 ~ # chmod +x gdisk
-</code></pre></div><h2 id="5拡張">5.拡張</h2>
+</code></pre></div><h2 id="拡張">拡張</h2>
 <p>ここまで来たらあと一息！<br>
 パーティションを操作しましょう。<br>
 partedでsddを開きます。</p>
@@ -223,10 +213,10 @@ Number  Start    End        Size       File system  Name                 Flags
 メモを忘れた人用に自分のパーティションテーブルを貼っておきます。<a class="link" href="https://drive.google.com/file/d/1udu6zJOhqdF3KGqjez9y3yI2fYaiY6Vx/view"  target="_blank" rel="noopener"
     >Google Drive</a><br>
 今回はproduct_aとsystem_aを削除して新しくsystem_aを作成します。
-この記事の場合は63,64ですね。</p>
-<h2 id="注意-1">⚠注意</h2>
-<h2 id="ここで間違ったパーティションを削除してしまうと再起不可になってしまう可能性があるので必ず手作業でやるようにしましょう">ここで間違ったパーティションを削除してしまうと再起不可になってしまう可能性があるので必ず手作業でやるようにしましょう。</h2>
-<p>コピペはしないようにね。</p>
+この記事の場合は63,64ですね。<br>
+注意<br>
+ここで間違ったパーティションを削除してしまうと再起不可になってしまう可能性があるので必ず手作業でやるようにしましょう。<br>
+コピペはしないようにね。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">(</span>parted<span class="p">)</span> rm
 Partition number? 63
 <span class="p">(</span>parted<span class="p">)</span> rm
@@ -334,7 +324,7 @@ Number  Start   End     Size    File system  Name                 Flags
 66      8447MB  9647MB  1200MB               preload_a            msftdata
 67      9647MB  128GB   118GB                userdata             msftdata
 </code></pre></div><p>これで拡張作業はおしまい。</p>
-<h3 id="6romをflashしよう">6.ROMをflashしよう</h3>
+<h2 id="romをflashしよう">ROMをflashしよう</h2>
 <p>これでようやく好きなROMが焼けるはず&hellip;。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">fastboot --disable-verity --disable-verification flash system dotOS-R-v5.2-arm64-ab-GAPPS-OFFICIAL.img
 Sending sparse &#39;system&#39; 1/8 (458752 KB)            OKAY [  3.193s]
@@ -361,14 +351,14 @@ Sending &#39;recovery_ramdisk&#39; (32768 KB)              OKAY [  0.232s]
 Writing &#39;recovery_ramdisk&#39;                         OKAY [  0.077s]
 Finished. Total time: 0.341s
 </code></pre></div><p>リカバリーを起動してファクトリーリセットをしたらいよいよ起動！</p>
-<h3 id="7いよいよ起動">7.いよいよ起動</h3>
+<h2 id="いよいよ起動">いよいよ起動</h2>
 <p>まぁ普通に起動するはずです。<br>
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">P30にDotOS降臨<br>ばいばいP20lite😭 <a href="https://t.co/iNxlIEgnJz">pic.twitter.com/iNxlIEgnJz</a></p>&mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) <a href="https://twitter.com/j7b3y/status/1449644900442464258?ref_src=twsrc%5Etfw">October 17, 2021</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <br>
 後はmagiskを入れるなりなんなりで自由にやっちゃってください！<br>
 <del>USB接続してもWindowsが認識できない不具合(?)はこちらでも残ってました</del></p>
-<h3 id="8参考にした記事">8.参考にした記事</h3>
+<h2 id="参考にした記事">参考にした記事</h2>
 <ul>
 <li><a class="link" href="https://ysss.hateblo.jp/entry/20200425/1587793352#parted%E3%81%A8gdisk%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89"  target="_blank" rel="noopener"
     >Android端末にカスタムROMを焼くにシステム領域が足りないためパーティションを拡張する</a></li>
@@ -640,33 +630,15 @@ Finished. Total time: 0.341s
                 <div class="widget--toc">
                     <nav id="TableOfContents">
   <ol>
-    <li>
-      <ol>
-        <li><a href="#目次">目次</a></li>
-        <li><a href="#0前置きと注意">0.前置きと注意</a></li>
-      </ol>
-    </li>
-    <li><a href="#huawei-p30にlineageos-181をインストールした話post2021-10-11-installing-lineageos-on-huawei-p30の続きです"><a href="/post/2021-10-11-installing-lineageos-on-huawei-p30/">Huawei P30にlineageOS 18.1をインストールした話</a>の続きです。</a></li>
-    <li><a href="#注意">⚠注意</a></li>
-    <li><a href="#この作業に取り掛かる前に必ずデータのバックアップを取ってください">この作業に取り掛かる前に必ずデータのバックアップを取ってください。</a></li>
-    <li><a href="#またここに書いてることを真似する場合は自己責任でお願いします">また、ここに書いてることを真似する場合は自己責任でお願いします。</a></li>
-    <li><a href="#この記事の内容を実践して生じた損害等の一切の責任を負いかねますのでご了承ください">この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。</a>
-      <ol>
-        <li><a href="#1前提条件">1.前提条件</a></li>
-        <li><a href="#2準備">2.準備</a></li>
-        <li><a href="#3twrpをflashする">3.TWRPをflashする</a></li>
-        <li><a href="#4-下準備">4. 下準備</a></li>
-      </ol>
-    </li>
-    <li><a href="#5拡張">5.拡張</a></li>
-    <li><a href="#注意-1">⚠注意</a></li>
-    <li><a href="#ここで間違ったパーティションを削除してしまうと再起不可になってしまう可能性があるので必ず手作業でやるようにしましょう">ここで間違ったパーティションを削除してしまうと再起不可になってしまう可能性があるので必ず手作業でやるようにしましょう。</a>
-      <ol>
-        <li><a href="#6romをflashしよう">6.ROMをflashしよう</a></li>
-        <li><a href="#7いよいよ起動">7.いよいよ起動</a></li>
-        <li><a href="#8参考にした記事">8.参考にした記事</a></li>
-      </ol>
-    </li>
+    <li><a href="#前置きと注意">前置きと注意</a></li>
+    <li><a href="#前提条件">前提条件</a></li>
+    <li><a href="#準備">準備</a></li>
+    <li><a href="#twrpをflashする">TWRPをflashする</a></li>
+    <li><a href="#下準備">下準備</a></li>
+    <li><a href="#拡張">拡張</a></li>
+    <li><a href="#romをflashしよう">ROMをflashしよう</a></li>
+    <li><a href="#いよいよ起動">いよいよ起動</a></li>
+    <li><a href="#参考にした記事">参考にした記事</a></li>
   </ol>
 </nav>
                 </div>

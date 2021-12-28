@@ -6,24 +6,19 @@
         <description>Recent content on Nothing There</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 18 Dec 2021 21:23:05 +0900</lastBuildDate><atom:link href="https://blog.j7b3y.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 28 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.j7b3y.com/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Xperia ZR用のLineage 18.1をビルドした</title>
         <link>https://blog.j7b3y.com/p/xperia-zr%E7%94%A8%E3%81%AElineage-18.1%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%9F/</link>
         <pubDate>Sat, 18 Dec 2021 21:23:05 +0900</pubDate>
         
         <guid>https://blog.j7b3y.com/p/xperia-zr%E7%94%A8%E3%81%AElineage-18.1%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%9F/</guid>
-        <description>&lt;h3 id=&#34;目次&#34;&gt;目次&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;0.前置きと注意&lt;br&gt;
-1.リンク&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;0前置きと注意&#34;&gt;0.前置きと注意&lt;/h3&gt;
+        <description>&lt;h2 id=&#34;前置きと注意&#34;&gt;前置きと注意&lt;/h2&gt;
 &lt;p&gt;実機を持ってないので動作確認してません。&lt;br&gt;
 Xperia ZR用のLineageOS 18.1です。&lt;br&gt;
 自分でビルドしたい人はローカルmanifestを公開しているので&lt;a class=&#34;link&#34; href=&#34;https://github.com/j7b3y/local_manifests_dogo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;こちら&lt;/a&gt;を参考にしてください。&lt;br&gt;
 ※こちらのromはXperia ZR用なのでSO-04eでは使用出来ません。&lt;/p&gt;
-&lt;h3 id=&#34;1リンク&#34;&gt;1.リンク&lt;/h3&gt;
+&lt;h2 id=&#34;リンク&#34;&gt;リンク&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://drive.google.com/drive/folders/1xH97o3F_hUxgZ1yeYg2i8MXCNS0c63XN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Lineage-18.1-dogo&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -34,32 +29,22 @@ Xperia ZR用のLineageOS 18.1です。&lt;br&gt;
         <pubDate>Thu, 09 Dec 2021 08:16:58 +0900</pubDate>
         
         <guid>https://blog.j7b3y.com/p/zenfone-5z%E3%82%92%E8%B2%B7%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7evolution-x%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
-        <description>&lt;h3 id=&#34;目次&#34;&gt;目次&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;0.前置きと注意&lt;br&gt;
-1.前提条件&lt;br&gt;
-2.ダウンロードするもの&lt;br&gt;
-3.下準備&lt;br&gt;
-4.TWRPを焼く
-5.ROMをflash &lt;br&gt;
-6.最後に&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;0前置き&#34;&gt;0.前置き&lt;/h3&gt;
+        <description>&lt;h2 id=&#34;前置き&#34;&gt;前置き&lt;/h2&gt;
 &lt;p&gt;Asus関連の項目が邪魔だったのでカスタムROMを使おう！というのが動機。&lt;br&gt;
 なかなかブートロゴにお目にかかれなかったりブートロゴでスタックしたりとで自分的にかなり詰まったのでまとめます。&lt;br&gt;
 この記事は公式アンロックなZenfone 5ZにOFFICIALなEvolution Xをインストールする人向けなので他のROMを焼くのであれば&lt;a class=&#34;link&#34; href=&#34;https://forum.xda-developers.com/t/guide-noob-friendly-custom-rom-flashing-guide.3944849/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;こちら&lt;/a&gt;を参考にした方が絶対に良いです。&lt;/p&gt;
-&lt;h2 id=&#34;注意&#34;&gt;⚠注意&lt;/h2&gt;
-&lt;h2 id=&#34;この作業に取り掛かる前に必ずデータのバックアップを取ってください&#34;&gt;この作業に取り掛かる前に必ずデータのバックアップを取ってください。&lt;/h2&gt;
-&lt;h2 id=&#34;またここに書いてることを真似する場合は自己責任でお願いします&#34;&gt;また、ここに書いてることを真似する場合は自己責任でお願いします。&lt;/h2&gt;
-&lt;h2 id=&#34;この記事の内容を実践して生じた損害等の一切の責任を負いかねますのでご了承ください&#34;&gt;この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。&lt;/h2&gt;
-&lt;p&gt;&lt;del&gt;あなたの大切なスマホが文鎮になっても私は責任を取れません。&lt;/del&gt;&lt;/p&gt;
-&lt;h3 id=&#34;1前提条件&#34;&gt;1.前提条件&lt;/h3&gt;
+&lt;p&gt;⚠注意&lt;br&gt;
+この作業に取り掛かる前に必ずデータのバックアップを取ってください。&lt;br&gt;
+また、ここに書いてることを真似する場合は自己責任でお願いします。&lt;br&gt;
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。&lt;br&gt;
+&lt;del&gt;あなたの大切なスマホが文鎮になっても私は責任を取れません。&lt;/del&gt;&lt;/p&gt;
+&lt;h2 id=&#34;前提条件&#34;&gt;前提条件&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;BootloaderがunlockされているZenfone5Z(この記事は公式アンロックな端末向けに書かれています。 )&lt;/li&gt;
 &lt;li&gt;fastbootコマンドが使用できる環境。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;2ダウンロードするもの&#34;&gt;2.ダウンロードするもの&lt;/h3&gt;
+&lt;h2 id=&#34;ダウンロードするもの&#34;&gt;ダウンロードするもの&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://sourceforge.net/projects/evolution-x/files/Z01R/EvolutionX_5.8_Z01R-11-20210612-0637-OFFICIAL.zip/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;EvolutionX_5.8_Z01R&lt;/a&gt;&lt;/li&gt;
@@ -83,7 +68,7 @@ Xperia ZR用のLineageOS 18.1です。&lt;br&gt;
 &lt;figure&gt;&lt;img src=&#34;https://drive.google.com/uc?export=view&amp;amp;id=1aEBKbHMsxVQckCXh_oDsuqf3JiOIVmrH&#34;/&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
-&lt;h3 id=&#34;3下準備&#34;&gt;3.下準備&lt;/h3&gt;
+&lt;h2 id=&#34;下準備&#34;&gt;下準備&lt;/h2&gt;
 &lt;p&gt;電源+volume upでbootloaderを起動してPCと接続。&lt;br&gt;
 そしてダウンロードしたフォルダのある場所でターミナルを開いて以下のコマンドを実行し、ユーザーデータを削除した後にvbmetaをflash。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;$ fastboot -w
@@ -99,10 +84,10 @@ fastboot set_active a
 #そしてbootloaderを再起動
 $ fastboot reboot bootloader
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ACTIVE SLOTが先ほどとは別のスロットに変更されているはずです。&lt;/p&gt;
-&lt;h3 id=&#34;4twrpを焼く&#34;&gt;4.TWRPを焼く&lt;/h3&gt;
+&lt;h2 id=&#34;twrpを焼く&#34;&gt;TWRPを焼く&lt;/h2&gt;
 &lt;p&gt;以下のコマンドを実行した後リカバリーモードに移行。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;$ fastboot flash boot twrp-3.4.0-0-Z01RD.img
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;5romをflash&#34;&gt;5.ROMをflash&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;romをflash&#34;&gt;ROMをflash&lt;/h2&gt;
 &lt;p&gt;リカバリーが起動したら、「Wipe」&amp;gt;「ADVANCED WIPE」と進んでsystem、Dalvik(Cache)、DataをWipeしてください。&lt;br&gt;
 完了したら、&lt;/p&gt;
 &lt;ul&gt;
@@ -122,8 +107,8 @@ $ fastboot reboot bootloader
 Encrypted Vendor &amp;gt; ABL.zip &amp;gt; dfe.zip&lt;br&gt;
 の順番でファイルをflashしてください。
 完了したらsystemを再起動、Evolution Xのロゴが表示された後セットアップ画面が出てくるはずです。&lt;/p&gt;
-&lt;h3 id=&#34;6最後に&#34;&gt;6.最後に&lt;/h3&gt;
-&lt;p&gt;GSIと違ってVolteも生きてて安定もしているのでいいですね。&lt;/p&gt;
+&lt;h2 id=&#34;最後に&#34;&gt;最後に&lt;/h2&gt;
+&lt;p&gt;Volteが不安定ですが全体的に動作も良好なので使いやすいですね。&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -132,33 +117,22 @@ Encrypted Vendor &amp;gt; ABL.zip &amp;gt; dfe.zip&lt;br&gt;
         <pubDate>Tue, 09 Nov 2021 05:12:15 +0900</pubDate>
         
         <guid>https://blog.j7b3y.com/p/magisk%E3%81%A8gapps%E3%82%92%E5%85%A5%E3%82%8A%E3%81%AEwsawindows-subsystem-for-android%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E8%A9%B1/</guid>
-        <description>&lt;h3 id=&#34;目次&#34;&gt;目次&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;0.前置きと注意&lt;br&gt;
-1.必要なもの&lt;br&gt;
-2.下準備&lt;br&gt;
-3.必要なファイルの用意&lt;br&gt;
-4.WSAをインストール
-5.いざ起動
-6.Magisk Managerをインストール&lt;br&gt;
-7.Unable to start Windows Subsystem for Androidと言われて動かない！&lt;br&gt;
-8.後書き&lt;br&gt;
-9.参考にした記事&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;0前置きと注意と筆者の環境&#34;&gt;0.前置きと注意と筆者の環境&lt;/h3&gt;
-&lt;p&gt;Win11の発表時からWSAを楽しみにしていたのにお預けをくらって待ちきれなかったのでネットサーフィンをしていたら、&lt;br&gt;
+        <description>&lt;p&gt;##前置きと注意と筆者の環境&lt;br&gt;
+Win11の発表時からWSAを楽しみにしていたのにお預けをくらって待ちきれなかったのでネットサーフィンをしていたら、&lt;br&gt;
 なんか凄そうなのを発見したので実行してみました。&lt;/p&gt;
-&lt;h2 id=&#34;注意--ここに書いてることを真似する場合は自己責任でお願いします&#34;&gt;⚠注意  ここに書いてることを真似する場合は自己責任でお願いします。&lt;/h2&gt;
-&lt;h2 id=&#34;この記事の内容を実践して生じた損害等の一切の責任を負いかねますのでご了承ください&#34;&gt;この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。&lt;/h2&gt;
-&lt;p&gt;&lt;del&gt;無いとは思うけど&lt;/del&gt;万が一Windowsが吹っ飛んだ時のために&lt;br&gt;
+&lt;p&gt;⚠注意  ここに書いてることを真似する場合は自己責任でお願いします。&lt;br&gt;
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。&lt;br&gt;
+&lt;del&gt;無いとは思うけど&lt;/del&gt;万が一Windowsが吹っ飛んだ時のために&lt;br&gt;
 不安ならバックアップを取っておこうね。&lt;br&gt;
 また、Hyper-Vを有効にするためMemuやBS5 32bit等々のエミュレーターが動作しなくなります、ご注意を。&lt;/p&gt;
-&lt;h3 id=&#34;筆者の環境&#34;&gt;筆者の環境&lt;/h3&gt;
-&lt;p&gt;CPU: Ryzen5 3600&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;筆者の環境&lt;br&gt;
+CPU: Ryzen5 3600&lt;br&gt;
 GPU: GTX1060 6GB&lt;br&gt;
 RAM: DDR4 4GB×2  16GB×1
-OS: Windows 11 Pro 21H2 22000.282&lt;/p&gt;
-&lt;h3 id=&#34;1必要なもの&#34;&gt;1.必要なもの&lt;/h3&gt;
+OS: Windows 11 Pro 21H2 22000.282&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;必要なもの&#34;&gt;必要なもの&lt;/h2&gt;
 &lt;p&gt;Windows11&lt;br&gt;
 Githubのアカウント&lt;br&gt;
 仮想化支援機能に対応したCPU&lt;/p&gt;
@@ -167,7 +141,7 @@ Githubのアカウント&lt;br&gt;
 ADBが使用できる環境&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;(試していないので真偽は不明ですがプレビュービルドでなくてもできるそうです。&lt;del&gt;誰か人柱になって&lt;/del&gt;)&lt;/p&gt;
-&lt;h3 id=&#34;2下準備&#34;&gt;2.下準備&lt;/h3&gt;
+&lt;h2 id=&#34;下準備&#34;&gt;下準備&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Windowsの機能の有効化または無効化からHyper-V、Windows ハイパーバイザー プラットフォーム、仮想マシンプラットフォームを有効にして再起動する。&lt;br&gt;
 これ↓&lt;br&gt;
@@ -176,7 +150,7 @@ ADBが使用できる環境&lt;/li&gt;
 &lt;/li&gt;
 &lt;li&gt;Biosの設定から仮想化支援機能を有効にする。(マザーボードのメーカーによってBiosの入り方等々が異なるので割愛)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;3必要なファイルの用意&#34;&gt;3.必要なファイルの用意&lt;/h3&gt;
+&lt;h2 id=&#34;必要なファイルの用意&#34;&gt;必要なファイルの用意&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/LSPosed/MagiskOnWSA&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;MagiskOnWSA&lt;/a&gt;のリポジトリをForkしてActionsを開きましょう。&lt;br&gt;
 Workflowsの中にあるMagiskの項目を選択して
@@ -194,7 +168,7 @@ Run workflowを開いてRun workflowのボタンを押します。&lt;br&gt;
 &lt;figure&gt;&lt;img src=&#34;https://drive.google.com/uc?export=view&amp;amp;id=1Yknyh8kmzSiKTsQkc4osoqZkllgd04-O&#34;/&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
-&lt;h3 id=&#34;4wsaをインストール&#34;&gt;4.WSAをインストール&lt;/h3&gt;
+&lt;h2 id=&#34;wsaをインストール&#34;&gt;WSAをインストール&lt;/h2&gt;
 &lt;p&gt;DLが終わったら自分の好きな場所に展開してください。
 展開している間にWindows設定から開発者モードを有効にしてあげましょう。&lt;br&gt;
 プライバシーとセキュリティ &amp;gt; 開発者向け と開いて一番上にある&lt;br&gt;
@@ -205,7 +179,7 @@ Run workflowを開いてRun workflowのボタンを押します。&lt;br&gt;
 &lt;/figure&gt;
 &lt;br&gt;
 インストールが開始します。&lt;/p&gt;
-&lt;h3 id=&#34;5いざ起動&#34;&gt;5.いざ起動&lt;/h3&gt;
+&lt;h2 id=&#34;5いざ起動&#34;&gt;5.いざ起動&lt;/h2&gt;
 &lt;p&gt;スタートメニューの検索に&amp;quot;アプリ: android&amp;quot;と入力すると&lt;br&gt;
 Windows Subsystem for Androidが出てくるので実行するとこんなメニューが出てきます。&lt;br&gt;
 &lt;figure&gt;&lt;img src=&#34;https://drive.google.com/uc?export=view&amp;amp;id=1ompHWjdTc9_fRigsjtVDoQW2ac4gBRMl&#34;/&gt;
@@ -215,7 +189,7 @@ Developer modeをOnにしてからManage developer settingsをクリックして
 &amp;ldquo;2.下準備&amp;quot;でちゃんと機能が有効になっているなら起動するはずです。&lt;br&gt;
 有効にしたのに*Unable to start Windows Subsystem for Android.*と言われる！って人は&lt;br&gt;
 &amp;ldquo;7.Unable to start Windows Subsystem for Androidと言われて動かない！&amp;ldquo;を見てみてください。&lt;/p&gt;
-&lt;h3 id=&#34;6magisk-managerをインストール&#34;&gt;6.Magisk Managerをインストール&lt;/h3&gt;
+&lt;h2 id=&#34;magisk-managerをインストール&#34;&gt;Magisk Managerをインストール&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;adbを使用する場合&lt;br&gt;
 ターミナルで以下を実行&lt;/li&gt;
@@ -228,7 +202,7 @@ adb install magisk.apk
 適当なブラウザをダウンロードして&lt;a class=&#34;link&#34; href=&#34;https://github.com/topjohnwu/Magisk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;ここ&lt;/a&gt;からMagisk Canaryのapkをダウンロードしてインストールしてください。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;7unable-to-start-windows-subsystem-for-androidと言われて動かない&#34;&gt;7.Unable to start Windows Subsystem for Androidと言われて動かない！&lt;/h3&gt;
+&lt;h2 id=&#34;unable-to-start-windows-subsystem-for-androidと言われて動かない&#34;&gt;Unable to start Windows Subsystem for Androidと言われて動かない！&lt;/h2&gt;
 &lt;p&gt;ちゃんと設定したのに動かない！って人向けです。
 自分もここで一回詰まりました。 &lt;br&gt;
 管理者として実行されたターミナルで以下を実行。&lt;/p&gt;
@@ -236,7 +210,7 @@ adb install magisk.apk
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;そして再起動。&lt;br&gt;
 多分起動するはずです。&lt;br&gt;
 これで起動しないのなら他に何か原因があるのかもしれないです。&lt;/p&gt;
-&lt;h3 id=&#34;8後書き&#34;&gt;8.後書き&lt;/h3&gt;
+&lt;h2 id=&#34;後書き&#34;&gt;後書き&lt;/h2&gt;
 &lt;p&gt;動作は良好で結構いい感じだったのですが思ったよりメモリを食うので飽きたらBS5に戻るのかな～って感じです。&lt;br&gt;
 生のAndroidが動くってのはロマンがあるのですが逆にそれ以外は何もないな～と思いました。&lt;br&gt;
 Hyper-Vを有効にしたのでBS5 32bitやMemuが動作しなくなるのもかなり痛いし多分今後は使わないかな～というのが自分の結論です。&lt;/p&gt;
@@ -250,7 +224,7 @@ Hyper-Vを有効にしたのでBS5 32bitやMemuが動作しなくなるのもか
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;WSAの中身はA11だった &lt;a href=&#34;https://t.co/bc2y3L3tyI&#34;&gt;pic.twitter.com/bc2y3L3tyI&lt;/a&gt;&lt;/p&gt;&amp;mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1457206889020723201?ref_src=twsrc%5Etfw&#34;&gt;November 7, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;/p&gt;
-&lt;h3 id=&#34;9参考にした記事&#34;&gt;9.参考にした記事&lt;/h3&gt;
+&lt;h2 id=&#34;参考にした記事&#34;&gt;参考にした記事&lt;/h2&gt;
 &lt;p&gt;多分こっちを翻訳したほうが分かりやすいと思います。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/LSPosed/MagiskOnWSA&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -264,25 +238,15 @@ Hyper-Vを有効にしたのでBS5 32bitやMemuが動作しなくなるのもか
         <pubDate>Sat, 06 Nov 2021 23:08:18 +0900</pubDate>
         
         <guid>https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8B/</guid>
-        <description>&lt;h3 id=&#34;目次&#34;&gt;目次&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;前置き&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Magisk関連&lt;/li&gt;
-&lt;li&gt;Xposedモジュール&lt;/li&gt;
-&lt;li&gt;ブラウザ&lt;/li&gt;
-&lt;li&gt;その他&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;前置き&#34;&gt;前置き&lt;/h3&gt;
-&lt;p&gt;初期化する度に入れていたアプリ等々を思い出すのも面倒なので自分用にまとめます。&lt;br&gt;
+        <description>&lt;p&gt;##前置き&lt;br&gt;
+初期化する度に入れていたアプリ等々を思い出すのも面倒なので自分用にまとめます。&lt;br&gt;
 ・環境&lt;br&gt;
 機種: Huawei P30&lt;br&gt;
 OS: Android11(DotOS 5.2 arm64 Vanilla)&lt;/p&gt;
-&lt;h3 id=&#34;magisk関連&#34;&gt;Magisk関連&lt;/h3&gt;
-&lt;h4 id=&#34;magiskhttpsgithubcomtopjohnwumagiskreleases&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/topjohnwu/Magisk/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Magisk&lt;/a&gt;&lt;/h4&gt;
-&lt;p&gt;これがないと何も始まらない。&lt;/p&gt;
+&lt;h2 id=&#34;magisk関連&#34;&gt;Magisk関連&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/topjohnwu/Magisk/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Magisk&lt;/a&gt;&lt;br&gt;
+これがないと何も始まらない。&lt;/p&gt;
 &lt;h3 id=&#34;モジュール&#34;&gt;モジュール&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -336,7 +300,7 @@ Sony Music Playerを使うために入れている。&lt;br&gt;
 おま環かもしれないがDotOSは初期状態でもSafetyNetが通るので必要ないと思うが一応。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;root権限が必要なアプリ&#34;&gt;Root権限が必要なアプリ&lt;/h3&gt;
+&lt;h2 id=&#34;root権限が必要なアプリ&#34;&gt;Root権限が必要なアプリ&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://vancedapp.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Vanced Manager&lt;/a&gt;&lt;br&gt;
@@ -379,8 +343,8 @@ XposedモジュールやLSPosed、LPを隠すのに使っています。&lt;/li&
 &lt;del&gt;翻訳系の拡張機能も使えるので英語弱者な自分でも安心&lt;/del&gt;&lt;br&gt;
 PC版はかなり軽かったのだがAndroid版はそうでもなかった。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;firefox-アドオンhttpsaddonsmozillaorgjafirefoxcollections17097905my-addon&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://addons.mozilla.org/ja/firefox/collections/17097905/my-addon/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Firefox アドオン&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&#34;firefox-アドオンhttpsaddonsmozillaorgjafirefoxcollections17097905my-addon&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://addons.mozilla.org/ja/firefox/collections/17097905/my-addon/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Firefox アドオン&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://addons.mozilla.org/ja/firefox/addon/ublock-origin/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;uBlock Origin&lt;/a&gt;
@@ -396,10 +360,8 @@ PC版はかなり軽かったのだがAndroid版はそうでもなかった。&l
 オープンソースなパスワードマネージャー(基本無料)&lt;br&gt;
 パスワード生成、支払情報の保存、パスワードが漏洩していないかの確認、セキュアメモ等々、&lt;br&gt;
 無料なのに機能が多くとても有能。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;10年な有料プランに入るとotpや1gbの暗号化ストレージが付いてくるぞ&#34;&gt;$10/年な有料プランに入るとOTPや1GBの暗号化ストレージが付いてくるぞ！&lt;/h4&gt;
-&lt;p&gt;ちなみにPCのクライアントやブラウザ版もあるのでスマホが急死しても安心。&lt;/p&gt;
-&lt;ul&gt;
+&lt;li&gt;$10/年な有料プランに入るとOTPや1GBの暗号化ストレージが付いてくるぞ！&lt;br&gt;
+ちなみにPCのクライアントやブラウザ版もあるのでスマホが急死しても安心。&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/WSTxda/QP-Gallery-Releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;QuickPic Gallery&lt;/a&gt;&lt;br&gt;
 Android初期の頃にあったQuickPicの改造版らしい。使いやすい。&lt;/li&gt;
@@ -434,28 +396,18 @@ ToDo リスト&lt;/p&gt;
         <pubDate>Sun, 17 Oct 2021 17:31:45 +0900</pubDate>
         
         <guid>https://blog.j7b3y.com/p/huawei-p30-ele-l29-%E3%81%AEsystem%E9%A0%98%E5%9F%9F%E3%82%92%E6%8B%A1%E5%BC%B5%E3%81%97%E3%81%9F%E8%A9%B1-%E3%81%9D%E3%81%AE1/</guid>
-        <description>&lt;h3 id=&#34;目次&#34;&gt;目次&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;0.前置きと注意&lt;br&gt;
-1.前提条件&lt;br&gt;
-2.準備&lt;br&gt;
-3.TWRPをflashする&lt;br&gt;
-4.下準備
-5.拡張&lt;br&gt;
-6.ROMをflashしよう&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;0前置きと注意&#34;&gt;0.前置きと注意&lt;/h3&gt;
-&lt;h2 id=&#34;huawei-p30にlineageos-181をインストールした話post2021-10-11-installing-lineageos-on-huawei-p30の続きです&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.j7b3y.com/post/2021-10-11-installing-lineageos-on-huawei-p30/&#34; &gt;Huawei P30にlineageOS 18.1をインストールした話&lt;/a&gt;の続きです。&lt;/h2&gt;
-&lt;p&gt;P30にGSIなカスタムROMをflashしようとしたところ&lt;br&gt;
+        <description>&lt;h2 id=&#34;前置きと注意&#34;&gt;前置きと注意&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.j7b3y.com/p/2021-10-11-installing-lineageos-on-huawei-p30/&#34; &gt;Huawei P30にlineageOS 18.1をインストールした話&lt;/a&gt;の続きです。&lt;br&gt;
+P30にGSIなカスタムROMをflashしようとしたところ&lt;br&gt;
 system領域が小さい！と怒られて大敗北しました。&lt;br&gt;
 今回はsystem領域の拡張に成功したのでメモ帳代わりにまとめることにしました。&lt;/p&gt;
-&lt;h2 id=&#34;注意&#34;&gt;⚠注意&lt;/h2&gt;
-&lt;h2 id=&#34;この作業に取り掛かる前に必ずデータのバックアップを取ってください&#34;&gt;この作業に取り掛かる前に必ずデータのバックアップを取ってください。&lt;/h2&gt;
-&lt;h2 id=&#34;またここに書いてることを真似する場合は自己責任でお願いします&#34;&gt;また、ここに書いてることを真似する場合は自己責任でお願いします。&lt;/h2&gt;
-&lt;h2 id=&#34;この記事の内容を実践して生じた損害等の一切の責任を負いかねますのでご了承ください&#34;&gt;この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。&lt;/h2&gt;
-&lt;p&gt;&lt;del&gt;あなたの大切なスマホが文鎮になっても私は責任を取れません。&lt;/del&gt;&lt;br&gt;
+&lt;p&gt;⚠注意&lt;br&gt;
+この作業に取り掛かる前に必ずデータのバックアップを取ってください。&lt;br&gt;
+また、ここに書いてることを真似する場合は自己責任でお願いします。&lt;br&gt;
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。&lt;br&gt;
+&lt;del&gt;あなたの大切なスマホが文鎮になっても私は責任を取れません。&lt;/del&gt;&lt;br&gt;
 また、この方法で拡張した場合はeRecoveryを使ってsystemの修復を際にパーティションを元に戻さないとエラーを吐くので注意してください。&lt;/p&gt;
-&lt;h3 id=&#34;1前提条件&#34;&gt;1.前提条件&lt;/h3&gt;
+&lt;h2 id=&#34;前提条件&#34;&gt;前提条件&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;BootloaderがunlockされているHuawei P30(自分はDC-Unlockerのライセンスを購入して解除しました。 )&lt;/li&gt;
 &lt;li&gt;fastbootコマンドが使用できる環境&lt;/li&gt;
@@ -465,7 +417,7 @@ system領域が小さい！と怒られて大敗北しました。&lt;br&gt;
 &lt;p&gt;P30はEMUI9.1にしておいてください。(EMUI10以降はfastbootコマンドが使えない&amp;amp;強制的にBootloaderにロックがかけられるため。)&lt;br&gt;
 eRecoveryを使用すると強制的にEMUI10にされますが、HisuiteでEMUI9.1に戻すとbootloaderがアンロックされた状態に戻るはずなので慌てないでください。&lt;br&gt;
 (自分の場合はちゃんと戻りました)&lt;/p&gt;
-&lt;h3 id=&#34;2準備&#34;&gt;2.準備&lt;/h3&gt;
+&lt;h2 id=&#34;準備&#34;&gt;準備&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://androidfilehost.com/?fid=11410963190603905658&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Mate20 XのTWRP&lt;/a&gt;&lt;/li&gt;
@@ -476,12 +428,12 @@ eRecoveryを使用すると強制的にEMUI10にされますが、HisuiteでEMUI
     &gt;DotOS&lt;/a&gt;を選択しました)&lt;/li&gt;
 &lt;li&gt;P30(&lt;del&gt;当たり前ですね&lt;/del&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;3twrpをflashする&#34;&gt;3.TWRPをflashする&lt;/h3&gt;
+&lt;h2 id=&#34;twrpをflashする&#34;&gt;TWRPをflashする&lt;/h2&gt;
 &lt;p&gt;Mate20 XのTWRPイメージがあるディレクトリでターミナルを開いてください。&lt;br&gt;
 開いたら&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;$ fastboot flash recovery_ramdisk twrp-3.2.1-0-everest-unofficial-v3.img
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;と入力してTWRPをflashしましょう。&lt;/p&gt;
-&lt;h3 id=&#34;4-下準備&#34;&gt;4. 下準備&lt;/h3&gt;
+&lt;h2 id=&#34;下準備&#34;&gt;下準備&lt;/h2&gt;
 &lt;p&gt;再起動してTWRPを起動しましょう。(電源+Volume Up)&lt;br&gt;
 タッチ操作は出来ないのでUSBマウスを接続して操作します。&lt;br&gt;
 作業が長引くかもしれないのでスリープを無効にして画面の明るさを最低にしましょう。&lt;/p&gt;
@@ -505,7 +457,7 @@ gdisk                           patch                       sepolicy
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;partedとgdiskがあることを確認したら実行権限を付与しましょう。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;~ # chmod +x parted
 ~ # chmod +x gdisk
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;5拡張&#34;&gt;5.拡張&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;拡張&#34;&gt;拡張&lt;/h2&gt;
 &lt;p&gt;ここまで来たらあと一息！&lt;br&gt;
 パーティションを操作しましょう。&lt;br&gt;
 partedでsddを開きます。&lt;/p&gt;
@@ -537,10 +489,10 @@ Number  Start    End        Size       File system  Name                 Flags
 メモを忘れた人用に自分のパーティションテーブルを貼っておきます。&lt;a class=&#34;link&#34; href=&#34;https://drive.google.com/file/d/1udu6zJOhqdF3KGqjez9y3yI2fYaiY6Vx/view&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Google Drive&lt;/a&gt;&lt;br&gt;
 今回はproduct_aとsystem_aを削除して新しくsystem_aを作成します。
-この記事の場合は63,64ですね。&lt;/p&gt;
-&lt;h2 id=&#34;注意-1&#34;&gt;⚠注意&lt;/h2&gt;
-&lt;h2 id=&#34;ここで間違ったパーティションを削除してしまうと再起不可になってしまう可能性があるので必ず手作業でやるようにしましょう&#34;&gt;ここで間違ったパーティションを削除してしまうと再起不可になってしまう可能性があるので必ず手作業でやるようにしましょう。&lt;/h2&gt;
-&lt;p&gt;コピペはしないようにね。&lt;/p&gt;
+この記事の場合は63,64ですね。&lt;br&gt;
+注意&lt;br&gt;
+ここで間違ったパーティションを削除してしまうと再起不可になってしまう可能性があるので必ず手作業でやるようにしましょう。&lt;br&gt;
+コピペはしないようにね。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;parted&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; rm
 Partition number? 63
 &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;parted&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; rm
@@ -648,7 +600,7 @@ Number  Start   End     Size    File system  Name                 Flags
 66      8447MB  9647MB  1200MB               preload_a            msftdata
 67      9647MB  128GB   118GB                userdata             msftdata
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;これで拡張作業はおしまい。&lt;/p&gt;
-&lt;h3 id=&#34;6romをflashしよう&#34;&gt;6.ROMをflashしよう&lt;/h3&gt;
+&lt;h2 id=&#34;romをflashしよう&#34;&gt;ROMをflashしよう&lt;/h2&gt;
 &lt;p&gt;これでようやく好きなROMが焼けるはず&amp;hellip;。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;fastboot --disable-verity --disable-verification flash system dotOS-R-v5.2-arm64-ab-GAPPS-OFFICIAL.img
 Sending sparse &amp;#39;system&amp;#39; 1/8 (458752 KB)            OKAY [  3.193s]
@@ -675,14 +627,14 @@ Sending &amp;#39;recovery_ramdisk&amp;#39; (32768 KB)              OKAY [  0.232
 Writing &amp;#39;recovery_ramdisk&amp;#39;                         OKAY [  0.077s]
 Finished. Total time: 0.341s
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;リカバリーを起動してファクトリーリセットをしたらいよいよ起動！&lt;/p&gt;
-&lt;h3 id=&#34;7いよいよ起動&#34;&gt;7.いよいよ起動&lt;/h3&gt;
+&lt;h2 id=&#34;いよいよ起動&#34;&gt;いよいよ起動&lt;/h2&gt;
 &lt;p&gt;まぁ普通に起動するはずです。&lt;br&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;P30にDotOS降臨&lt;br&gt;ばいばいP20lite😭 &lt;a href=&#34;https://t.co/iNxlIEgnJz&#34;&gt;pic.twitter.com/iNxlIEgnJz&lt;/a&gt;&lt;/p&gt;&amp;mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1449644900442464258?ref_src=twsrc%5Etfw&#34;&gt;October 17, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;br&gt;
 後はmagiskを入れるなりなんなりで自由にやっちゃってください！&lt;br&gt;
 &lt;del&gt;USB接続してもWindowsが認識できない不具合(?)はこちらでも残ってました&lt;/del&gt;&lt;/p&gt;
-&lt;h3 id=&#34;8参考にした記事&#34;&gt;8.参考にした記事&lt;/h3&gt;
+&lt;h2 id=&#34;参考にした記事&#34;&gt;参考にした記事&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://ysss.hateblo.jp/entry/20200425/1587793352#parted%E3%81%A8gdisk%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Android端末にカスタムROMを焼くにシステム領域が足りないためパーティションを拡張する&lt;/a&gt;&lt;/li&gt;
@@ -697,28 +649,20 @@ Finished. Total time: 0.341s
         <pubDate>Mon, 11 Oct 2021 10:12:31 +0900</pubDate>
         
         <guid>https://blog.j7b3y.com/p/huawei-p30%E3%81%ABlineageos-18.1%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E8%A9%B1/</guid>
-        <description>&lt;h3 id=&#34;目次&#34;&gt;目次&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;0.前置きと注意&lt;br&gt;
-1.前提条件&lt;br&gt;
-2.romの選択とダウンロード&lt;br&gt;
-3.romをflashする&lt;br&gt;
-4.実際に使ってみる&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;0前置き&#34;&gt;0.前置き&lt;/h3&gt;
+        <description>&lt;h2 id=&#34;前置き&#34;&gt;前置き&lt;/h2&gt;
 &lt;p&gt;再起動する度に画面の明るさ自動調整が勝手にONになるのが地味に面倒だなと感じたので、別にEMUIを使う理由もないということでカスタムROMを焼こうとなりました。&lt;/p&gt;
-&lt;h2 id=&#34;注意&#34;&gt;⚠注意&lt;/h2&gt;
-&lt;h2 id=&#34;この作業に取り掛かる前に必ずデータのバックアップを取ってください&#34;&gt;この作業に取り掛かる前に必ずデータのバックアップを取ってください。&lt;/h2&gt;
-&lt;h2 id=&#34;またここに書いてることを真似する場合は自己責任でお願いします&#34;&gt;また、ここに書いてることを真似する場合は自己責任でお願いします。&lt;/h2&gt;
-&lt;h2 id=&#34;この記事の内容を実践して生じた損害等の一切の責任を負いかねますのでご了承ください&#34;&gt;この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。&lt;/h2&gt;
-&lt;p&gt;&lt;del&gt;あなたの大切なスマホが文鎮になっても私は責任を取れません。&lt;/del&gt;&lt;/p&gt;
-&lt;h3 id=&#34;1前提条件&#34;&gt;1.前提条件&lt;/h3&gt;
+&lt;p&gt;⚠注意&lt;br&gt;
+この作業に取り掛かる前に必ずデータのバックアップを取ってください。&lt;br&gt;
+ここに書いていることを真似する場合は自己責任でお願いします。&lt;br&gt;
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。&lt;br&gt;
+&lt;del&gt;あなたの大切なスマホが文鎮になっても私は責任を取れません。&lt;/del&gt;&lt;/p&gt;
+&lt;h2 id=&#34;前提条件&#34;&gt;前提条件&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;BootloaderがunlockされているHuawei P30(自分はDC-Unlockerのライセンスを購入して解除しました。 )&lt;/li&gt;
 &lt;li&gt;fastbootコマンドが使用できる環境。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;P30はEMUI9.1にしておいてください。(EMUI10以降はfastbootコマンドが使えなくされているためです。&lt;del&gt;ふざけんな&lt;/del&gt;)&lt;/p&gt;
-&lt;h3 id=&#34;2romの選択とダウンロード&#34;&gt;2.romの選択とダウンロード&lt;/h3&gt;
+&lt;h2 id=&#34;romの選択とダウンロード&#34;&gt;romの選択とダウンロード&lt;/h2&gt;
 &lt;p&gt;今回使用するromを選びましょう。&lt;br&gt;
 私は&lt;a class=&#34;link&#34; href=&#34;https://sourceforge.net/projects/andyyan-gsi/files/lineage-18.x/lineage-18.1-20211010-UNOFFICIAL-treble_arm64_bvS.img.xz/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;LineageOS 18.1&lt;/a&gt;にしました。&lt;br&gt;
@@ -731,9 +675,9 @@ fastboot: error: Command failed
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;del&gt;とエラーを吐いてしまい素人な自分ではどうにもならなかったからです。たすけて&lt;/del&gt;&lt;br&gt;
 &lt;del&gt;自分だけなのか他の人もこうなってるのかはわからないですが、&lt;/del&gt;&lt;br&gt;
 &lt;del&gt;そもそもの話P30をBLUしている人が少数なので全く情報が無かったです。&lt;/del&gt;&lt;/p&gt;
-&lt;h2 id=&#34;system領域の拡張が上手く行ったので近いうちにまとめます&#34;&gt;system領域の拡張が上手く行ったので近いうちにまとめます。&lt;/h2&gt;
-&lt;h3 id=&#34;追記&#34;&gt;追記&lt;/h3&gt;
-&lt;p&gt;そもそもfastbootdに対応していなかったってオチでした。&lt;br&gt;
+&lt;p&gt;system領域の拡張が上手く行ったので近いうちに&lt;a class=&#34;link&#34; href=&#34;https://blog.j7b3y.com/p/huawei-p30-ele-l29-%e3%81%aesystem%e9%a0%98%e5%9f%9f%e3%82%92%e6%8b%a1%e5%bc%b5%e3%81%97%e3%81%9f%e8%a9%b1-%e3%81%9d%e3%81%ae1/&#34; &gt;まとめました&lt;/a&gt;。&lt;br&gt;
+追記&lt;br&gt;
+そもそもfastbootdに対応していなかったってオチでした。&lt;br&gt;
 &lt;del&gt;ちゃんと文章は読もうねというお話&lt;/del&gt;&lt;br&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;よく読め &lt;a href=&#34;https://t.co/HToiVz7lDm&#34;&gt;pic.twitter.com/HToiVz7lDm&lt;/a&gt;&lt;/p&gt;&amp;mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1449012464603975681?ref_src=twsrc%5Etfw&#34;&gt;October 15, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
@@ -752,7 +696,7 @@ fastboot: error: Command failed
     &gt;AOSP 11.0 v313&lt;/a&gt;(system-roar-arm64-ab-vndklite-vanilla.img or system-roar-arm64-ab-vanilla.img)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;ここ辺りでしょうか。&lt;/p&gt;
-&lt;h3 id=&#34;3romをflashする&#34;&gt;3.romをflashする&lt;/h3&gt;
+&lt;h2 id=&#34;romをflashする&#34;&gt;romをflashする&lt;/h2&gt;
 &lt;p&gt;ダウンロードしたファイルが圧縮されていた場合は展開しておいてください。&lt;br&gt;
 イメージファイルのディレクトリでターミナルを開いて&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;$ fastboot --disable-verity --disable-verification flash system (file_name).img
@@ -761,7 +705,7 @@ flashが完了したらファクトリーリセットをしましょう。&lt;br
 ケーブルを抜いてからVolume+と電源を長押しして起動、&lt;br&gt;
 Huaweiロゴが表示されたらボタンを離してください。&lt;br&gt;
 リカバリーが起動します。&lt;/p&gt;
-&lt;h3 id=&#34;4実際に使ってみる&#34;&gt;4.実際に使ってみる&lt;/h3&gt;
+&lt;h2 id=&#34;実際に使ってみる&#34;&gt;実際に使ってみる&lt;/h2&gt;
 &lt;p&gt;数十分使ってみましたが動作はすごく良かったです。&lt;br&gt;
 EMUIよりも軽量で使いやすかったです。&lt;br&gt;
 しかしながら&lt;del&gt;1つ&lt;/del&gt;2つだけ大きな欠点がありました。&lt;br&gt;
@@ -799,23 +743,13 @@ Mate 20 XのTWRPがP30でも動作したので(唐突)&lt;br&gt;
 &lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;5参考にした記事&#34;&gt;5.参考にした記事&lt;/h3&gt;
+&lt;h2 id=&#34;参考にした記事&#34;&gt;参考にした記事&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://source.android.com/setup/build/gsi?hl=ja#flashing-gsis&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Generic System Image  |  Android オープンソース プロジェクト&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://forum.xda-developers.com/t/losq-lir-lineageos-17-1-18-1-unofficial-gsi.4219291/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;LOSQ/LiR - LineageOS 17.1/18.1-UNOFFICIAL-GSI&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-        </item>
-        <item>
-        <title>このブログについて</title>
-        <link>https://blog.j7b3y.com/p/%E3%81%93%E3%81%AE%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</link>
-        <pubDate>Thu, 07 Oct 2021 07:17:21 +0900</pubDate>
-        
-        <guid>https://blog.j7b3y.com/p/%E3%81%93%E3%81%AE%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</guid>
-        <description>&lt;p&gt;Hugoを使用して作成しました。
-自分が挑戦したことを忘れないためにメモ書きをする為の場所です。&lt;/p&gt;
 </description>
         </item>
         

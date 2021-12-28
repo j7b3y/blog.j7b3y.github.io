@@ -110,7 +110,7 @@
 
 
                 <time class="article-time--reading">
-                    読了時間: 1分
+                    Reading Time: 1分
                 </time>
             </div>
         
@@ -120,28 +120,20 @@
 </header>
 
     <section class="article-content">
-    <h3 id="目次">目次</h3>
-<blockquote>
-<p>0.前置きと注意<br>
-1.前提条件<br>
-2.romの選択とダウンロード<br>
-3.romをflashする<br>
-4.実際に使ってみる</p>
-</blockquote>
-<h3 id="0前置き">0.前置き</h3>
+    <h2 id="前置き">前置き</h2>
 <p>再起動する度に画面の明るさ自動調整が勝手にONになるのが地味に面倒だなと感じたので、別にEMUIを使う理由もないということでカスタムROMを焼こうとなりました。</p>
-<h2 id="注意">⚠注意</h2>
-<h2 id="この作業に取り掛かる前に必ずデータのバックアップを取ってください">この作業に取り掛かる前に必ずデータのバックアップを取ってください。</h2>
-<h2 id="またここに書いてることを真似する場合は自己責任でお願いします">また、ここに書いてることを真似する場合は自己責任でお願いします。</h2>
-<h2 id="この記事の内容を実践して生じた損害等の一切の責任を負いかねますのでご了承ください">この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。</h2>
-<p><del>あなたの大切なスマホが文鎮になっても私は責任を取れません。</del></p>
-<h3 id="1前提条件">1.前提条件</h3>
+<p>⚠注意<br>
+この作業に取り掛かる前に必ずデータのバックアップを取ってください。<br>
+ここに書いていることを真似する場合は自己責任でお願いします。<br>
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。<br>
+<del>あなたの大切なスマホが文鎮になっても私は責任を取れません。</del></p>
+<h2 id="前提条件">前提条件</h2>
 <ul>
 <li>BootloaderがunlockされているHuawei P30(自分はDC-Unlockerのライセンスを購入して解除しました。 )</li>
 <li>fastbootコマンドが使用できる環境。</li>
 </ul>
 <p>P30はEMUI9.1にしておいてください。(EMUI10以降はfastbootコマンドが使えなくされているためです。<del>ふざけんな</del>)</p>
-<h3 id="2romの選択とダウンロード">2.romの選択とダウンロード</h3>
+<h2 id="romの選択とダウンロード">romの選択とダウンロード</h2>
 <p>今回使用するromを選びましょう。<br>
 私は<a class="link" href="https://sourceforge.net/projects/andyyan-gsi/files/lineage-18.x/lineage-18.1-20211010-UNOFFICIAL-treble_arm64_bvS.img.xz/download"  target="_blank" rel="noopener"
     >LineageOS 18.1</a>にしました。<br>
@@ -154,9 +146,9 @@ fastboot: error: Command failed
 </code></pre></div><p><del>とエラーを吐いてしまい素人な自分ではどうにもならなかったからです。たすけて</del><br>
 <del>自分だけなのか他の人もこうなってるのかはわからないですが、</del><br>
 <del>そもそもの話P30をBLUしている人が少数なので全く情報が無かったです。</del></p>
-<h2 id="system領域の拡張が上手く行ったので近いうちにまとめます">system領域の拡張が上手く行ったので近いうちにまとめます。</h2>
-<h3 id="追記">追記</h3>
-<p>そもそもfastbootdに対応していなかったってオチでした。<br>
+<p>system領域の拡張が上手く行ったので近いうちに<a class="link" href="/p/huawei-p30-ele-l29-%e3%81%aesystem%e9%a0%98%e5%9f%9f%e3%82%92%e6%8b%a1%e5%bc%b5%e3%81%97%e3%81%9f%e8%a9%b1-%e3%81%9d%e3%81%ae1/" >まとめました</a>。<br>
+追記<br>
+そもそもfastbootdに対応していなかったってオチでした。<br>
 <del>ちゃんと文章は読もうねというお話</del><br>
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">よく読め <a href="https://t.co/HToiVz7lDm">pic.twitter.com/HToiVz7lDm</a></p>&mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) <a href="https://twitter.com/j7b3y/status/1449012464603975681?ref_src=twsrc%5Etfw">October 15, 2021</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -175,7 +167,7 @@ fastboot: error: Command failed
     >AOSP 11.0 v313</a>(system-roar-arm64-ab-vndklite-vanilla.img or system-roar-arm64-ab-vanilla.img)</li>
 </ul>
 <p>ここ辺りでしょうか。</p>
-<h3 id="3romをflashする">3.romをflashする</h3>
+<h2 id="romをflashする">romをflashする</h2>
 <p>ダウンロードしたファイルが圧縮されていた場合は展開しておいてください。<br>
 イメージファイルのディレクトリでターミナルを開いて</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">$ fastboot --disable-verity --disable-verification flash system (file_name).img
@@ -184,7 +176,7 @@ flashが完了したらファクトリーリセットをしましょう。<br>
 ケーブルを抜いてからVolume+と電源を長押しして起動、<br>
 Huaweiロゴが表示されたらボタンを離してください。<br>
 リカバリーが起動します。</p>
-<h3 id="4実際に使ってみる">4.実際に使ってみる</h3>
+<h2 id="実際に使ってみる">実際に使ってみる</h2>
 <p>数十分使ってみましたが動作はすごく良かったです。<br>
 EMUIよりも軽量で使いやすかったです。<br>
 しかしながら<del>1つ</del>2つだけ大きな欠点がありました。<br>
@@ -222,7 +214,7 @@ Mate 20 XのTWRPがP30でも動作したので(唐突)<br>
 </figure>
 </li>
 </ul>
-<h3 id="5参考にした記事">5.参考にした記事</h3>
+<h2 id="参考にした記事">参考にした記事</h2>
 <ul>
 <li><a class="link" href="https://source.android.com/setup/build/gsi?hl=ja#flashing-gsis"  target="_blank" rel="noopener"
     >Generic System Image  |  Android オープンソース プロジェクト</a></li>
@@ -494,29 +486,12 @@ Mate 20 XのTWRPがP30でも動作したので(唐突)<br>
                 <div class="widget--toc">
                     <nav id="TableOfContents">
   <ol>
-    <li>
-      <ol>
-        <li><a href="#目次">目次</a></li>
-        <li><a href="#0前置き">0.前置き</a></li>
-      </ol>
-    </li>
-    <li><a href="#注意">⚠注意</a></li>
-    <li><a href="#この作業に取り掛かる前に必ずデータのバックアップを取ってください">この作業に取り掛かる前に必ずデータのバックアップを取ってください。</a></li>
-    <li><a href="#またここに書いてることを真似する場合は自己責任でお願いします">また、ここに書いてることを真似する場合は自己責任でお願いします。</a></li>
-    <li><a href="#この記事の内容を実践して生じた損害等の一切の責任を負いかねますのでご了承ください">この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。</a>
-      <ol>
-        <li><a href="#1前提条件">1.前提条件</a></li>
-        <li><a href="#2romの選択とダウンロード">2.romの選択とダウンロード</a></li>
-      </ol>
-    </li>
-    <li><a href="#system領域の拡張が上手く行ったので近いうちにまとめます">system領域の拡張が上手く行ったので近いうちにまとめます。</a>
-      <ol>
-        <li><a href="#追記">追記</a></li>
-        <li><a href="#3romをflashする">3.romをflashする</a></li>
-        <li><a href="#4実際に使ってみる">4.実際に使ってみる</a></li>
-        <li><a href="#5参考にした記事">5.参考にした記事</a></li>
-      </ol>
-    </li>
+    <li><a href="#前置き">前置き</a></li>
+    <li><a href="#前提条件">前提条件</a></li>
+    <li><a href="#romの選択とダウンロード">romの選択とダウンロード</a></li>
+    <li><a href="#romをflashする">romをflashする</a></li>
+    <li><a href="#実際に使ってみる">実際に使ってみる</a></li>
+    <li><a href="#参考にした記事">参考にした記事</a></li>
   </ol>
 </nav>
                 </div>

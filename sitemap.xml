@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.j7b3y.com/archives/</loc>
+    <lastmod>2021-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.j7b3y.com/</loc>
+    <lastmod>2021-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.j7b3y.com/page/</loc>
+    <lastmod>2021-12-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.j7b3y.com/tags/android/</loc>
     <lastmod>2021-12-18T21:23:05+09:00</lastmod>
   </url><url>
@@ -9,9 +18,6 @@
     <lastmod>2021-12-18T21:23:05+09:00</lastmod>
   </url><url>
     <loc>https://blog.j7b3y.com/categories/</loc>
-    <lastmod>2021-12-18T21:23:05+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.j7b3y.com/</loc>
     <lastmod>2021-12-18T21:23:05+09:00</lastmod>
   </url><url>
     <loc>https://blog.j7b3y.com/post/</loc>
@@ -56,7 +62,7 @@
     <loc>https://blog.j7b3y.com/p/huawei-p30%E3%81%ABlineageos-18.1%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E8%A9%B1/</loc>
     <lastmod>2021-10-11T10:12:31+09:00</lastmod>
   </url><url>
-    <loc>https://blog.j7b3y.com/p/%E3%81%93%E3%81%AE%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/</loc>
+    <loc>https://blog.j7b3y.com/about/</loc>
     <lastmod>2021-10-07T07:17:21+09:00</lastmod>
   </url><url>
     <loc>https://blog.j7b3y.com/tags/%E3%81%9D%E3%81%AE%E4%BB%96/</loc>
@@ -64,5 +70,7 @@
   </url><url>
     <loc>https://blog.j7b3y.com/categories/%E3%81%9D%E3%81%AE%E4%BB%96/</loc>
     <lastmod>2021-10-07T07:17:21+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.j7b3y.com/search/</loc>
   </url>
 </urlset>

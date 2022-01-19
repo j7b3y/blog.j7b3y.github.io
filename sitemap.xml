@@ -2,29 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.j7b3y.com/archives/</loc>
-    <lastmod>2021-12-28T00:00:00+00:00</lastmod>
+    <loc>https://blog.j7b3y.com/tags/android/</loc>
+    <lastmod>2022-01-19T16:17:12+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.j7b3y.com/categories/android/</loc>
+    <lastmod>2022-01-19T16:17:12+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Bzygisk%E7%92%B0%E5%A2%83/</loc>
+    <lastmod>2022-01-19T16:17:12+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.j7b3y.com/categories/</loc>
+    <lastmod>2022-01-19T16:17:12+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.j7b3y.com/tags/magisk/</loc>
+    <lastmod>2022-01-19T16:17:12+09:00</lastmod>
   </url><url>
     <loc>https://blog.j7b3y.com/</loc>
+    <lastmod>2022-01-19T16:17:12+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.j7b3y.com/post/</loc>
+    <lastmod>2022-01-19T16:17:12+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.j7b3y.com/tags/</loc>
+    <lastmod>2022-01-19T16:17:12+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.j7b3y.com/tags/xposed/</loc>
+    <lastmod>2022-01-19T16:17:12+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.j7b3y.com/archives/</loc>
     <lastmod>2021-12-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.j7b3y.com/page/</loc>
     <lastmod>2021-12-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.j7b3y.com/tags/android/</loc>
-    <lastmod>2021-12-18T21:23:05+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.j7b3y.com/categories/android/</loc>
-    <lastmod>2021-12-18T21:23:05+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.j7b3y.com/categories/</loc>
-    <lastmod>2021-12-18T21:23:05+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.j7b3y.com/post/</loc>
-    <lastmod>2021-12-18T21:23:05+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.j7b3y.com/tags/</loc>
-    <lastmod>2021-12-18T21:23:05+09:00</lastmod>
   </url><url>
     <loc>https://blog.j7b3y.com/p/xperia-zr%E7%94%A8%E3%81%AElineage-18.1%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%9F/</loc>
     <lastmod>2021-12-18T21:23:05+09:00</lastmod>
@@ -34,9 +43,6 @@
   </url><url>
     <loc>https://blog.j7b3y.com/p/zenfone-5z%E3%82%92%E8%B2%B7%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7evolution-x%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/</loc>
     <lastmod>2021-12-09T08:16:58+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.j7b3y.com/tags/magisk/</loc>
-    <lastmod>2021-11-09T05:12:15+09:00</lastmod>
   </url><url>
     <loc>https://blog.j7b3y.com/p/magisk%E3%81%A8gapps%E3%82%92%E5%85%A5%E3%82%8A%E3%81%AEwsawindows-subsystem-for-android%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E8%A9%B1/</loc>
     <lastmod>2021-11-09T05:12:15+09:00</lastmod>
@@ -50,10 +56,7 @@
     <loc>https://blog.j7b3y.com/tags/wsa/</loc>
     <lastmod>2021-11-09T05:12:15+09:00</lastmod>
   </url><url>
-    <loc>https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8B/</loc>
-    <lastmod>2021-11-06T23:08:18+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.j7b3y.com/tags/xposed/</loc>
+    <loc>https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Briru%E7%92%B0%E5%A2%83/</loc>
     <lastmod>2021-11-06T23:08:18+09:00</lastmod>
   </url><url>
     <loc>https://blog.j7b3y.com/p/huawei-p30-ele-l29-%E3%81%AEsystem%E9%A0%98%E5%9F%9F%E3%82%92%E6%8B%A1%E5%BC%B5%E3%81%97%E3%81%9F%E8%A9%B1-%E3%81%9D%E3%81%AE1/</loc>

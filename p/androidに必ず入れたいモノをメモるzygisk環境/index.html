@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Xperia ZR用のLineage 18.1をビルドした'><title>Xperia ZR用のLineage 18.1をビルドした</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='自分が入れているアプリやモジュール等々'><title>Androidに必ず入れたいモノをメモる(Zygisk環境)</title>
 
-<link rel='canonical' href='https://blog.j7b3y.com/p/xperia-zr%E7%94%A8%E3%81%AElineage-18.1%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%9F/'>
+<link rel='canonical' href='https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Bzygisk%E7%92%B0%E5%A2%83/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Xperia ZR用のLineage 18.1をビルドした'>
-<meta property='og:description' content='Xperia ZR用のLineage 18.1をビルドした'>
-<meta property='og:url' content='https://blog.j7b3y.com/p/xperia-zr%E7%94%A8%E3%81%AElineage-18.1%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%9F/'>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Androidに必ず入れたいモノをメモる(Zygisk環境)'>
+<meta property='og:description' content='自分が入れているアプリやモジュール等々'>
+<meta property='og:url' content='https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Bzygisk%E7%92%B0%E5%A2%83/'>
 <meta property='og:site_name' content='Nothing There'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Android' /><meta property='article:tag' content='カスタムROM' /><meta property='article:published_time' content='2021-12-18T21:23:05&#43;09:00'/><meta property='article:modified_time' content='2021-12-18T21:23:05&#43;09:00'/><meta property='og:image' content='https://blog.j7b3y.com/site/avatar.webp' />
-<meta name="twitter:title" content="Xperia ZR用のLineage 18.1をビルドした">
-<meta name="twitter:description" content="Xperia ZR用のLineage 18.1をビルドした"><meta name="twitter:card" content="summary">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Android' /><meta property='article:tag' content='Magisk' /><meta property='article:tag' content='Xposed' /><meta property='article:published_time' content='2022-01-19T16:17:12&#43;09:00'/><meta property='article:modified_time' content='2022-01-19T16:17:12&#43;09:00'/><meta property='og:image' content='https://blog.j7b3y.com/site/avatar.webp' />
+<meta name="twitter:title" content="Androidに必ず入れたいモノをメモる(Zygisk環境)">
+<meta name="twitter:description" content="自分が入れているアプリやモジュール等々"><meta name="twitter:card" content="summary">
     <meta name="twitter:image" content='https://blog.j7b3y.com/site/avatar.webp' />
     <link rel="shortcut icon" href="/site/favicon.webp">
 
@@ -76,12 +76,12 @@
     
 
     <h2 class="article-title">
-        <a href="/p/xperia-zr%E7%94%A8%E3%81%AElineage-18.1%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%9F/">Xperia ZR用のLineage 18.1をビルドした</a>
+        <a href="/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Bzygisk%E7%92%B0%E5%A2%83/">Androidに必ず入れたいモノをメモる(Zygisk環境)</a>
     </h2>
 
     
     <h3 class="article-subtitle">
-        Xperia ZR用のLineage 18.1をビルドした
+        自分が入れているアプリやモジュール等々
     </h3>
     
 
@@ -98,7 +98,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Dec 18, 2021</time>
+                <time class="article-time--published">Jan 19, 2022</time>
             </div>
         
 
@@ -123,15 +123,72 @@
 </header>
 
     <section class="article-content">
-    <h2 id="前置きと注意">前置きと注意</h2>
-<p>実機を持ってないので動作確認してません。<br>
-Xperia ZR用のLineageOS 18.1です。<br>
-自分でビルドしたい人はローカルmanifestを公開しているので<a class="link" href="https://github.com/j7b3y/local_manifests_dogo"  target="_blank" rel="noopener"
-    >こちら</a>を参考にしてください。<br>
-※こちらのromはXperia ZR用なのでSO-04eでは使用出来ません。</p>
-<h2 id="リンク">リンク</h2>
-<p><a class="link" href="https://drive.google.com/drive/folders/1xH97o3F_hUxgZ1yeYg2i8MXCNS0c63XN"  target="_blank" rel="noopener"
-    >Lineage-18.1-dogo</a></p>
+    <p>##前置き<br>
+<a class="link" href="/p/android%e3%81%ab%e5%bf%85%e3%81%9a%e5%85%a5%e3%82%8c%e3%81%9f%e3%81%84%e3%83%a2%e3%83%8e%e3%82%92%e3%83%a1%e3%83%a2%e3%82%8briru%e7%92%b0%e5%a2%83/" >Androidに必ず入れたいモノをメモる(Riru環境)</a>をZygisk環境向けに編集したついでに<br>
+新しく使用するようになったアプリ等々を追加した感じです。<br>
+前記事から特に変化していない項目は省略しています。 <br>
+・環境<br>
+機種: Zenfone 5z<br>
+OS: Android11(EvolutionX 5.9)
+Magisk Canary 23016 &amp; Zygisk</p>
+<h2 id="magisk関連">Magisk関連</h2>
+<p><a class="link" href="https://github.com/topjohnwu/Magisk/releases"  target="_blank" rel="noopener"
+    >Magisk</a><br>
+これがないと何も始まらない。</p>
+<h3 id="モジュール">モジュール</h3>
+<ul>
+<li>
+<p>Asus 5z ZenUI 6<br>
+Z01RのTelegramコミュニティに転がってたもの。</p>
+</li>
+<li>
+<p><a class="link" href="https://www.androidacy.com/downloads/?fm_rdme_links=&amp;view=%2540Magisk-Modules%2540Busybox_for_Android_NDK"  target="_blank" rel="noopener"
+    >Busybox for Android NDK</a><br>
+これが必要なアプリがいくつかあるので(後述)</p>
+</li>
+<li>
+<p><a class="link" href="https://www.androidacy.com/downloads/?fm_rdme_links=&amp;view=%2540Magisk-Modules%2540Font_Manager"  target="_blank" rel="noopener"
+    >Font Manager</a><br>
+システムの絵文字をTwemojiに変更するのに使用。</p>
+</li>
+<li>
+<p><a class="link" href="https://github.com/AndroPlus-org/magisk-module-koruri-font/releases"  target="_blank" rel="noopener"
+    >Koruri Font</a><br>
+見やすいので愛用しています。</p>
+</li>
+<li>
+<p><a class="link" href="https://github.com/LSPosed/LSPosed/actions"  target="_blank" rel="noopener"
+    >Zygisk - LSPosed</a><br>
+Xposedの後継。</p>
+</li>
+<li>
+<p><a class="link" href="https://github.com/Magisk-Modules-Repo/CloudflareDNS4Magisk"  target="_blank" rel="noopener"
+    >CloudflareDNS4Magisk</a><br>
+気になったので使ってるだけ。</p>
+</li>
+<li>
+<p><a class="link" href="https://github.com/kdrag0n/safetynet-fix/releases"  target="_blank" rel="noopener"
+    >Universal SafetyNet Fix</a><br>
+気が付いたらZygisk対応版が出てた。</p>
+</li>
+<li>
+<p><a class="link" href="https://www.pling.com/p/1531390/"  target="_blank" rel="noopener"
+    >Dolby Atmos ZTE A2019 Pro Magisk Module</a><br>
+最近入れてみた。そこそこ良い。</p>
+</li>
+</ul>
+<h3 id="モジュールの管理">モジュールの管理</h3>
+<ul>
+<li><a class="link" href="https://github.com/Fox2Code/FoxMagiskModuleManager"  target="_blank" rel="noopener"
+    >Fox&rsquo;s Magisk Module Manager</a><br>
+Magisk CanaryでモジュールのDLが出来なくなったため。</li>
+</ul>
+<h2 id="ブラウザ">ブラウザ</h2>
+<ul>
+<li><a class="link" href="https://github.com/fork-maintainers/iceraven-browser/releases"  target="_blank" rel="noopener"
+    >Iceraven Browser</a><br>
+PC版Firefoxのようにアドオンのインストールに制限が無いfirefox。</li>
+</ul>
 
 </section>
 
@@ -142,7 +199,9 @@ Xperia ZR用のLineageOS 18.1です。<br>
         
             <a href="/tags/android/">Android</a>
         
-            <a href="/tags/%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0rom/">カスタムROM</a>
+            <a href="/tags/magisk/">Magisk</a>
+        
+            <a href="/tags/xposed/">Xposed</a>
         
     </section>
 
@@ -174,6 +233,42 @@ Xperia ZR用のLineageOS 18.1です。<br>
                 
                     
 <article class="">
+    <a href="/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Briru%E7%92%B0%E5%A2%83/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Androidに必ず入れたいモノをメモる(Riru環境)</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/magisk%E3%81%A8gapps%E3%82%92%E5%85%A5%E3%82%8A%E3%81%AEwsawindows-subsystem-for-android%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E8%A9%B1/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">MagiskとGappsを入りのWSA(Windows Subsystem for Android)をインストールする話。</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/xperia-zr%E7%94%A8%E3%81%AElineage-18.1%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%9F/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Xperia ZR用のLineage 18.1をビルドした</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
     <a href="/p/zenfone-5z%E3%82%92%E8%B2%B7%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7evolution-x%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/">
         
         
@@ -192,42 +287,6 @@ Xperia ZR用のLineageOS 18.1です。<br>
 
         <div class="article-details">
             <h2 class="article-title">Huawei P30 (ELE-L29) のsystem領域を拡張した話 その1</h2>
-        </div>
-    </a>
-</article>
-                
-                    
-<article class="">
-    <a href="/p/huawei-p30%E3%81%ABlineageos-18.1%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E8%A9%B1/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Huawei P30にlineageOS 18.1をインストールした話</h2>
-        </div>
-    </a>
-</article>
-                
-                    
-<article class="">
-    <a href="/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Bzygisk%E7%92%B0%E5%A2%83/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Androidに必ず入れたいモノをメモる(Zygisk環境)</h2>
-        </div>
-    </a>
-</article>
-                
-                    
-<article class="">
-    <a href="/p/magisk%E3%81%A8gapps%E3%82%92%E5%85%A5%E3%82%8A%E3%81%AEwsawindows-subsystem-for-android%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E8%A9%B1/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">MagiskとGappsを入りのWSA(Windows Subsystem for Android)をインストールする話。</h2>
         </div>
     </a>
 </article>
@@ -399,8 +458,13 @@ Xperia ZR用のLineageOS 18.1です。<br>
                 <div class="widget--toc">
                     <nav id="TableOfContents">
   <ol>
-    <li><a href="#前置きと注意">前置きと注意</a></li>
-    <li><a href="#リンク">リンク</a></li>
+    <li><a href="#magisk関連">Magisk関連</a>
+      <ol>
+        <li><a href="#モジュール">モジュール</a></li>
+        <li><a href="#モジュールの管理">モジュールの管理</a></li>
+      </ol>
+    </li>
+    <li><a href="#ブラウザ">ブラウザ</a></li>
   </ol>
 </nav>
                 </div>

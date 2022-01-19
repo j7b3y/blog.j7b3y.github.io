@@ -6,7 +6,39 @@
     <description>Recent content in Posts on Nothing There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Dec 2021 21:23:05 +0900</lastBuildDate><atom:link href="https://blog.j7b3y.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Jan 2022 16:17:12 +0900</lastBuildDate><atom:link href="https://blog.j7b3y.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Androidに必ず入れたいモノをメモる(Zygisk環境)</title>
+      <link>https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Bzygisk%E7%92%B0%E5%A2%83/</link>
+      <pubDate>Wed, 19 Jan 2022 16:17:12 +0900</pubDate>
+      
+      <guid>https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Bzygisk%E7%92%B0%E5%A2%83/</guid>
+      <description>##前置き
+Androidに必ず入れたいモノをメモる(Riru環境)をZygisk環境向けに編集したついでに
+新しく使用するようになったアプリ等々を追加した感じです。
+前記事から特に変化していない項目は省略しています。 ・環境
+機種: Zenfone 5z
+OS: Android11(EvolutionX 5.9) Magisk Canary 23016 &amp;amp; Zygisk
+Magisk関連 Magisk
+これがないと何も始まらない。
+モジュール   Asus 5z ZenUI 6
+Z01RのTelegramコミュニティに転がってたもの。
+  Busybox for Android NDK
+これが必要なアプリがいくつかあるので(後述)
+  Font Manager
+システムの絵文字をTwemojiに変更するのに使用。
+  Koruri Font
+見やすいので愛用しています。
+  Zygisk - LSPosed
+Xposedの後継。
+  CloudflareDNS4Magisk
+気になったので使ってるだけ。
+  Universal SafetyNet Fix
+気が付いたらZygisk対応版が出てた。
+  Dolby Atmos ZTE A2019 Pro Magisk Module
+最近入れてみた。そこそこ良い。</description>
+    </item>
+    
     <item>
       <title>Xperia ZR用のLineage 18.1をビルドした</title>
       <link>https://blog.j7b3y.com/p/xperia-zr%E7%94%A8%E3%81%AElineage-18.1%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%9F/</link>
@@ -81,16 +113,16 @@ Workflowsの中にあるMagiskの項目を選択して  Run workflowを開いて
     </item>
     
     <item>
-      <title>Androidに必ず入れたいモノをメモる</title>
-      <link>https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8B/</link>
+      <title>Androidに必ず入れたいモノをメモる(Riru環境)</title>
+      <link>https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Briru%E7%92%B0%E5%A2%83/</link>
       <pubDate>Sat, 06 Nov 2021 23:08:18 +0900</pubDate>
       
-      <guid>https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8B/</guid>
+      <guid>https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Briru%E7%92%B0%E5%A2%83/</guid>
       <description>##前置き
 初期化する度に入れていたアプリ等々を思い出すのも面倒なので自分用にまとめます。
 ・環境
 機種: Huawei P30
-OS: Android11(DotOS 5.2 arm64 Vanilla)
+OS: Android11(DotOS 5.2 arm64 Vanilla) Magisk 23.0 &amp;amp; Riru v26
 Magisk関連 Magisk
 これがないと何も始まらない。
 モジュール   Busybox for Android NDK
@@ -107,9 +139,7 @@ Magisk関連 Magisk
 LSPosedやHide My Applist(後述)を使用するために入れている。Zygiskなるものが出たので今後は不要になるかもしれない。
   Riru - Hide My Applist
 Hide My Applistのアプリからインストールできるやつ。
-  Riru - LSPosed
-Xposedの後継。今後はZygisk版を使うかもしれない。
-  Sony Music Player</description>
+  Riru - LSPosed</description>
     </item>
     
     <item>

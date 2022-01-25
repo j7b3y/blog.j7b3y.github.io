@@ -18,7 +18,8 @@ Androidに必ず入れたいモノをメモる(Riru環境)をZygisk環境向け�
 新しく使用するようになったアプリ等々を追加した感じです。
 前記事から特に変化していない項目は省略しています。 ・環境
 機種: Zenfone 5z
-OS: Android11(EvolutionX 5.9) Magisk Canary 23016 &amp;amp; Zygisk
+OS: Android11(EvolutionX 5.9)
+Magisk Canary 23016 &amp;amp; Zygisk
 Magisk関連 Magisk
 これがないと何も始まらない。
 モジュール   Asus 5z ZenUI 6

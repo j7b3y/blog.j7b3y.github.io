@@ -21,6 +21,11 @@ Evolution Xにはあったアプリ別に音量を調整する機能が無かっ
 機種: Zenfone 5z&lt;br&gt;
 OS: Android12(crDroid8.0)&lt;br&gt;
 Magisk Canary 23018 &amp;amp; Zygisk&lt;/p&gt;
+&lt;p&gt;⚠注意&lt;br&gt;
+この作業に取り掛かる前に必ずデータのバックアップを取ってください。&lt;br&gt;
+また、ここに書いてることを真似する場合は自己責任でお願いします。&lt;br&gt;
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。&lt;br&gt;
+&lt;del&gt;あなたの大切なスマホが文鎮になっても私は責任を取れません。&lt;/del&gt;&lt;/p&gt;
 &lt;h2 id=&#34;ダウンロードするもの&#34;&gt;ダウンロードするもの&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Alcatraz323/audiohq_module/releases/tag/api31_r1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

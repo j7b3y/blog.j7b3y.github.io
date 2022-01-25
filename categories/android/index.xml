@@ -21,6 +21,11 @@ Evolution Xにはあったアプリ別に音量を調整する機能が無かっ
 機種: Zenfone 5z
 OS: Android12(crDroid8.0)
 Magisk Canary 23018 &amp;amp; Zygisk
+⚠注意
+この作業に取り掛かる前に必ずデータのバックアップを取ってください。
+また、ここに書いてることを真似する場合は自己責任でお願いします。
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。
+あなたの大切なスマホが文鎮になっても私は責任を取れません。
 ダウンロードするもの  audiohq_combined_1.zip  インストール Magisk Managerでaudiohq_combined_1.zipをインストールして再起動。
 再起動すると『Audio HeadQuarter』という名前のアプリがあるので起動する。
 あとは注意書きやらなんやらを読みつつbattery optimizationと他のアプリの上に重ねて表示を有効にすればセットアップは完了。

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unity on Nothing There</title>
+    <link>https://blog.j7b3y.com/tags/unity/</link>
+    <description>Recent content in Unity on Nothing There</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Feb 2022 19:46:05 +0900</lastBuildDate><atom:link href="https://blog.j7b3y.com/tags/unity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ダンスする時のシャオンちゃんを表情豊かにしてみた。</title>
+      <link>https://blog.j7b3y.com/p/%E3%83%80%E3%83%B3%E3%82%B9%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%82%B7%E3%83%A3%E3%82%AA%E3%83%B3%E3%81%A1%E3%82%83%E3%82%93%E3%82%92%E8%A1%A8%E6%83%85%E8%B1%8A%E3%81%8B%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link>
+      <pubDate>Fri, 25 Feb 2022 19:46:05 +0900</pubDate>
+      
+      <guid>https://blog.j7b3y.com/p/%E3%83%80%E3%83%B3%E3%82%B9%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%82%B7%E3%83%A3%E3%82%AA%E3%83%B3%E3%81%A1%E3%82%83%E3%82%93%E3%82%92%E8%A1%A8%E6%83%85%E8%B1%8A%E3%81%8B%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
+      <description>前置き シャオンちゃんを魔改造している際のテストで某ダンスワールドで踊ってもらってたのですか
+デフォルトの表情のままなのが勿体ないな～と感じたので頑張りました。
+注意
+ Unityでシャオンちゃんを読み込める環境を作っていること VRChatにシャオンちゃんをアップロード出来る条件を満たしていること
+を前提に書いています。  環境
+ Unity 2019.4.31f1 VRCSDK3 Shaon_v1.10  ダウンロードするもの VRCDeveloperTool がとーしょこらさんが作ったツールです。感謝して使いましょう。
+ダミーのメッシュを削除する VRCDeveloperToolをインポートしたら上のメニューから
+VRCDeveloperTool &amp;gt; メッシュ &amp;gt; Shapekey Deleterを選択して開きます。
+ Shapekey Deleterを開いたらSkinnedMeshRendererにBodyを入れて
+dummyが1つになるようにチェックを入れて削除しましょう。
+ MMD用に名前を変更したキーを作る dummyを削除したらVRCDeveloperTool &amp;gt; メッシュ &amp;gt; ShapekeyName Changerを開いて
+RendererにBodyを指定します。
+以下のサイトを見ながらシャオンちゃんのBlendShapesをいじりつつ
+リネームしたいシェイプキーの右にあるテキストボックスにMMD用のシェイプキーを入力していきましょう。
+ MMDモーフ一覧（TDAミク基準） MMD表情モーフ一覧  変更を適応する際にはDuplication Shapekeysにチェックを入れてからChange ShapekeyNameを押すことをお勧めします。
+Duplication Shapekeysにチェックを入れることで既存のシェイプキーを残したままMMD用にリネームしたシェイプキーを作ることができます。
+ FXレイヤーにある全てのアニメーションのWrite Defaultをオンにする。 アバターのFXレイヤーに&amp;quot;vrc_AvatarV3HandsLayer2_Shaon_standard&amp;quot;を指定した後アニメーターで開いて、
+&amp;ldquo;ResetFace&amp;rdquo;,&amp;ldquo;Left Hand&amp;rdquo;,&amp;ldquo;Right Hand&amp;quot;の中にある全てのアニメーションのWrite Defaultにチェックを入れてください。
+ 入れ終わったらアップロードして確認してみよう！
+ちゃんと設定できてたらこうなってるはず シェイプキーを設定する前は張り付いた笑顔で踊っていたシャオンちゃんが..?
+ 表情豊かになった！  参考にした記事  VRChatのMMDダンスワールドで可愛く踊らせる方法 mmd월드 쉐이프키 작동조건 정리　  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -143,21 +143,21 @@
 <del>本当はOctaviOSを使用したかったのですが自分の環境ではflash出来なかったので断念しました。</del><br>
 <del>P30のsystemパーティションよりOctaviOSのイメージの方が大きかったのでsystem領域を拡張しようと思ったのですが</del><br>
 <del>delete-logical-partitionを実行しようとしても</del></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">$ fastboot delete-logical-partition product
-Deleting &#39;product&#39;                                 FAILED (remote: &#39;Command not allowed&#39;)
-fastboot: error: Command failed
-</code></pre></div><p><del>とエラーを吐いてしまい素人な自分ではどうにもならなかったからです。たすけて</del><br>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">$ fastboot delete-logical-partition product
+</span></span><span class="line"><span class="cl">Deleting &#39;product&#39;                                 FAILED (remote: &#39;Command not allowed&#39;)
+</span></span><span class="line"><span class="cl">fastboot: error: Command failed
+</span></span></code></pre></div><p><del>とエラーを吐いてしまい素人な自分ではどうにもならなかったからです。たすけて</del><br>
 <del>自分だけなのか他の人もこうなってるのかはわからないですが、</del><br>
 <del>そもそもの話P30をBLUしている人が少数なので全く情報が無かったです。</del></p>
 <p>system領域の拡張が上手く行ったので近いうちに<a class="link" href="/p/huawei-p30-ele-l29-%e3%81%aesystem%e9%a0%98%e5%9f%9f%e3%82%92%e6%8b%a1%e5%bc%b5%e3%81%97%e3%81%9f%e8%a9%b1-%e3%81%9d%e3%81%ae1/" >まとめました</a>。<br>
 追記<br>
 そもそもfastbootdに対応していなかったってオチでした。<br>
 <del>ちゃんと文章は読もうねというお話</del><br>
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">よく読め <a href="https://t.co/HToiVz7lDm">pic.twitter.com/HToiVz7lDm</a></p>&mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) <a href="https://twitter.com/j7b3y/status/1449012464603975681?ref_src=twsrc%5Etfw">October 15, 2021</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">よく読め <a href="https://t.co/HToiVz7lDm">pic.twitter.com/HToiVz7lDm</a></p>&mdash; j7b3y (@j7b3y) <a href="https://twitter.com/j7b3y/status/1449012464603975681?ref_src=twsrc%5Etfw">October 15, 2021</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </p>
 <p>system領域は2.25GBくらいでした。
-<blockquote class="twitter-tweet"><p lang="und" dir="ltr">😩 <a href="https://t.co/wyMwMLW1Wt">pic.twitter.com/wyMwMLW1Wt</a></p>&mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) <a href="https://twitter.com/j7b3y/status/1449017523542708230?ref_src=twsrc%5Etfw">October 15, 2021</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="und" dir="ltr">😩 <a href="https://t.co/wyMwMLW1Wt">pic.twitter.com/wyMwMLW1Wt</a></p>&mdash; j7b3y (@j7b3y) <a href="https://twitter.com/j7b3y/status/1449017523542708230?ref_src=twsrc%5Etfw">October 15, 2021</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </p>
 <p>flashするROMの候補としては</p>
@@ -173,8 +173,8 @@ fastboot: error: Command failed
 <h2 id="romをflashする">romをflashする</h2>
 <p>ダウンロードしたファイルが圧縮されていた場合は展開しておいてください。<br>
 イメージファイルのディレクトリでターミナルを開いて</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">$ fastboot --disable-verity --disable-verification flash system (file_name).img
-</code></pre></div><p>と実行してください。<br>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">$ fastboot --disable-verity --disable-verification flash system (file_name).img
+</span></span></code></pre></div><p>と実行してください。<br>
 flashが完了したらファクトリーリセットをしましょう。<br>
 ケーブルを抜いてからVolume+と電源を長押しして起動、<br>
 Huaweiロゴが表示されたらボタンを離してください。<br>
@@ -189,7 +189,7 @@ LineageOSが画面内指紋認証に対応していないようで<br>
 顔認証も使用出来ないようなので流石に厳しいってことで画面内指紋認証を採用している機種ではカスタムromは厳しいのかもしれないです。<br>
 もう1つは端末や環境との相性問題かもしれませんが<br>
 windowsとP30を接続しても認識されない問題が発生しました。</p>
-<blockquote class="twitter-tweet"><p lang="et" dir="ltr">ELE-L29 LineageOS 18.1 ～完～ <a href="https://t.co/2srtsZziJg">pic.twitter.com/2srtsZziJg</a></p>&mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) <a href="https://twitter.com/j7b3y/status/1447494835682758656?ref_src=twsrc%5Etfw">October 11, 2021</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="et" dir="ltr">ELE-L29 LineageOS 18.1 ～完～ <a href="https://t.co/2srtsZziJg">pic.twitter.com/2srtsZziJg</a></p>&mdash; j7b3y (@j7b3y) <a href="https://twitter.com/j7b3y/status/1447494835682758656?ref_src=twsrc%5Etfw">October 11, 2021</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <p>流石に<del>面倒になったので</del>これは厳しいってことで一回休むことにしました😩。<br>
@@ -335,7 +335,7 @@ Mate 20 XのTWRPがP30でも動作したので(唐突)<br>
     <div class="disqus-container">
     <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

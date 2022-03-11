@@ -158,61 +158,61 @@ eRecoveryを使用すると強制的にEMUI10にされますが、HCUでアン�
 <h2 id="twrpをflashする">TWRPをflashする</h2>
 <p>Mate20 XのTWRPイメージがあるディレクトリでターミナルを開いてください。<br>
 開いたら</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">$ fastboot flash recovery_ramdisk twrp-3.2.1-0-everest-unofficial-v3.img
-</code></pre></div><p>と入力してTWRPをflashしましょう。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">$ fastboot flash recovery_ramdisk twrp-3.2.1-0-everest-unofficial-v3.img
+</span></span></code></pre></div><p>と入力してTWRPをflashしましょう。</p>
 <h2 id="下準備">下準備</h2>
 <p>再起動してTWRPを起動しましょう。(電源+Volume Up)<br>
 タッチ操作は出来ないのでUSBマウスを接続して操作します。<br>
 作業が長引くかもしれないのでスリープを無効にして画面の明るさを最低にしましょう。</p>
 <p>マウスの接続を解除してPCに接続してください。<br>
 接続したら一度</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">$ adb devices
-</code></pre></div><p>と入力してちゃんと接続されているかを確認しましょう。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">$ adb devices
+</span></span></code></pre></div><p>と入力してちゃんと接続されているかを確認しましょう。</p>
 <p>接続が確認出来たらpartedとgdiskをP30にコピーしましょう。<br>
 parted_gdisk_fdisk_mkfs.ext4-AARCH64.zipを展開してターミナルで開きましょう</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">$ adb push parted /
-$ adb push gdisk /
-</code></pre></div><p>コピーが終わったら端末のシェルを起動します。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">$ adb shell
-</code></pre></div><p>シェルを起動したらpartedとgdiskがコピーされているかを確認してください。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">~ #  ls
-acc                         　　 init                        patch_hw                      splash2
-acct                        　   init.rc                     plat_file_contexts          storage
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-file_contexts.bin           parted                      sec_storage
-gdisk                           patch                       sepolicy
-</code></pre></div><p>partedとgdiskがあることを確認したら実行権限を付与しましょう。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">~ # chmod +x parted
-~ # chmod +x gdisk
-</code></pre></div><h2 id="拡張">拡張</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">$ adb push parted /
+</span></span><span class="line"><span class="cl">$ adb push gdisk /
+</span></span></code></pre></div><p>コピーが終わったら端末のシェルを起動します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">$ adb shell
+</span></span></code></pre></div><p>シェルを起動したらpartedとgdiskがコピーされているかを確認してください。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">~ #  ls
+</span></span><span class="line"><span class="cl">acc                         　　 init                        patch_hw                      splash2
+</span></span><span class="line"><span class="cl">acct                        　   init.rc                     plat_file_contexts          storage
+</span></span><span class="line"><span class="cl">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+</span></span><span class="line"><span class="cl">file_contexts.bin           parted                      sec_storage
+</span></span><span class="line"><span class="cl">gdisk                           patch                       sepolicy
+</span></span></code></pre></div><p>partedとgdiskがあることを確認したら実行権限を付与しましょう。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">~ # chmod +x parted
+</span></span><span class="line"><span class="cl">~ # chmod +x gdisk
+</span></span></code></pre></div><h2 id="拡張">拡張</h2>
 <p>ここまで来たらあと一息！<br>
 パーティションを操作しましょう。<br>
 partedでsddを開きます。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">/parted /dev/block/sdd
-GNU Parted 3.2
-Using /dev/block/sdd
-Welcome to GNU Parted! Type &#39;help&#39; to view a list of commands.
-</code></pre></div><p>まずはパーティションテーブルを確認しましょう。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">(</span>parted<span class="p">)</span> unit MiB
-<span class="p">(</span>parted<span class="p">)</span> p
-Error: The backup GPT table is corrupt, but the primary appears OK, so that will
-be used.
-OK/Cancel? ok
-Model: HISI SS6100GBCV100MBD (scsi)
-Disk /dev/block/sdd: 122000MiB
-Sector size (logical/physical): 4096B/4096B
-Partition Table: gpt
-Disk Flags:
-
-Number  Start    End        Size       File system  Name                 Flags
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-62      2928MiB  3016MiB    88.0MiB                 cust_a               msftdata
-63      3016MiB  5328MiB    2312MiB    ext4         system_a             msftdata
-64      5328MiB  7480MiB    2152MiB                 product_a            msftdata
-65      7480MiB  8056MiB    576MiB                  version_a            msftdata
-66      8056MiB  9200MiB    1144MiB                 preload_a            msftdata
-67      9200MiB  122000MiB  112800MiB  ext4         userdata             msftdata
-</code></pre></div><p>確認ができたら適当なテキストファイルにコピペしておきましょう。<br>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">/parted /dev/block/sdd
+</span></span><span class="line"><span class="cl">GNU Parted 3.2
+</span></span><span class="line"><span class="cl">Using /dev/block/sdd
+</span></span><span class="line"><span class="cl">Welcome to GNU Parted! Type &#39;help&#39; to view a list of commands.
+</span></span></code></pre></div><p>まずはパーティションテーブルを確認しましょう。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl"><span class="p">(</span>parted<span class="p">)</span> unit MiB
+</span></span><span class="line"><span class="cl"><span class="p">(</span>parted<span class="p">)</span> p
+</span></span><span class="line"><span class="cl">Error: The backup GPT table is corrupt, but the primary appears OK, so that will
+</span></span><span class="line"><span class="cl">be used.
+</span></span><span class="line"><span class="cl">OK/Cancel? ok
+</span></span><span class="line"><span class="cl">Model: HISI SS6100GBCV100MBD (scsi)
+</span></span><span class="line"><span class="cl">Disk /dev/block/sdd: 122000MiB
+</span></span><span class="line"><span class="cl">Sector size (logical/physical): 4096B/4096B
+</span></span><span class="line"><span class="cl">Partition Table: gpt
+</span></span><span class="line"><span class="cl">Disk Flags:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Number  Start    End        Size       File system  Name                 Flags
+</span></span><span class="line"><span class="cl">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+</span></span><span class="line"><span class="cl">62      2928MiB  3016MiB    88.0MiB                 cust_a               msftdata
+</span></span><span class="line"><span class="cl">63      3016MiB  5328MiB    2312MiB    ext4         system_a             msftdata
+</span></span><span class="line"><span class="cl">64      5328MiB  7480MiB    2152MiB                 product_a            msftdata
+</span></span><span class="line"><span class="cl">65      7480MiB  8056MiB    576MiB                  version_a            msftdata
+</span></span><span class="line"><span class="cl">66      8056MiB  9200MiB    1144MiB                 preload_a            msftdata
+</span></span><span class="line"><span class="cl">67      9200MiB  122000MiB  112800MiB  ext4         userdata             msftdata
+</span></span></code></pre></div><p>確認ができたら適当なテキストファイルにコピペしておきましょう。<br>
 メモを忘れた人用に自分のパーティションテーブルを貼っておきます。<a class="link" href="https://drive.google.com/file/d/1udu6zJOhqdF3KGqjez9y3yI2fYaiY6Vx/view"  target="_blank" rel="noopener"
     >Google Drive</a><br>
 今回はproduct_aとsystem_aを削除して新しくsystem_aを作成します。
@@ -220,143 +220,143 @@ Number  Start    End        Size       File system  Name                 Flags
 注意<br>
 ここで間違ったパーティションを削除してしまうと再起不可になってしまう可能性があるので必ず手作業でやるようにしましょう。<br>
 コピペはしないようにね。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">(</span>parted<span class="p">)</span> rm
-Partition number? 63
-<span class="p">(</span>parted<span class="p">)</span> rm
-Partition number? 64
-</code></pre></div><p>削除が終わったらgdiskに移動します。<br>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl"><span class="p">(</span>parted<span class="p">)</span> rm
+</span></span><span class="line"><span class="cl">Partition number? 63
+</span></span><span class="line"><span class="cl"><span class="p">(</span>parted<span class="p">)</span> rm
+</span></span><span class="line"><span class="cl">Partition number? 64
+</span></span></code></pre></div><p>削除が終わったらgdiskに移動します。<br>
 一度partedを閉じてから</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">~ # /gdisk /dev/block/sdd
-GPT fdisk (gdisk) version 1.0.3
-
-Partition table scan:
-  MBR: protective
-  BSD: not present
-  APM: not present
-  GPT: present
-
-Found valid GPT with protective MBR; using GPT.
-
-Command (? for help):
-</code></pre></div><p>ここからパーティションを追加します。<br>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">~ # /gdisk /dev/block/sdd
+</span></span><span class="line"><span class="cl">GPT fdisk (gdisk) version 1.0.3
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Partition table scan:
+</span></span><span class="line"><span class="cl">  MBR: protective
+</span></span><span class="line"><span class="cl">  BSD: not present
+</span></span><span class="line"><span class="cl">  APM: not present
+</span></span><span class="line"><span class="cl">  GPT: present
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Found valid GPT with protective MBR; using GPT.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Command (? for help):
+</span></span></code></pre></div><p>ここからパーティションを追加します。<br>
 この記事の場合は63ですね。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">Command (? for help): n
-Partition number (63-128, default 63): 63
-First sector (34-1914879, default = 772096) or {+-}size{KMGTP}:
-Last sector (772096-1914879, default = 1914879) or {+-}size{KMGTP}: +4464MiB
-Current type is &#39;Linux filesystem&#39;
-Hex code or GUID (L to show codes, Enter = 8300): 0700
-Changed type of partition to &#39;Microsoft basic data&#39;
-
-Command (? for help):
-</code></pre></div><p>作成したパーティションの名前を変更します。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">Command (? for help): c
-Partition number (1-67): 63
-Enter name: system_a
-</code></pre></div><p>作業が終わったら書き込みをする前に一度変更後のパーティションテーブルを確認しましょう。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">Command (? for help): p
-Disk /dev/block/sdd: 31232000 sectors, 119.1 GiB
-Sector size (logical/physical): 4096/4096 bytes
-Disk identifier (GUID): F9F21FFF-A8D4-5F0E-9746-594869AEC34E
-Partition table holds up to 128 entries
-Main partition table begins at sector 2 and ends at sector 5
-First usable sector is 34, last usable sector is 31231999
-Partitions will be aligned on 128-sector boundaries
-Total free space is 94 sectors (376.0 KiB)
-
-Number  Start (sector)    End (sector)  Size       Code  Name
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  62          749568          772095   88.0 MiB    0700  cust_a
-  63          772096         1914879   4.4 GiB     0700  system_a
-  65         1914880         2062335   576.0 MiB   0700  version_a
-  66         2062336         2355199   1.1 GiB     0700  preload_a
-  67         2355200        31231999   110.2 GiB   0700  userdata
-</code></pre></div><p>確認して大丈夫だったらパーティション情報の書き込みをしましょう。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">Command (? for help): w
-
-Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
-PARTITIONS!!
-
-Do you want to proceed? (Y/N): Y
-OK; writing new GUID partition table (GPT) to /dev/block/sdd.
-Warning: The kernel is still using the old partition table.
-The new table will be used at the next reboot or after you
-run partprobe(8) or kpartx(8)
-The operation has completed successfully.
-</code></pre></div><p>書き込みが終わったらgdiskを閉じてpartedを開いてください。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">~ # /parted /dev/block/sdd
-GNU Parted 3.2
-Using /dev/block/sdd
-Welcome to GNU Parted! Type &#39;help&#39; to view a list of commands.
-<span class="p">(</span>parted<span class="p">)</span>
-</code></pre></div><p>Flagの設定</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="p">(</span>parted<span class="p">)</span> <span class="k">set</span> <span class="nv">63</span>
-Flag to Invert? msftdata
-New state?  on/[off]? on
-</code></pre></div><p>ext4にフォーマット</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">~ # make_ext4fs /dev/block/sdd63
-Creating filesystem with parameters:
-    Size: 3472883712
-    Block size: 4096
-    Blocks per group: 32768
-    Inodes per group: 8160
-    Inode size: 256
-    Journal blocks: 13248
-    Label:
-    Blocks: 847872
-    Block groups: 26
-    Reserved block group size: 207
-Created filesystem with 11/212160 inodes and 28026/847872 blocks
-</code></pre></div><p>変更がちゃんとできているかの確認</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">~ # /parted /dev/block/sdd
-GNU Parted 3.2
-Using /dev/block/sdd
-Welcome to GNU Parted! Type &#39;help&#39; to view a list of commands.
-<span class="p">(</span>parted<span class="p">)</span> p
-Model: HISI SS6100GBCV100MBD (scsi)
-Disk /dev/block/sdd: 128GB
-Sector size (logical/physical): 4096B/4096B
-Partition Table: gpt
-Disk Flags:
-
-Number  Start   End     Size    File system  Name                 Flags
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-62      3070MB  3163MB  92.3MB               cust_a               msftdata
-63      3163MB  7843MB  4681MB  ext4         system_a             msftdata
-65      7843MB  8447MB  604MB                version_a            msftdata
-66      8447MB  9647MB  1200MB               preload_a            msftdata
-67      9647MB  128GB   118GB                userdata             msftdata
-</code></pre></div><p>これで拡張作業はおしまい。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">Command (? for help): n
+</span></span><span class="line"><span class="cl">Partition number (63-128, default 63): 63
+</span></span><span class="line"><span class="cl">First sector (34-1914879, default = 772096) or {+-}size{KMGTP}:
+</span></span><span class="line"><span class="cl">Last sector (772096-1914879, default = 1914879) or {+-}size{KMGTP}: +4464MiB
+</span></span><span class="line"><span class="cl">Current type is &#39;Linux filesystem&#39;
+</span></span><span class="line"><span class="cl">Hex code or GUID (L to show codes, Enter = 8300): 0700
+</span></span><span class="line"><span class="cl">Changed type of partition to &#39;Microsoft basic data&#39;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Command (? for help):
+</span></span></code></pre></div><p>作成したパーティションの名前を変更します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">Command (? for help): c
+</span></span><span class="line"><span class="cl">Partition number (1-67): 63
+</span></span><span class="line"><span class="cl">Enter name: system_a
+</span></span></code></pre></div><p>作業が終わったら書き込みをする前に一度変更後のパーティションテーブルを確認しましょう。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">Command (? for help): p
+</span></span><span class="line"><span class="cl">Disk /dev/block/sdd: 31232000 sectors, 119.1 GiB
+</span></span><span class="line"><span class="cl">Sector size (logical/physical): 4096/4096 bytes
+</span></span><span class="line"><span class="cl">Disk identifier (GUID): F9F21FFF-A8D4-5F0E-9746-594869AEC34E
+</span></span><span class="line"><span class="cl">Partition table holds up to 128 entries
+</span></span><span class="line"><span class="cl">Main partition table begins at sector 2 and ends at sector 5
+</span></span><span class="line"><span class="cl">First usable sector is 34, last usable sector is 31231999
+</span></span><span class="line"><span class="cl">Partitions will be aligned on 128-sector boundaries
+</span></span><span class="line"><span class="cl">Total free space is 94 sectors (376.0 KiB)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Number  Start (sector)    End (sector)  Size       Code  Name
+</span></span><span class="line"><span class="cl">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+</span></span><span class="line"><span class="cl">  62          749568          772095   88.0 MiB    0700  cust_a
+</span></span><span class="line"><span class="cl">  63          772096         1914879   4.4 GiB     0700  system_a
+</span></span><span class="line"><span class="cl">  65         1914880         2062335   576.0 MiB   0700  version_a
+</span></span><span class="line"><span class="cl">  66         2062336         2355199   1.1 GiB     0700  preload_a
+</span></span><span class="line"><span class="cl">  67         2355200        31231999   110.2 GiB   0700  userdata
+</span></span></code></pre></div><p>確認して大丈夫だったらパーティション情報の書き込みをしましょう。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">Command (? for help): w
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+</span></span><span class="line"><span class="cl">PARTITIONS!!
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Do you want to proceed? (Y/N): Y
+</span></span><span class="line"><span class="cl">OK; writing new GUID partition table (GPT) to /dev/block/sdd.
+</span></span><span class="line"><span class="cl">Warning: The kernel is still using the old partition table.
+</span></span><span class="line"><span class="cl">The new table will be used at the next reboot or after you
+</span></span><span class="line"><span class="cl">run partprobe(8) or kpartx(8)
+</span></span><span class="line"><span class="cl">The operation has completed successfully.
+</span></span></code></pre></div><p>書き込みが終わったらgdiskを閉じてpartedを開いてください。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">~ # /parted /dev/block/sdd
+</span></span><span class="line"><span class="cl">GNU Parted 3.2
+</span></span><span class="line"><span class="cl">Using /dev/block/sdd
+</span></span><span class="line"><span class="cl">Welcome to GNU Parted! Type &#39;help&#39; to view a list of commands.
+</span></span><span class="line"><span class="cl"><span class="p">(</span>parted<span class="p">)</span>
+</span></span></code></pre></div><p>Flagの設定</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl"><span class="p">(</span>parted<span class="p">)</span> <span class="k">set</span> <span class="nv">63</span>
+</span></span><span class="line"><span class="cl">Flag to Invert? msftdata
+</span></span><span class="line"><span class="cl">New state?  on/[off]? on
+</span></span></code></pre></div><p>ext4にフォーマット</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">~ # make_ext4fs /dev/block/sdd63
+</span></span><span class="line"><span class="cl">Creating filesystem with parameters:
+</span></span><span class="line"><span class="cl">    Size: 3472883712
+</span></span><span class="line"><span class="cl">    Block size: 4096
+</span></span><span class="line"><span class="cl">    Blocks per group: 32768
+</span></span><span class="line"><span class="cl">    Inodes per group: 8160
+</span></span><span class="line"><span class="cl">    Inode size: 256
+</span></span><span class="line"><span class="cl">    Journal blocks: 13248
+</span></span><span class="line"><span class="cl">    Label:
+</span></span><span class="line"><span class="cl">    Blocks: 847872
+</span></span><span class="line"><span class="cl">    Block groups: 26
+</span></span><span class="line"><span class="cl">    Reserved block group size: 207
+</span></span><span class="line"><span class="cl">Created filesystem with 11/212160 inodes and 28026/847872 blocks
+</span></span></code></pre></div><p>変更がちゃんとできているかの確認</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">~ # /parted /dev/block/sdd
+</span></span><span class="line"><span class="cl">GNU Parted 3.2
+</span></span><span class="line"><span class="cl">Using /dev/block/sdd
+</span></span><span class="line"><span class="cl">Welcome to GNU Parted! Type &#39;help&#39; to view a list of commands.
+</span></span><span class="line"><span class="cl"><span class="p">(</span>parted<span class="p">)</span> p
+</span></span><span class="line"><span class="cl">Model: HISI SS6100GBCV100MBD (scsi)
+</span></span><span class="line"><span class="cl">Disk /dev/block/sdd: 128GB
+</span></span><span class="line"><span class="cl">Sector size (logical/physical): 4096B/4096B
+</span></span><span class="line"><span class="cl">Partition Table: gpt
+</span></span><span class="line"><span class="cl">Disk Flags:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Number  Start   End     Size    File system  Name                 Flags
+</span></span><span class="line"><span class="cl">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+</span></span><span class="line"><span class="cl">62      3070MB  3163MB  92.3MB               cust_a               msftdata
+</span></span><span class="line"><span class="cl">63      3163MB  7843MB  4681MB  ext4         system_a             msftdata
+</span></span><span class="line"><span class="cl">65      7843MB  8447MB  604MB                version_a            msftdata
+</span></span><span class="line"><span class="cl">66      8447MB  9647MB  1200MB               preload_a            msftdata
+</span></span><span class="line"><span class="cl">67      9647MB  128GB   118GB                userdata             msftdata
+</span></span></code></pre></div><p>これで拡張作業はおしまい。</p>
 <h2 id="romをflashしよう">ROMをflashしよう</h2>
 <p>これでようやく好きなROMが焼けるはず&hellip;。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">fastboot --disable-verity --disable-verification flash system dotOS-R-v5.2-arm64-ab-GAPPS-OFFICIAL.img
-Sending sparse &#39;system&#39; 1/8 (458752 KB)            OKAY [  3.193s]
-Writing &#39;system&#39;                                   OKAY [  1.051s]
-Sending sparse &#39;system&#39; 2/8 (458752 KB)            OKAY [  9.784s]
-Writing &#39;system&#39;                                   OKAY [  1.050s]
-Sending sparse &#39;system&#39; 3/8 (458752 KB)            OKAY [  9.894s]
-Writing &#39;system&#39;                                   OKAY [  1.051s]
-Sending sparse &#39;system&#39; 4/8 (458752 KB)            OKAY [  9.541s]
-Writing &#39;system&#39;                                   OKAY [  1.789s]
-Sending sparse &#39;system&#39; 5/8 (458752 KB)            OKAY [  9.920s]
-Writing &#39;system&#39;                                   OKAY [  4.190s]
-Sending sparse &#39;system&#39; 6/8 (458752 KB)            OKAY [  9.487s]
-Writing &#39;system&#39;                                   OKAY [  4.602s]
-Sending sparse &#39;system&#39; 7/8 (458752 KB)            OKAY [  9.500s]
-Writing &#39;system&#39;                                   OKAY [  1.034s]
-Sending sparse &#39;system&#39; 8/8 (233220 KB)            OKAY [  4.879s]
-Writing &#39;system&#39;                                   OKAY [  0.807s]
-Finished. Total time: 81.857s
-</code></pre></div><p>わーい。
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">fastboot --disable-verity --disable-verification flash system dotOS-R-v5.2-arm64-ab-GAPPS-OFFICIAL.img
+</span></span><span class="line"><span class="cl">Sending sparse &#39;system&#39; 1/8 (458752 KB)            OKAY [  3.193s]
+</span></span><span class="line"><span class="cl">Writing &#39;system&#39;                                   OKAY [  1.051s]
+</span></span><span class="line"><span class="cl">Sending sparse &#39;system&#39; 2/8 (458752 KB)            OKAY [  9.784s]
+</span></span><span class="line"><span class="cl">Writing &#39;system&#39;                                   OKAY [  1.050s]
+</span></span><span class="line"><span class="cl">Sending sparse &#39;system&#39; 3/8 (458752 KB)            OKAY [  9.894s]
+</span></span><span class="line"><span class="cl">Writing &#39;system&#39;                                   OKAY [  1.051s]
+</span></span><span class="line"><span class="cl">Sending sparse &#39;system&#39; 4/8 (458752 KB)            OKAY [  9.541s]
+</span></span><span class="line"><span class="cl">Writing &#39;system&#39;                                   OKAY [  1.789s]
+</span></span><span class="line"><span class="cl">Sending sparse &#39;system&#39; 5/8 (458752 KB)            OKAY [  9.920s]
+</span></span><span class="line"><span class="cl">Writing &#39;system&#39;                                   OKAY [  4.190s]
+</span></span><span class="line"><span class="cl">Sending sparse &#39;system&#39; 6/8 (458752 KB)            OKAY [  9.487s]
+</span></span><span class="line"><span class="cl">Writing &#39;system&#39;                                   OKAY [  4.602s]
+</span></span><span class="line"><span class="cl">Sending sparse &#39;system&#39; 7/8 (458752 KB)            OKAY [  9.500s]
+</span></span><span class="line"><span class="cl">Writing &#39;system&#39;                                   OKAY [  1.034s]
+</span></span><span class="line"><span class="cl">Sending sparse &#39;system&#39; 8/8 (233220 KB)            OKAY [  4.879s]
+</span></span><span class="line"><span class="cl">Writing &#39;system&#39;                                   OKAY [  0.807s]
+</span></span><span class="line"><span class="cl">Finished. Total time: 81.857s
+</span></span></code></pre></div><p>わーい。
 この後初期化するので一度stock recoveryに戻してください。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">fastboot flash recovery_ramdisk recovery_ramdiS.img
-Sending &#39;recovery_ramdisk&#39; (32768 KB)              OKAY [  0.232s]
-Writing &#39;recovery_ramdisk&#39;                         OKAY [  0.077s]
-Finished. Total time: 0.341s
-</code></pre></div><p>リカバリーを起動してファクトリーリセットをしたらいよいよ起動！</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">fastboot flash recovery_ramdisk recovery_ramdiS.img
+</span></span><span class="line"><span class="cl">Sending &#39;recovery_ramdisk&#39; (32768 KB)              OKAY [  0.232s]
+</span></span><span class="line"><span class="cl">Writing &#39;recovery_ramdisk&#39;                         OKAY [  0.077s]
+</span></span><span class="line"><span class="cl">Finished. Total time: 0.341s
+</span></span></code></pre></div><p>リカバリーを起動してファクトリーリセットをしたらいよいよ起動！</p>
 <h2 id="いよいよ起動">いよいよ起動</h2>
 <p>まぁ普通に起動するはずです。<br>
-<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">P30にDotOS降臨<br>ばいばいP20lite😭 <a href="https://t.co/iNxlIEgnJz">pic.twitter.com/iNxlIEgnJz</a></p>&mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) <a href="https://twitter.com/j7b3y/status/1449644900442464258?ref_src=twsrc%5Etfw">October 17, 2021</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">P30にDotOS降臨<br>ばいばいP20lite😭 <a href="https://t.co/iNxlIEgnJz">pic.twitter.com/iNxlIEgnJz</a></p>&mdash; j7b3y (@j7b3y) <a href="https://twitter.com/j7b3y/status/1449644900442464258?ref_src=twsrc%5Etfw">October 17, 2021</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <br>
 後はmagiskを入れるなりなんなりで自由にやっちゃってください！<br>
@@ -479,7 +479,7 @@ Finished. Total time: 0.341s
     <div class="disqus-container">
     <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

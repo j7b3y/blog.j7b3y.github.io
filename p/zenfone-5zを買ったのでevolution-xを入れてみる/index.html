@@ -165,23 +165,23 @@
 <h2 id="下準備">下準備</h2>
 <p>電源+volume upでbootloaderを起動してPCと接続。<br>
 そしてダウンロードしたフォルダのある場所でターミナルを開いて以下のコマンドを実行し、ユーザーデータを削除した後にvbmetaをflash。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">$ fastboot -w
-$ fastboot --disable-verity --disable-verification flash vbmeta q_vbmeta.img
-</code></pre></div><p>コマンドの実行が完了したらここで1回画面の方にご注目！<br>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">$ fastboot -w
+</span></span><span class="line"><span class="cl">$ fastboot --disable-verity --disable-verification flash vbmeta q_vbmeta.img
+</span></span></code></pre></div><p>コマンドの実行が完了したらここで1回画面の方にご注目！<br>
 ACTIVE SLOTの項目を確認してください。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">#アクティブなスロットがaなら
-$ fastboot set_active b
-
-#bの場合は
-fastboot set_active a
-
-#そしてbootloaderを再起動
-$ fastboot reboot bootloader
-</code></pre></div><p>ACTIVE SLOTが先ほどとは別のスロットに変更されているはずです。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">#アクティブなスロットがaなら
+</span></span><span class="line"><span class="cl">$ fastboot set_active b
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#bの場合は
+</span></span><span class="line"><span class="cl">fastboot set_active a
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#そしてbootloaderを再起動
+</span></span><span class="line"><span class="cl">$ fastboot reboot bootloader
+</span></span></code></pre></div><p>ACTIVE SLOTが先ほどとは別のスロットに変更されているはずです。</p>
 <h2 id="twrpを焼く">TWRPを焼く</h2>
 <p>以下のコマンドを実行した後リカバリーモードに移行。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd">$ fastboot flash boot twrp-3.4.0-0-Z01RD.img
-</code></pre></div><h2 id="romをflash">ROMをflash</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">$ fastboot flash boot twrp-3.4.0-0-Z01RD.img
+</span></span></code></pre></div><h2 id="romをflash">ROMをflash</h2>
 <p>リカバリーが起動したら、「Wipe」&gt;「ADVANCED WIPE」と進んでsystem、Dalvik(Cache)、DataをWipeしてください。<br>
 完了したら、</p>
 <ul>
@@ -314,7 +314,7 @@ Encrypted Vendor &gt; ABL.zip &gt; dfe.zip<br>
     <div class="disqus-container">
     <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

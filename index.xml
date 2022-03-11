@@ -116,7 +116,7 @@ Magisk Canary 23018 &amp;amp; Zygisk&lt;/p&gt;
 &lt;p&gt;Settings &amp;gt; Float windowと進んでFloat Serviceにチェックを入れる。&lt;/p&gt;
 &lt;h2 id=&#34;使ってみよう&#34;&gt;使ってみよう&lt;/h2&gt;
 &lt;p&gt;音量ボタンを押すと左上に音量マークが出てくるのでそれをタップすると起動しているアプリの音量が0~100%で調整できる。&lt;br&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;うぃ &lt;a href=&#34;https://t.co/nH5eVCxTDq&#34;&gt;pic.twitter.com/nH5eVCxTDq&lt;/a&gt;&lt;/p&gt;&amp;mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1485880208393908225?ref_src=twsrc%5Etfw&#34;&gt;January 25, 2022&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;うぃ &lt;a href=&#34;https://t.co/nH5eVCxTDq&#34;&gt;pic.twitter.com/nH5eVCxTDq&lt;/a&gt;&lt;/p&gt;&amp;mdash; j7b3y (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1485880208393908225?ref_src=twsrc%5Etfw&#34;&gt;January 25, 2022&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;最後に&#34;&gt;最後に&lt;/h2&gt;
@@ -267,23 +267,23 @@ Xperia ZR用のLineageOS 18.1です。&lt;br&gt;
 &lt;h2 id=&#34;下準備&#34;&gt;下準備&lt;/h2&gt;
 &lt;p&gt;電源+volume upでbootloaderを起動してPCと接続。&lt;br&gt;
 そしてダウンロードしたフォルダのある場所でターミナルを開いて以下のコマンドを実行し、ユーザーデータを削除した後にvbmetaをflash。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;$ fastboot -w
-$ fastboot --disable-verity --disable-verification flash vbmeta q_vbmeta.img
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;コマンドの実行が完了したらここで1回画面の方にご注目！&lt;br&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ fastboot -w
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ fastboot --disable-verity --disable-verification flash vbmeta q_vbmeta.img
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;コマンドの実行が完了したらここで1回画面の方にご注目！&lt;br&gt;
 ACTIVE SLOTの項目を確認してください。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;#アクティブなスロットがaなら
-$ fastboot set_active b
-
-#bの場合は
-fastboot set_active a
-
-#そしてbootloaderを再起動
-$ fastboot reboot bootloader
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ACTIVE SLOTが先ほどとは別のスロットに変更されているはずです。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#アクティブなスロットがaなら
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ fastboot set_active b
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#bの場合は
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;fastboot set_active a
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#そしてbootloaderを再起動
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ fastboot reboot bootloader
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ACTIVE SLOTが先ほどとは別のスロットに変更されているはずです。&lt;/p&gt;
 &lt;h2 id=&#34;twrpを焼く&#34;&gt;TWRPを焼く&lt;/h2&gt;
 &lt;p&gt;以下のコマンドを実行した後リカバリーモードに移行。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;$ fastboot flash boot twrp-3.4.0-0-Z01RD.img
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;romをflash&#34;&gt;ROMをflash&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ fastboot flash boot twrp-3.4.0-0-Z01RD.img
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;romをflash&#34;&gt;ROMをflash&lt;/h2&gt;
 &lt;p&gt;リカバリーが起動したら、「Wipe」&amp;gt;「ADVANCED WIPE」と進んでsystem、Dalvik(Cache)、DataをWipeしてください。&lt;br&gt;
 完了したら、&lt;/p&gt;
 &lt;ul&gt;
@@ -390,9 +390,9 @@ Developer modeをOnにしてからManage developer settingsをクリックして
 &lt;li&gt;adbを使用する場合&lt;br&gt;
 ターミナルで以下を実行&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;adb connect localhost:58526
-adb install magisk.apk
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb connect localhost:58526
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;adb install magisk.apk
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;adbを使用しない場合&lt;br&gt;
 スタートメニューで&amp;quot;アプリ: play ストア&amp;quot;と検索してplayストアを開いてGoogleアカウントにログイン、&lt;br&gt;
 適当なブラウザをダウンロードして&lt;a class=&#34;link&#34; href=&#34;https://github.com/topjohnwu/Magisk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -402,8 +402,8 @@ adb install magisk.apk
 &lt;p&gt;ちゃんと設定したのに動かない！って人向けです。
 自分もここで一回詰まりました。 &lt;br&gt;
 管理者として実行されたターミナルで以下を実行。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;bcdedit /set hypervisorlaunchtype auto
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;そして再起動。&lt;br&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;bcdedit /set hypervisorlaunchtype auto
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;そして再起動。&lt;br&gt;
 多分起動するはずです。&lt;br&gt;
 これで起動しないのなら他に何か原因があるのかもしれないです。&lt;/p&gt;
 &lt;h2 id=&#34;後書き&#34;&gt;後書き&lt;/h2&gt;
@@ -411,13 +411,13 @@ adb install magisk.apk
 生のAndroidが動くってのはロマンがあるのですが逆にそれ以外は何もないな～と思いました。&lt;br&gt;
 Hyper-Vを有効にしたのでBS5 32bitやMemuが動作しなくなるのもかなり痛いし多分今後は使わないかな～というのが自分の結論です。&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;スクショ供養のコーナー&lt;/del&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;今日の進捗、後でMagisk更新しよ &lt;a href=&#34;https://t.co/cqAt3rqH6C&#34;&gt;pic.twitter.com/cqAt3rqH6C&lt;/a&gt;&lt;/p&gt;&amp;mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1457247747153666049?ref_src=twsrc%5Etfw&#34;&gt;November 7, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;今日の進捗、後でMagisk更新しよ &lt;a href=&#34;https://t.co/cqAt3rqH6C&#34;&gt;pic.twitter.com/cqAt3rqH6C&lt;/a&gt;&lt;/p&gt;&amp;mdash; j7b3y (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1457247747153666049?ref_src=twsrc%5Etfw&#34;&gt;November 7, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;pl&#34; dir=&#34;ltr&#34;&gt;CPU-Z &lt;a href=&#34;https://t.co/qmxjOIXidf&#34;&gt;pic.twitter.com/qmxjOIXidf&lt;/a&gt;&lt;/p&gt;&amp;mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1457248305482592259?ref_src=twsrc%5Etfw&#34;&gt;November 7, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;pl&#34; dir=&#34;ltr&#34;&gt;CPU-Z &lt;a href=&#34;https://t.co/qmxjOIXidf&#34;&gt;pic.twitter.com/qmxjOIXidf&lt;/a&gt;&lt;/p&gt;&amp;mdash; j7b3y (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1457248305482592259?ref_src=twsrc%5Etfw&#34;&gt;November 7, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;WSAの中身はA11だった &lt;a href=&#34;https://t.co/bc2y3L3tyI&#34;&gt;pic.twitter.com/bc2y3L3tyI&lt;/a&gt;&lt;/p&gt;&amp;mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1457206889020723201?ref_src=twsrc%5Etfw&#34;&gt;November 7, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;WSAの中身はA11だった &lt;a href=&#34;https://t.co/bc2y3L3tyI&#34;&gt;pic.twitter.com/bc2y3L3tyI&lt;/a&gt;&lt;/p&gt;&amp;mdash; j7b3y (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1457206889020723201?ref_src=twsrc%5Etfw&#34;&gt;November 7, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;参考にした記事&#34;&gt;参考にした記事&lt;/h2&gt;
@@ -610,61 +610,61 @@ eRecoveryを使用すると強制的にEMUI10にされますが、HCUでアン�
 &lt;h2 id=&#34;twrpをflashする&#34;&gt;TWRPをflashする&lt;/h2&gt;
 &lt;p&gt;Mate20 XのTWRPイメージがあるディレクトリでターミナルを開いてください。&lt;br&gt;
 開いたら&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;$ fastboot flash recovery_ramdisk twrp-3.2.1-0-everest-unofficial-v3.img
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;と入力してTWRPをflashしましょう。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ fastboot flash recovery_ramdisk twrp-3.2.1-0-everest-unofficial-v3.img
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;と入力してTWRPをflashしましょう。&lt;/p&gt;
 &lt;h2 id=&#34;下準備&#34;&gt;下準備&lt;/h2&gt;
 &lt;p&gt;再起動してTWRPを起動しましょう。(電源+Volume Up)&lt;br&gt;
 タッチ操作は出来ないのでUSBマウスを接続して操作します。&lt;br&gt;
 作業が長引くかもしれないのでスリープを無効にして画面の明るさを最低にしましょう。&lt;/p&gt;
 &lt;p&gt;マウスの接続を解除してPCに接続してください。&lt;br&gt;
 接続したら一度&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;$ adb devices
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;と入力してちゃんと接続されているかを確認しましょう。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ adb devices
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;と入力してちゃんと接続されているかを確認しましょう。&lt;/p&gt;
 &lt;p&gt;接続が確認出来たらpartedとgdiskをP30にコピーしましょう。&lt;br&gt;
 parted_gdisk_fdisk_mkfs.ext4-AARCH64.zipを展開してターミナルで開きましょう&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;$ adb push parted /
-$ adb push gdisk /
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;コピーが終わったら端末のシェルを起動します。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;$ adb shell
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;シェルを起動したらpartedとgdiskがコピーされているかを確認してください。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;~ #  ls
-acc                         　　 init                        patch_hw                      splash2
-acct                        　   init.rc                     plat_file_contexts          storage
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-file_contexts.bin           parted                      sec_storage
-gdisk                           patch                       sepolicy
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;partedとgdiskがあることを確認したら実行権限を付与しましょう。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;~ # chmod +x parted
-~ # chmod +x gdisk
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;拡張&#34;&gt;拡張&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ adb push parted /
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ adb push gdisk /
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;コピーが終わったら端末のシェルを起動します。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ adb shell
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;シェルを起動したらpartedとgdiskがコピーされているかを確認してください。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~ #  ls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;acc                         　　 init                        patch_hw                      splash2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;acct                        　   init.rc                     plat_file_contexts          storage
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;file_contexts.bin           parted                      sec_storage
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gdisk                           patch                       sepolicy
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;partedとgdiskがあることを確認したら実行権限を付与しましょう。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~ # chmod +x parted
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~ # chmod +x gdisk
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;拡張&#34;&gt;拡張&lt;/h2&gt;
 &lt;p&gt;ここまで来たらあと一息！&lt;br&gt;
 パーティションを操作しましょう。&lt;br&gt;
 partedでsddを開きます。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;/parted /dev/block/sdd
-GNU Parted 3.2
-Using /dev/block/sdd
-Welcome to GNU Parted! Type &amp;#39;help&amp;#39; to view a list of commands.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;まずはパーティションテーブルを確認しましょう。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;parted&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; unit MiB
-&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;parted&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; p
-Error: The backup GPT table is corrupt, but the primary appears OK, so that will
-be used.
-OK/Cancel? ok
-Model: HISI SS6100GBCV100MBD (scsi)
-Disk /dev/block/sdd: 122000MiB
-Sector size (logical/physical): 4096B/4096B
-Partition Table: gpt
-Disk Flags:
-
-Number  Start    End        Size       File system  Name                 Flags
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-62      2928MiB  3016MiB    88.0MiB                 cust_a               msftdata
-63      3016MiB  5328MiB    2312MiB    ext4         system_a             msftdata
-64      5328MiB  7480MiB    2152MiB                 product_a            msftdata
-65      7480MiB  8056MiB    576MiB                  version_a            msftdata
-66      8056MiB  9200MiB    1144MiB                 preload_a            msftdata
-67      9200MiB  122000MiB  112800MiB  ext4         userdata             msftdata
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;確認ができたら適当なテキストファイルにコピペしておきましょう。&lt;br&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/parted /dev/block/sdd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;GNU Parted 3.2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Using /dev/block/sdd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Welcome to GNU Parted! Type &amp;#39;help&amp;#39; to view a list of commands.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;まずはパーティションテーブルを確認しましょう。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;parted&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; unit MiB
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;parted&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; p
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Error: The backup GPT table is corrupt, but the primary appears OK, so that will
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;be used.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;OK/Cancel? ok
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Model: HISI SS6100GBCV100MBD (scsi)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Disk /dev/block/sdd: 122000MiB
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Sector size (logical/physical): 4096B/4096B
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Partition Table: gpt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Disk Flags:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Number  Start    End        Size       File system  Name                 Flags
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;62      2928MiB  3016MiB    88.0MiB                 cust_a               msftdata
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;63      3016MiB  5328MiB    2312MiB    ext4         system_a             msftdata
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;64      5328MiB  7480MiB    2152MiB                 product_a            msftdata
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;65      7480MiB  8056MiB    576MiB                  version_a            msftdata
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;66      8056MiB  9200MiB    1144MiB                 preload_a            msftdata
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;67      9200MiB  122000MiB  112800MiB  ext4         userdata             msftdata
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;確認ができたら適当なテキストファイルにコピペしておきましょう。&lt;br&gt;
 メモを忘れた人用に自分のパーティションテーブルを貼っておきます。&lt;a class=&#34;link&#34; href=&#34;https://drive.google.com/file/d/1udu6zJOhqdF3KGqjez9y3yI2fYaiY6Vx/view&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Google Drive&lt;/a&gt;&lt;br&gt;
 今回はproduct_aとsystem_aを削除して新しくsystem_aを作成します。
@@ -672,143 +672,143 @@ Number  Start    End        Size       File system  Name                 Flags
 注意&lt;br&gt;
 ここで間違ったパーティションを削除してしまうと再起不可になってしまう可能性があるので必ず手作業でやるようにしましょう。&lt;br&gt;
 コピペはしないようにね。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;parted&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; rm
-Partition number? 63
-&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;parted&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; rm
-Partition number? 64
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;削除が終わったらgdiskに移動します。&lt;br&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;parted&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; rm
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Partition number? 63
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;parted&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; rm
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Partition number? 64
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;削除が終わったらgdiskに移動します。&lt;br&gt;
 一度partedを閉じてから&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;~ # /gdisk /dev/block/sdd
-GPT fdisk (gdisk) version 1.0.3
-
-Partition table scan:
-  MBR: protective
-  BSD: not present
-  APM: not present
-  GPT: present
-
-Found valid GPT with protective MBR; using GPT.
-
-Command (? for help):
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ここからパーティションを追加します。&lt;br&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~ # /gdisk /dev/block/sdd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;GPT fdisk (gdisk) version 1.0.3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Partition table scan:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  MBR: protective
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  BSD: not present
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  APM: not present
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  GPT: present
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Found valid GPT with protective MBR; using GPT.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Command (? for help):
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ここからパーティションを追加します。&lt;br&gt;
 この記事の場合は63ですね。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;Command (? for help): n
-Partition number (63-128, default 63): 63
-First sector (34-1914879, default = 772096) or {+-}size{KMGTP}:
-Last sector (772096-1914879, default = 1914879) or {+-}size{KMGTP}: +4464MiB
-Current type is &amp;#39;Linux filesystem&amp;#39;
-Hex code or GUID (L to show codes, Enter = 8300): 0700
-Changed type of partition to &amp;#39;Microsoft basic data&amp;#39;
-
-Command (? for help):
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;作成したパーティションの名前を変更します。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;Command (? for help): c
-Partition number (1-67): 63
-Enter name: system_a
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;作業が終わったら書き込みをする前に一度変更後のパーティションテーブルを確認しましょう。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;Command (? for help): p
-Disk /dev/block/sdd: 31232000 sectors, 119.1 GiB
-Sector size (logical/physical): 4096/4096 bytes
-Disk identifier (GUID): F9F21FFF-A8D4-5F0E-9746-594869AEC34E
-Partition table holds up to 128 entries
-Main partition table begins at sector 2 and ends at sector 5
-First usable sector is 34, last usable sector is 31231999
-Partitions will be aligned on 128-sector boundaries
-Total free space is 94 sectors (376.0 KiB)
-
-Number  Start (sector)    End (sector)  Size       Code  Name
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  62          749568          772095   88.0 MiB    0700  cust_a
-  63          772096         1914879   4.4 GiB     0700  system_a
-  65         1914880         2062335   576.0 MiB   0700  version_a
-  66         2062336         2355199   1.1 GiB     0700  preload_a
-  67         2355200        31231999   110.2 GiB   0700  userdata
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;確認して大丈夫だったらパーティション情報の書き込みをしましょう。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;Command (? for help): w
-
-Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
-PARTITIONS!!
-
-Do you want to proceed? (Y/N): Y
-OK; writing new GUID partition table (GPT) to /dev/block/sdd.
-Warning: The kernel is still using the old partition table.
-The new table will be used at the next reboot or after you
-run partprobe(8) or kpartx(8)
-The operation has completed successfully.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;書き込みが終わったらgdiskを閉じてpartedを開いてください。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;~ # /parted /dev/block/sdd
-GNU Parted 3.2
-Using /dev/block/sdd
-Welcome to GNU Parted! Type &amp;#39;help&amp;#39; to view a list of commands.
-&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;parted&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Flagの設定&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;parted&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;63&lt;/span&gt;
-Flag to Invert? msftdata
-New state?  on/[off]? on
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ext4にフォーマット&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;~ # make_ext4fs /dev/block/sdd63
-Creating filesystem with parameters:
-    Size: 3472883712
-    Block size: 4096
-    Blocks per group: 32768
-    Inodes per group: 8160
-    Inode size: 256
-    Journal blocks: 13248
-    Label:
-    Blocks: 847872
-    Block groups: 26
-    Reserved block group size: 207
-Created filesystem with 11/212160 inodes and 28026/847872 blocks
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;変更がちゃんとできているかの確認&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;~ # /parted /dev/block/sdd
-GNU Parted 3.2
-Using /dev/block/sdd
-Welcome to GNU Parted! Type &amp;#39;help&amp;#39; to view a list of commands.
-&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;parted&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; p
-Model: HISI SS6100GBCV100MBD (scsi)
-Disk /dev/block/sdd: 128GB
-Sector size (logical/physical): 4096B/4096B
-Partition Table: gpt
-Disk Flags:
-
-Number  Start   End     Size    File system  Name                 Flags
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-62      3070MB  3163MB  92.3MB               cust_a               msftdata
-63      3163MB  7843MB  4681MB  ext4         system_a             msftdata
-65      7843MB  8447MB  604MB                version_a            msftdata
-66      8447MB  9647MB  1200MB               preload_a            msftdata
-67      9647MB  128GB   118GB                userdata             msftdata
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;これで拡張作業はおしまい。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Command (? for help): n
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Partition number (63-128, default 63): 63
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;First sector (34-1914879, default = 772096) or {+-}size{KMGTP}:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Last sector (772096-1914879, default = 1914879) or {+-}size{KMGTP}: +4464MiB
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Current type is &amp;#39;Linux filesystem&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Hex code or GUID (L to show codes, Enter = 8300): 0700
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Changed type of partition to &amp;#39;Microsoft basic data&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Command (? for help):
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;作成したパーティションの名前を変更します。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Command (? for help): c
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Partition number (1-67): 63
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Enter name: system_a
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;作業が終わったら書き込みをする前に一度変更後のパーティションテーブルを確認しましょう。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Command (? for help): p
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Disk /dev/block/sdd: 31232000 sectors, 119.1 GiB
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Sector size (logical/physical): 4096/4096 bytes
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Disk identifier (GUID): F9F21FFF-A8D4-5F0E-9746-594869AEC34E
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Partition table holds up to 128 entries
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Main partition table begins at sector 2 and ends at sector 5
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;First usable sector is 34, last usable sector is 31231999
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Partitions will be aligned on 128-sector boundaries
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Total free space is 94 sectors (376.0 KiB)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Number  Start (sector)    End (sector)  Size       Code  Name
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  62          749568          772095   88.0 MiB    0700  cust_a
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  63          772096         1914879   4.4 GiB     0700  system_a
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  65         1914880         2062335   576.0 MiB   0700  version_a
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  66         2062336         2355199   1.1 GiB     0700  preload_a
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  67         2355200        31231999   110.2 GiB   0700  userdata
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;確認して大丈夫だったらパーティション情報の書き込みをしましょう。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Command (? for help): w
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;PARTITIONS!!
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Do you want to proceed? (Y/N): Y
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;OK; writing new GUID partition table (GPT) to /dev/block/sdd.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Warning: The kernel is still using the old partition table.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;The new table will be used at the next reboot or after you
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;run partprobe(8) or kpartx(8)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;The operation has completed successfully.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;書き込みが終わったらgdiskを閉じてpartedを開いてください。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~ # /parted /dev/block/sdd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;GNU Parted 3.2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Using /dev/block/sdd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Welcome to GNU Parted! Type &amp;#39;help&amp;#39; to view a list of commands.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;parted&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Flagの設定&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;parted&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;63&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Flag to Invert? msftdata
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;New state?  on/[off]? on
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;ext4にフォーマット&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~ # make_ext4fs /dev/block/sdd63
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Creating filesystem with parameters:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Size: 3472883712
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Block size: 4096
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Blocks per group: 32768
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Inodes per group: 8160
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Inode size: 256
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Journal blocks: 13248
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Label:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Blocks: 847872
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Block groups: 26
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Reserved block group size: 207
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Created filesystem with 11/212160 inodes and 28026/847872 blocks
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;変更がちゃんとできているかの確認&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~ # /parted /dev/block/sdd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;GNU Parted 3.2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Using /dev/block/sdd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Welcome to GNU Parted! Type &amp;#39;help&amp;#39; to view a list of commands.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;parted&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; p
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Model: HISI SS6100GBCV100MBD (scsi)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Disk /dev/block/sdd: 128GB
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Sector size (logical/physical): 4096B/4096B
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Partition Table: gpt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Disk Flags:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Number  Start   End     Size    File system  Name                 Flags
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;62      3070MB  3163MB  92.3MB               cust_a               msftdata
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;63      3163MB  7843MB  4681MB  ext4         system_a             msftdata
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;65      7843MB  8447MB  604MB                version_a            msftdata
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;66      8447MB  9647MB  1200MB               preload_a            msftdata
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;67      9647MB  128GB   118GB                userdata             msftdata
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;これで拡張作業はおしまい。&lt;/p&gt;
 &lt;h2 id=&#34;romをflashしよう&#34;&gt;ROMをflashしよう&lt;/h2&gt;
 &lt;p&gt;これでようやく好きなROMが焼けるはず&amp;hellip;。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;fastboot --disable-verity --disable-verification flash system dotOS-R-v5.2-arm64-ab-GAPPS-OFFICIAL.img
-Sending sparse &amp;#39;system&amp;#39; 1/8 (458752 KB)            OKAY [  3.193s]
-Writing &amp;#39;system&amp;#39;                                   OKAY [  1.051s]
-Sending sparse &amp;#39;system&amp;#39; 2/8 (458752 KB)            OKAY [  9.784s]
-Writing &amp;#39;system&amp;#39;                                   OKAY [  1.050s]
-Sending sparse &amp;#39;system&amp;#39; 3/8 (458752 KB)            OKAY [  9.894s]
-Writing &amp;#39;system&amp;#39;                                   OKAY [  1.051s]
-Sending sparse &amp;#39;system&amp;#39; 4/8 (458752 KB)            OKAY [  9.541s]
-Writing &amp;#39;system&amp;#39;                                   OKAY [  1.789s]
-Sending sparse &amp;#39;system&amp;#39; 5/8 (458752 KB)            OKAY [  9.920s]
-Writing &amp;#39;system&amp;#39;                                   OKAY [  4.190s]
-Sending sparse &amp;#39;system&amp;#39; 6/8 (458752 KB)            OKAY [  9.487s]
-Writing &amp;#39;system&amp;#39;                                   OKAY [  4.602s]
-Sending sparse &amp;#39;system&amp;#39; 7/8 (458752 KB)            OKAY [  9.500s]
-Writing &amp;#39;system&amp;#39;                                   OKAY [  1.034s]
-Sending sparse &amp;#39;system&amp;#39; 8/8 (233220 KB)            OKAY [  4.879s]
-Writing &amp;#39;system&amp;#39;                                   OKAY [  0.807s]
-Finished. Total time: 81.857s
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;わーい。
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;fastboot --disable-verity --disable-verification flash system dotOS-R-v5.2-arm64-ab-GAPPS-OFFICIAL.img
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Sending sparse &amp;#39;system&amp;#39; 1/8 (458752 KB)            OKAY [  3.193s]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Writing &amp;#39;system&amp;#39;                                   OKAY [  1.051s]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Sending sparse &amp;#39;system&amp;#39; 2/8 (458752 KB)            OKAY [  9.784s]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Writing &amp;#39;system&amp;#39;                                   OKAY [  1.050s]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Sending sparse &amp;#39;system&amp;#39; 3/8 (458752 KB)            OKAY [  9.894s]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Writing &amp;#39;system&amp;#39;                                   OKAY [  1.051s]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Sending sparse &amp;#39;system&amp;#39; 4/8 (458752 KB)            OKAY [  9.541s]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Writing &amp;#39;system&amp;#39;                                   OKAY [  1.789s]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Sending sparse &amp;#39;system&amp;#39; 5/8 (458752 KB)            OKAY [  9.920s]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Writing &amp;#39;system&amp;#39;                                   OKAY [  4.190s]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Sending sparse &amp;#39;system&amp;#39; 6/8 (458752 KB)            OKAY [  9.487s]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Writing &amp;#39;system&amp;#39;                                   OKAY [  4.602s]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Sending sparse &amp;#39;system&amp;#39; 7/8 (458752 KB)            OKAY [  9.500s]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Writing &amp;#39;system&amp;#39;                                   OKAY [  1.034s]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Sending sparse &amp;#39;system&amp;#39; 8/8 (233220 KB)            OKAY [  4.879s]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Writing &amp;#39;system&amp;#39;                                   OKAY [  0.807s]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Finished. Total time: 81.857s
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;わーい。
 この後初期化するので一度stock recoveryに戻してください。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;fastboot flash recovery_ramdisk recovery_ramdiS.img
-Sending &amp;#39;recovery_ramdisk&amp;#39; (32768 KB)              OKAY [  0.232s]
-Writing &amp;#39;recovery_ramdisk&amp;#39;                         OKAY [  0.077s]
-Finished. Total time: 0.341s
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;リカバリーを起動してファクトリーリセットをしたらいよいよ起動！&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;fastboot flash recovery_ramdisk recovery_ramdiS.img
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Sending &amp;#39;recovery_ramdisk&amp;#39; (32768 KB)              OKAY [  0.232s]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Writing &amp;#39;recovery_ramdisk&amp;#39;                         OKAY [  0.077s]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Finished. Total time: 0.341s
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;リカバリーを起動してファクトリーリセットをしたらいよいよ起動！&lt;/p&gt;
 &lt;h2 id=&#34;いよいよ起動&#34;&gt;いよいよ起動&lt;/h2&gt;
 &lt;p&gt;まぁ普通に起動するはずです。&lt;br&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;P30にDotOS降臨&lt;br&gt;ばいばいP20lite😭 &lt;a href=&#34;https://t.co/iNxlIEgnJz&#34;&gt;pic.twitter.com/iNxlIEgnJz&lt;/a&gt;&lt;/p&gt;&amp;mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1449644900442464258?ref_src=twsrc%5Etfw&#34;&gt;October 17, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;P30にDotOS降臨&lt;br&gt;ばいばいP20lite😭 &lt;a href=&#34;https://t.co/iNxlIEgnJz&#34;&gt;pic.twitter.com/iNxlIEgnJz&lt;/a&gt;&lt;/p&gt;&amp;mdash; j7b3y (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1449644900442464258?ref_src=twsrc%5Etfw&#34;&gt;October 17, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;br&gt;
 後はmagiskを入れるなりなんなりで自由にやっちゃってください！&lt;br&gt;
@@ -848,21 +848,21 @@ Finished. Total time: 0.341s
 &lt;del&gt;本当はOctaviOSを使用したかったのですが自分の環境ではflash出来なかったので断念しました。&lt;/del&gt;&lt;br&gt;
 &lt;del&gt;P30のsystemパーティションよりOctaviOSのイメージの方が大きかったのでsystem領域を拡張しようと思ったのですが&lt;/del&gt;&lt;br&gt;
 &lt;del&gt;delete-logical-partitionを実行しようとしても&lt;/del&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;$ fastboot delete-logical-partition product
-Deleting &amp;#39;product&amp;#39;                                 FAILED (remote: &amp;#39;Command not allowed&amp;#39;)
-fastboot: error: Command failed
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;del&gt;とエラーを吐いてしまい素人な自分ではどうにもならなかったからです。たすけて&lt;/del&gt;&lt;br&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ fastboot delete-logical-partition product
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Deleting &amp;#39;product&amp;#39;                                 FAILED (remote: &amp;#39;Command not allowed&amp;#39;)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;fastboot: error: Command failed
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;del&gt;とエラーを吐いてしまい素人な自分ではどうにもならなかったからです。たすけて&lt;/del&gt;&lt;br&gt;
 &lt;del&gt;自分だけなのか他の人もこうなってるのかはわからないですが、&lt;/del&gt;&lt;br&gt;
 &lt;del&gt;そもそもの話P30をBLUしている人が少数なので全く情報が無かったです。&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;system領域の拡張が上手く行ったので近いうちに&lt;a class=&#34;link&#34; href=&#34;https://blog.j7b3y.com/p/huawei-p30-ele-l29-%e3%81%aesystem%e9%a0%98%e5%9f%9f%e3%82%92%e6%8b%a1%e5%bc%b5%e3%81%97%e3%81%9f%e8%a9%b1-%e3%81%9d%e3%81%ae1/&#34; &gt;まとめました&lt;/a&gt;。&lt;br&gt;
 追記&lt;br&gt;
 そもそもfastbootdに対応していなかったってオチでした。&lt;br&gt;
 &lt;del&gt;ちゃんと文章は読もうねというお話&lt;/del&gt;&lt;br&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;よく読め &lt;a href=&#34;https://t.co/HToiVz7lDm&#34;&gt;pic.twitter.com/HToiVz7lDm&lt;/a&gt;&lt;/p&gt;&amp;mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1449012464603975681?ref_src=twsrc%5Etfw&#34;&gt;October 15, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;よく読め &lt;a href=&#34;https://t.co/HToiVz7lDm&#34;&gt;pic.twitter.com/HToiVz7lDm&lt;/a&gt;&lt;/p&gt;&amp;mdash; j7b3y (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1449012464603975681?ref_src=twsrc%5Etfw&#34;&gt;October 15, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;/p&gt;
 &lt;p&gt;system領域は2.25GBくらいでした。
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;😩 &lt;a href=&#34;https://t.co/wyMwMLW1Wt&#34;&gt;pic.twitter.com/wyMwMLW1Wt&lt;/a&gt;&lt;/p&gt;&amp;mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1449017523542708230?ref_src=twsrc%5Etfw&#34;&gt;October 15, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;😩 &lt;a href=&#34;https://t.co/wyMwMLW1Wt&#34;&gt;pic.twitter.com/wyMwMLW1Wt&lt;/a&gt;&lt;/p&gt;&amp;mdash; j7b3y (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1449017523542708230?ref_src=twsrc%5Etfw&#34;&gt;October 15, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;/p&gt;
 &lt;p&gt;flashするROMの候補としては&lt;/p&gt;
@@ -878,8 +878,8 @@ fastboot: error: Command failed
 &lt;h2 id=&#34;romをflashする&#34;&gt;romをflashする&lt;/h2&gt;
 &lt;p&gt;ダウンロードしたファイルが圧縮されていた場合は展開しておいてください。&lt;br&gt;
 イメージファイルのディレクトリでターミナルを開いて&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;$ fastboot --disable-verity --disable-verification flash system (file_name).img
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;と実行してください。&lt;br&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ fastboot --disable-verity --disable-verification flash system (file_name).img
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;と実行してください。&lt;br&gt;
 flashが完了したらファクトリーリセットをしましょう。&lt;br&gt;
 ケーブルを抜いてからVolume+と電源を長押しして起動、&lt;br&gt;
 Huaweiロゴが表示されたらボタンを離してください。&lt;br&gt;
@@ -894,7 +894,7 @@ LineageOSが画面内指紋認証に対応していないようで&lt;br&gt;
 顔認証も使用出来ないようなので流石に厳しいってことで画面内指紋認証を採用している機種ではカスタムromは厳しいのかもしれないです。&lt;br&gt;
 もう1つは端末や環境との相性問題かもしれませんが&lt;br&gt;
 windowsとP30を接続しても認識されない問題が発生しました。&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;et&#34; dir=&#34;ltr&#34;&gt;ELE-L29 LineageOS 18.1 ～完～ &lt;a href=&#34;https://t.co/2srtsZziJg&#34;&gt;pic.twitter.com/2srtsZziJg&lt;/a&gt;&lt;/p&gt;&amp;mdash; 𝐣𝟕𝐛𝟑𝐲 (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1447494835682758656?ref_src=twsrc%5Etfw&#34;&gt;October 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;et&#34; dir=&#34;ltr&#34;&gt;ELE-L29 LineageOS 18.1 ～完～ &lt;a href=&#34;https://t.co/2srtsZziJg&#34;&gt;pic.twitter.com/2srtsZziJg&lt;/a&gt;&lt;/p&gt;&amp;mdash; j7b3y (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1447494835682758656?ref_src=twsrc%5Etfw&#34;&gt;October 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;流石に&lt;del&gt;面倒になったので&lt;/del&gt;これは厳しいってことで一回休むことにしました😩。&lt;br&gt;

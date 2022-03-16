@@ -126,13 +126,22 @@
     <h2 id="前置きと注意">前置きと注意</h2>
 <p>実機を持ってないので動作確認してません。<br>
 Xperia ZR用のLineageOS 18.1です。<br>
-自分でビルドしたい人はローカルmanifestを公開しているので<a class="link" href="https://github.com/j7b3y/local_manifests_dogo"  target="_blank" rel="noopener"
-    >こちら</a>を参考にしてください。<br>
 ※こちらのromはXperia ZR用なのでSO-04eでは使用出来ません。</p>
 <h2 id="リンク">リンク</h2>
 <p><a class="link" href="https://drive.google.com/drive/folders/1xH97o3F_hUxgZ1yeYg2i8MXCNS0c63XN"  target="_blank" rel="noopener"
     >Lineage-18.1-dogo</a></p>
-
+<h2 id="manifests">manifests</h2>
+<pre tabindex="0"><code>&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+&lt;manifest&gt;
+    &lt;project name=&#34;fusion3-common/android_device_sony_dogo&#34; path=&#34;device/sony/dogo&#34; remote=&#34;github&#34; revision=&#34;lineage-17.1&#34;/&gt;
+    &lt;project name=&#34;sony-fusion3-dev/android_device_sony_fusion3-common&#34;  path=&#34;device/sony/fusion3-common&#34; remote=&#34;github&#34; revision=&#34;lineage-18.1&#34;/&gt;
+    &lt;project name=&#34;sony-fusion3-dev/android_kernel_sony_apq8064&#34; path=&#34;kernel/sony/apq8064&#34; remote=&#34;github&#34; revision=&#34;lineage-18.1&#34;/&gt;
+    &lt;project name=&#34;LineageOS/android_device_sony_common&#34;  path=&#34;device/sony/common&#34; remote=&#34;github&#34;/&gt;
+    &lt;project name=&#34;LineageOS/android_hardware_sony_DASH&#34; path=&#34;hardware/sony/DASH&#34; remote=&#34;github&#34;/&gt;
+    &lt;project name=&#34;LineageOS/android_hardware_sony_thermanager&#34; path=&#34;hardware/sony/thermanager&#34; remote=&#34;github&#34;/&gt;
+    &lt;project name=&#34;sony-fusion3-dev/proprietary_vendor_sony&#34; path=&#34;vendor/sony&#34; remote=&#34;github&#34; revision=&#34;lineage-18.1&#34;/&gt;
+&lt;/manifest&gt;
+</code></pre>
 </section>
 
 
@@ -401,6 +410,7 @@ Xperia ZR用のLineageOS 18.1です。<br>
   <ol>
     <li><a href="#前置きと注意">前置きと注意</a></li>
     <li><a href="#リンク">リンク</a></li>
+    <li><a href="#manifests">manifests</a></li>
   </ol>
 </nav>
                 </div>

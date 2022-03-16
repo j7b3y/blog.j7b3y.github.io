@@ -211,13 +211,22 @@ PC版Firefoxのようにアドオンのインストールに制限が無いfiref
         <description>&lt;h2 id=&#34;前置きと注意&#34;&gt;前置きと注意&lt;/h2&gt;
 &lt;p&gt;実機を持ってないので動作確認してません。&lt;br&gt;
 Xperia ZR用のLineageOS 18.1です。&lt;br&gt;
-自分でビルドしたい人はローカルmanifestを公開しているので&lt;a class=&#34;link&#34; href=&#34;https://github.com/j7b3y/local_manifests_dogo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;こちら&lt;/a&gt;を参考にしてください。&lt;br&gt;
 ※こちらのromはXperia ZR用なのでSO-04eでは使用出来ません。&lt;/p&gt;
 &lt;h2 id=&#34;リンク&#34;&gt;リンク&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://drive.google.com/drive/folders/1xH97o3F_hUxgZ1yeYg2i8MXCNS0c63XN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Lineage-18.1-dogo&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;h2 id=&#34;manifests&#34;&gt;manifests&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;
+&amp;lt;manifest&amp;gt;
+    &amp;lt;project name=&amp;#34;fusion3-common/android_device_sony_dogo&amp;#34; path=&amp;#34;device/sony/dogo&amp;#34; remote=&amp;#34;github&amp;#34; revision=&amp;#34;lineage-17.1&amp;#34;/&amp;gt;
+    &amp;lt;project name=&amp;#34;sony-fusion3-dev/android_device_sony_fusion3-common&amp;#34;  path=&amp;#34;device/sony/fusion3-common&amp;#34; remote=&amp;#34;github&amp;#34; revision=&amp;#34;lineage-18.1&amp;#34;/&amp;gt;
+    &amp;lt;project name=&amp;#34;sony-fusion3-dev/android_kernel_sony_apq8064&amp;#34; path=&amp;#34;kernel/sony/apq8064&amp;#34; remote=&amp;#34;github&amp;#34; revision=&amp;#34;lineage-18.1&amp;#34;/&amp;gt;
+    &amp;lt;project name=&amp;#34;LineageOS/android_device_sony_common&amp;#34;  path=&amp;#34;device/sony/common&amp;#34; remote=&amp;#34;github&amp;#34;/&amp;gt;
+    &amp;lt;project name=&amp;#34;LineageOS/android_hardware_sony_DASH&amp;#34; path=&amp;#34;hardware/sony/DASH&amp;#34; remote=&amp;#34;github&amp;#34;/&amp;gt;
+    &amp;lt;project name=&amp;#34;LineageOS/android_hardware_sony_thermanager&amp;#34; path=&amp;#34;hardware/sony/thermanager&amp;#34; remote=&amp;#34;github&amp;#34;/&amp;gt;
+    &amp;lt;project name=&amp;#34;sony-fusion3-dev/proprietary_vendor_sony&amp;#34; path=&amp;#34;vendor/sony&amp;#34; remote=&amp;#34;github&amp;#34; revision=&amp;#34;lineage-18.1&amp;#34;/&amp;gt;
+&amp;lt;/manifest&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</description>
         </item>
         <item>
         <title>Zenfone 5Zを買ったのでEvolution Xを入れてみる</title>
@@ -501,8 +510,8 @@ Sony Music Playerを使うために入れている。&lt;br&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://vancedapp.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Vanced Manager&lt;/a&gt;&lt;br&gt;
-広告ブロックとかそういうのを抜いても優秀なクライアントなので愛用。&lt;br&gt;
-自分はMusicのオフライン再生のためだけにプレミアムに加入しているのでお得感半減だけど😂&lt;/li&gt;
+消されちまった😂&lt;br&gt;
+真面目な話広告ブロックは必要ないからその他の便利機能だけ詰め込んだやつが欲しい。&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://drive.google.com/file/d/1g6PZ_H1FlH92BRr5DCqwNAKUkhDczioA&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Pakage Disabler&lt;/a&gt;&lt;br&gt;
 邪魔なアプリは全部これで無効化している。&lt;/li&gt;

@@ -6,7 +6,36 @@
     <description>Recent content in Android on Nothing There</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Jan 2022 16:03:00 +0900</lastBuildDate><atom:link href="https://blog.j7b3y.com/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Mar 2022 17:51:56 +0900</lastBuildDate><atom:link href="https://blog.j7b3y.com/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EMUI11からダウングレードした端末が認識されなくなる問題</title>
+      <link>https://blog.j7b3y.com/p/emui11%E3%81%8B%E3%82%89%E3%83%80%E3%82%A6%E3%83%B3%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E7%AB%AF%E6%9C%AB%E3%81%8C%E8%AA%8D%E8%AD%98%E3%81%95%E3%82%8C%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B%E5%95%8F%E9%A1%8C/</link>
+      <pubDate>Thu, 17 Mar 2022 17:51:56 +0900</pubDate>
+      
+      <guid>https://blog.j7b3y.com/p/emui11%E3%81%8B%E3%82%89%E3%83%80%E3%82%A6%E3%83%B3%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E7%AB%AF%E6%9C%AB%E3%81%8C%E8%AA%8D%E8%AD%98%E3%81%95%E3%82%8C%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B%E5%95%8F%E9%A1%8C/</guid>
+      <description>前置き XDAで知り合ったセルビア在住の方(以下セルビア人)とTelegramでお話した時のものを自分用にまとめたものです。
+Twitterにざっくりまとめてあります。
+そもそもUSBが認識されなくなるって？ こんな感じでPCがUSBデバイスを認識できなくなる現象が発生します。
+ELE-L29 LineageOS 18.1 ～完～ pic.twitter.com/2srtsZziJg
+&amp;mdash; j7b3y (@j7b3y) October 11, 2021  問題が発生したのでこのデバイスは停止しました。 (コード 43) USB デバイスから無効な製品説明文字列記述子が返されました。 朝起きたら深夜に不在着信があった(二件) ちなみに自分が起きる前にxdaから関連の記事を拾ってきていた。有能
+ Huawei P30 (ELE-L29 11.0.0.159 C431) TEST POINT AND DOWNGRADE PROBLEM  自分も過去に一度EMUI11に更新していたはずなのだがこのような現象には遭遇しなかったため認知していませんでした。
+ちなみにGitHubでも報告されています。
+ Fix for USB/Fast Boot/Fast Charging  この現象が発生する条件は？  過去にEMUI11にアップグレードした端末をダウングレードした GSIをインストールした。  の二つを確認しています。
+過去にEMUI11にアップグレードした端末をダウングレードした 一度でもEMUI11にアップグレードしたらダウングレードした際に発生します。
+(おそらく11.0.0.159以降であると思われる)
+再度EMUI11にアップグレードすると発生しなくなります。
+GSIをインストールした。 これは過去の記事で僕が言ってたやつですね。
+GSIを使用している間、PC等がデバイスを認識できなくなります。
+過去にEMUI11にアップグレードしていない端末はEMUI9.1~10に戻した時点で発生しなくなります。
+更新履歴がある場合はおそらく11に戻すと発生しなくなります。
+んで解決方法とかなんかないの？ 自分は知り得ないです。
+Harmony TP Cableなるものを使用すれば解決できるという話も聞きましたが、
+使用できたという今のところは報告を見つけることができないので噂レベルに等しいです。
+AliExpressで販売されているのを見つけたので現在購入を検討していますが、
+PCやスマホを破壊してしまうかもしれないので迷っています。 誰か人柱お願い🥺
+ Harmony TP Cable     AliExpressで販売されていたもの</description>
+    </item>
+    
     <item>
       <title>アプリ別音量コントロールを可能にする『Audio HeadQuarter』を使ってみた</title>
       <link>https://blog.j7b3y.com/p/%E3%82%A2%E3%83%97%E3%83%AA%E5%88%A5%E9%9F%B3%E9%87%8F%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%AB%E3%82%92%E5%8F%AF%E8%83%BD%E3%81%AB%E3%81%99%E3%82%8Baudio-headquarter%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/</link>

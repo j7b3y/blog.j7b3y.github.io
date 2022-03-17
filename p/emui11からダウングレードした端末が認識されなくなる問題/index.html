@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='自分が入れているアプリやモジュール等々'><title>Androidに必ず入れたいモノをメモる(Zygisk環境)</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='P30にGSIを入れた時に言ってたやつも関連してると思います。'><title>EMUI11からダウングレードした端末が認識されなくなる問題</title>
 
-<link rel='canonical' href='https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Bzygisk%E7%92%B0%E5%A2%83/'>
+<link rel='canonical' href='https://blog.j7b3y.com/p/emui11%E3%81%8B%E3%82%89%E3%83%80%E3%82%A6%E3%83%B3%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E7%AB%AF%E6%9C%AB%E3%81%8C%E8%AA%8D%E8%AD%98%E3%81%95%E3%82%8C%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B%E5%95%8F%E9%A1%8C/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Androidに必ず入れたいモノをメモる(Zygisk環境)'>
-<meta property='og:description' content='自分が入れているアプリやモジュール等々'>
-<meta property='og:url' content='https://blog.j7b3y.com/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Bzygisk%E7%92%B0%E5%A2%83/'>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='EMUI11からダウングレードした端末が認識されなくなる問題'>
+<meta property='og:description' content='P30にGSIを入れた時に言ってたやつも関連してると思います。'>
+<meta property='og:url' content='https://blog.j7b3y.com/p/emui11%E3%81%8B%E3%82%89%E3%83%80%E3%82%A6%E3%83%B3%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E7%AB%AF%E6%9C%AB%E3%81%8C%E8%AA%8D%E8%AD%98%E3%81%95%E3%82%8C%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B%E5%95%8F%E9%A1%8C/'>
 <meta property='og:site_name' content='Nothing There'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Android' /><meta property='article:tag' content='Magisk' /><meta property='article:tag' content='Xposed' /><meta property='article:published_time' content='2022-01-19T16:17:12&#43;09:00'/><meta property='article:modified_time' content='2022-01-19T16:17:12&#43;09:00'/><meta property='og:image' content='https://blog.j7b3y.com/site/avatar.webp' />
-<meta name="twitter:title" content="Androidに必ず入れたいモノをメモる(Zygisk環境)">
-<meta name="twitter:description" content="自分が入れているアプリやモジュール等々"><meta name="twitter:card" content="summary">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Android' /><meta property='article:published_time' content='2022-03-17T17:51:56&#43;09:00'/><meta property='article:modified_time' content='2022-03-17T17:51:56&#43;09:00'/><meta property='og:image' content='https://blog.j7b3y.com/site/avatar.webp' />
+<meta name="twitter:title" content="EMUI11からダウングレードした端末が認識されなくなる問題">
+<meta name="twitter:description" content="P30にGSIを入れた時に言ってたやつも関連してると思います。"><meta name="twitter:card" content="summary">
     <meta name="twitter:image" content='https://blog.j7b3y.com/site/avatar.webp' />
     <link rel="shortcut icon" href="/site/favicon.webp">
 
@@ -76,12 +76,12 @@
     
 
     <h2 class="article-title">
-        <a href="/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Bzygisk%E7%92%B0%E5%A2%83/">Androidに必ず入れたいモノをメモる(Zygisk環境)</a>
+        <a href="/p/emui11%E3%81%8B%E3%82%89%E3%83%80%E3%82%A6%E3%83%B3%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E7%AB%AF%E6%9C%AB%E3%81%8C%E8%AA%8D%E8%AD%98%E3%81%95%E3%82%8C%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B%E5%95%8F%E9%A1%8C/">EMUI11からダウングレードした端末が認識されなくなる問題</a>
     </h2>
 
     
     <h3 class="article-subtitle">
-        自分が入れているアプリやモジュール等々
+        P30にGSIを入れた時に言ってたやつも関連してると思います。
     </h3>
     
 
@@ -98,7 +98,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Jan 19, 2022</time>
+                <time class="article-time--published">Mar 17, 2022</time>
             </div>
         
 
@@ -123,78 +123,67 @@
 </header>
 
     <section class="article-content">
-    <p>##前置き<br>
-<a class="link" href="/p/android%e3%81%ab%e5%bf%85%e3%81%9a%e5%85%a5%e3%82%8c%e3%81%9f%e3%81%84%e3%83%a2%e3%83%8e%e3%82%92%e3%83%a1%e3%83%a2%e3%82%8briru%e7%92%b0%e5%a2%83/" >Androidに必ず入れたいモノをメモる(Riru環境)</a>をZygisk環境向けに編集したついでに<br>
-新しく使用するようになったアプリ等々を追加した感じです。<br>
-前記事から特に変化していない項目は省略しています。 <br>
-・環境<br>
-機種: Zenfone 5z<br>
-OS: Android11(EvolutionX 5.9)<br>
-Magisk Canary 23016 &amp; Zygisk</p>
-<h2 id="magisk関連">Magisk関連</h2>
-<p><a class="link" href="https://github.com/topjohnwu/Magisk/releases"  target="_blank" rel="noopener"
-    >Magisk</a><br>
-これがないと何も始まらない。</p>
-<h3 id="モジュール">モジュール</h3>
+    <h2 id="前置き">前置き</h2>
+<p>XDAで知り合ったセルビア在住の方(以下セルビア人)とTelegramでお話した時のものを自分用にまとめたものです。<br>
+<a class="link" href="https://twitter.com/j7b3y/status/1504372269816381441"  target="_blank" rel="noopener"
+    >Twitter</a>にざっくりまとめてあります。</p>
+<h2 id="そもそもusbが認識されなくなるって">そもそもUSBが認識されなくなるって？</h2>
+<p>こんな感じでPCがUSBデバイスを認識できなくなる現象が発生します。<br>
+<blockquote class="twitter-tweet"><p lang="et" dir="ltr">ELE-L29 LineageOS 18.1 ～完～ <a href="https://t.co/2srtsZziJg">pic.twitter.com/2srtsZziJg</a></p>&mdash; j7b3y (@j7b3y) <a href="https://twitter.com/j7b3y/status/1447494835682758656?ref_src=twsrc%5Etfw">October 11, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
+<pre tabindex="0"><code>問題が発生したのでこのデバイスは停止しました。 (コード 43)
+
+USB デバイスから無効な製品説明文字列記述子が返されました。
+</code></pre><h2 id="朝起きたら深夜に不在着信があった二件">朝起きたら深夜に不在着信があった(二件)</h2>
+<p>ちなみに自分が起きる前にxdaから関連の記事を拾ってきていた。有能</p>
 <ul>
-<li>
-<p>Asus 5z ZenUI 6<br>
-Z01RのTelegramコミュニティに転がってたもの。</p>
-</li>
-<li>
-<p><a class="link" href="https://www.androidacy.com/downloads/?fm_rdme_links=&amp;view=%2540Magisk-Modules%2540Busybox_for_Android_NDK"  target="_blank" rel="noopener"
-    >Busybox for Android NDK</a><br>
-これが必要なアプリがいくつかあるので(後述)</p>
-</li>
-<li>
-<p><a class="link" href="https://www.androidacy.com/downloads/?fm_rdme_links=&amp;view=%2540Magisk-Modules%2540Font_Manager"  target="_blank" rel="noopener"
-    >Font Manager</a><br>
-システムの絵文字をTwemojiに変更するのに使用。</p>
-</li>
-<li>
-<p><a class="link" href="https://github.com/AndroPlus-org/magisk-module-koruri-font/releases"  target="_blank" rel="noopener"
-    >Koruri Font</a><br>
-見やすいので愛用しています。</p>
-</li>
-<li>
-<p><a class="link" href="https://github.com/LSPosed/LSPosed/actions"  target="_blank" rel="noopener"
-    >Zygisk - LSPosed</a><br>
-Xposedの後継。</p>
-</li>
-<li>
-<p><a class="link" href="https://github.com/Magisk-Modules-Repo/CloudflareDNS4Magisk"  target="_blank" rel="noopener"
-    >CloudflareDNS4Magisk</a><br>
-気になったので使ってるだけ。</p>
-</li>
-<li>
-<p><a class="link" href="https://github.com/kdrag0n/safetynet-fix/releases"  target="_blank" rel="noopener"
-    >Universal SafetyNet Fix</a><br>
-気が付いたらZygisk対応版が出てた。</p>
-</li>
-<li>
-<p><a class="link" href="https://www.pling.com/p/1531390/"  target="_blank" rel="noopener"
-    >Dolby Atmos ZTE A2019 Pro Magisk Module</a><br>
-最近入れてみた。そこそこ良い。</p>
-</li>
-<li>
-<p><a class="link" href="https://github.com/Alcatraz323/audiohq_module"  target="_blank" rel="noopener"
-    >audiohq module</a><br>
-アプリ別音量をコントロールを可能にするモジュール。<br>
-<a class="link" href="/p/%e3%82%a2%e3%83%97%e3%83%aa%e5%88%a5%e9%9f%b3%e9%87%8f%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%ab%e3%82%92%e5%8f%af%e8%83%bd%e3%81%ab%e3%81%99%e3%82%8baudio-headquarter%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e3%81%bf%e3%81%9f/" >こちら</a>に詳細書いてます。</p>
+<li><a class="link" href="https://forum.xda-developers.com/t/huawei-p30-ele-l29-11-0-0-159-c431-test-point-and-downgrade-problem.4324535/"  target="_blank" rel="noopener"
+    >Huawei P30 (ELE-L29 11.0.0.159 C431) TEST POINT AND DOWNGRADE PROBLEM</a></li>
+</ul>
+<p>自分も過去に一度EMUI11に更新していたはずなのだがこのような現象には遭遇しなかったため認知していませんでした。</p>
+<p>ちなみにGitHubでも報告されています。</p>
+<ul>
+<li><a class="link" href="https://github.com/ProfessorJTJ/HISuite-Proxy/issues/128"  target="_blank" rel="noopener"
+    >Fix for USB/Fast Boot/Fast Charging</a></li>
+</ul>
+<h2 id="この現象が発生する条件は">この現象が発生する条件は？</h2>
+<ol>
+<li>過去にEMUI11にアップグレードした端末をダウングレードした</li>
+<li>GSIをインストールした。</li>
+</ol>
+<p>の二つを確認しています。</p>
+<h2 id="過去にemui11にアップグレードした端末をダウングレードした">過去にEMUI11にアップグレードした端末をダウングレードした</h2>
+<p>一度でもEMUI11にアップグレードしたらダウングレードした際に発生します。<br>
+(おそらく11.0.0.159以降であると思われる)</p>
+<p>再度EMUI11にアップグレードすると発生しなくなります。</p>
+<h2 id="gsiをインストールした">GSIをインストールした。</h2>
+<p>これは過去の記事で僕が言ってたやつですね。<br>
+GSIを使用している間、PC等がデバイスを認識できなくなります。<br>
+過去にEMUI11にアップグレードしていない端末はEMUI9.1~10に戻した時点で発生しなくなります。<br>
+更新履歴がある場合はおそらく11に戻すと発生しなくなります。</p>
+<h2 id="んで解決方法とかなんかないの">んで解決方法とかなんかないの？</h2>
+<p>自分は知り得ないです。<br>
+Harmony TP Cableなるものを使用すれば解決できるという話も聞きましたが、<br>
+使用できたという今のところは報告を見つけることができないので噂レベルに等しいです。<br>
+AliExpressで販売されているのを見つけたので現在購入を検討していますが、<br>
+PCやスマホを破壊してしまうかもしれないので迷っています。  <del>誰か人柱お願い🥺</del></p>
+<ul>
+<li>Harmony TP Cable
+<figure><img src="https://user-images.githubusercontent.com/49002275/140633958-f6090a2b-cd5a-4636-bb3d-347bc1b37078.png"/>
+</figure>
+<br>
+<figure><img src="https://user-images.githubusercontent.com/49002275/140633963-8c7d59c9-53f4-4733-bf09-78ba0d77108b.jpg"/>
+</figure>
 </li>
 </ul>
-<h3 id="モジュールの管理">モジュールの管理</h3>
-<ul>
-<li><a class="link" href="https://github.com/Fox2Code/FoxMagiskModuleManager"  target="_blank" rel="noopener"
-    >Fox&rsquo;s Magisk Module Manager</a><br>
-Magisk CanaryでモジュールのDLが出来なくなったため。</li>
-</ul>
-<h2 id="ブラウザ">ブラウザ</h2>
-<ul>
-<li><a class="link" href="https://github.com/fork-maintainers/iceraven-browser/releases"  target="_blank" rel="noopener"
-    >Iceraven Browser</a><br>
-PC版Firefoxのようにアドオンのインストールに制限が無いfirefox。</li>
-</ul>
+<p>AliExpressで販売されていたもの<br>
+<a class="link" href="https://www.aliexpress.com/item/1005003414526364.html"  target="_blank" rel="noopener"
+    >2022 New Cable For Harmony Tp Cable For Huawei</a></p>
+<h2 id="後書き">後書き</h2>
+<p>ユーザーの選択肢を狭めるような改悪で残念だねって話をセルビア人としました。<br>
+セルビア人は新しい端末を購入するつもりでOneplusを検討しているそうです。<br>
+Bootloaderのアンロックコードの発行停止は仕方が無いと思いますが、ダウングレードした端末に制限をかけるのは流石にやりすぎだと感じました。</p>
 
 </section>
 
@@ -204,10 +193,6 @@ PC版Firefoxのようにアドオンのインストールに制限が無いfiref
     <section class="article-tags">
         
             <a href="/tags/android/">Android</a>
-        
-            <a href="/tags/magisk/">Magisk</a>
-        
-            <a href="/tags/xposed/">Xposed</a>
         
     </section>
 
@@ -239,18 +224,6 @@ PC版Firefoxのようにアドオンのインストールに制限が無いfiref
                 
                     
 <article class="">
-    <a href="/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Briru%E7%92%B0%E5%A2%83/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Androidに必ず入れたいモノをメモる(Riru環境)</h2>
-        </div>
-    </a>
-</article>
-                
-                    
-<article class="">
     <a href="/p/%E3%82%A2%E3%83%97%E3%83%AA%E5%88%A5%E9%9F%B3%E9%87%8F%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%AB%E3%82%92%E5%8F%AF%E8%83%BD%E3%81%AB%E3%81%99%E3%82%8Baudio-headquarter%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/">
         
         
@@ -263,24 +236,12 @@ PC版Firefoxのようにアドオンのインストールに制限が無いfiref
                 
                     
 <article class="">
-    <a href="/p/magisk%E3%81%A8gapps%E3%82%92%E5%85%A5%E3%82%8A%E3%81%AEwsawindows-subsystem-for-android%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E8%A9%B1/">
+    <a href="/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Bzygisk%E7%92%B0%E5%A2%83/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">MagiskとGappsを入りのWSA(Windows Subsystem for Android)をインストールする話。</h2>
-        </div>
-    </a>
-</article>
-                
-                    
-<article class="">
-    <a href="/p/emui11%E3%81%8B%E3%82%89%E3%83%80%E3%82%A6%E3%83%B3%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E7%AB%AF%E6%9C%AB%E3%81%8C%E8%AA%8D%E8%AD%98%E3%81%95%E3%82%8C%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B%E5%95%8F%E9%A1%8C/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">EMUI11からダウングレードした端末が認識されなくなる問題</h2>
+            <h2 class="article-title">Androidに必ず入れたいモノをメモる(Zygisk環境)</h2>
         </div>
     </a>
 </article>
@@ -293,6 +254,30 @@ PC版Firefoxのようにアドオンのインストールに制限が無いfiref
 
         <div class="article-details">
             <h2 class="article-title">Xperia ZR用のLineage 18.1をビルドした</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/zenfone-5z%E3%82%92%E8%B2%B7%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7evolution-x%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Zenfone 5Zを買ったのでEvolution Xを入れてみる</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/magisk%E3%81%A8gapps%E3%82%92%E5%85%A5%E3%82%8A%E3%81%AEwsawindows-subsystem-for-android%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E8%A9%B1/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">MagiskとGappsを入りのWSA(Windows Subsystem for Android)をインストールする話。</h2>
         </div>
     </a>
 </article>
@@ -464,13 +449,14 @@ PC版Firefoxのようにアドオンのインストールに制限が無いfiref
                 <div class="widget--toc">
                     <nav id="TableOfContents">
   <ol>
-    <li><a href="#magisk関連">Magisk関連</a>
-      <ol>
-        <li><a href="#モジュール">モジュール</a></li>
-        <li><a href="#モジュールの管理">モジュールの管理</a></li>
-      </ol>
-    </li>
-    <li><a href="#ブラウザ">ブラウザ</a></li>
+    <li><a href="#前置き">前置き</a></li>
+    <li><a href="#そもそもusbが認識されなくなるって">そもそもUSBが認識されなくなるって？</a></li>
+    <li><a href="#朝起きたら深夜に不在着信があった二件">朝起きたら深夜に不在着信があった(二件)</a></li>
+    <li><a href="#この現象が発生する条件は">この現象が発生する条件は？</a></li>
+    <li><a href="#過去にemui11にアップグレードした端末をダウングレードした">過去にEMUI11にアップグレードした端末をダウングレードした</a></li>
+    <li><a href="#gsiをインストールした">GSIをインストールした。</a></li>
+    <li><a href="#んで解決方法とかなんかないの">んで解決方法とかなんかないの？</a></li>
+    <li><a href="#後書き">後書き</a></li>
   </ol>
 </nav>
                 </div>

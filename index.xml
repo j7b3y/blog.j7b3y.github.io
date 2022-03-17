@@ -6,7 +6,76 @@
         <description>Recent content on Nothing There</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 25 Feb 2022 19:46:05 +0900</lastBuildDate><atom:link href="https://blog.j7b3y.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 17 Mar 2022 17:51:56 +0900</lastBuildDate><atom:link href="https://blog.j7b3y.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>EMUI11からダウングレードした端末が認識されなくなる問題</title>
+        <link>https://blog.j7b3y.com/p/emui11%E3%81%8B%E3%82%89%E3%83%80%E3%82%A6%E3%83%B3%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E7%AB%AF%E6%9C%AB%E3%81%8C%E8%AA%8D%E8%AD%98%E3%81%95%E3%82%8C%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B%E5%95%8F%E9%A1%8C/</link>
+        <pubDate>Thu, 17 Mar 2022 17:51:56 +0900</pubDate>
+        
+        <guid>https://blog.j7b3y.com/p/emui11%E3%81%8B%E3%82%89%E3%83%80%E3%82%A6%E3%83%B3%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E7%AB%AF%E6%9C%AB%E3%81%8C%E8%AA%8D%E8%AD%98%E3%81%95%E3%82%8C%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B%E5%95%8F%E9%A1%8C/</guid>
+        <description>&lt;h2 id=&#34;前置き&#34;&gt;前置き&lt;/h2&gt;
+&lt;p&gt;XDAで知り合ったセルビア在住の方(以下セルビア人)とTelegramでお話した時のものを自分用にまとめたものです。&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://twitter.com/j7b3y/status/1504372269816381441&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Twitter&lt;/a&gt;にざっくりまとめてあります。&lt;/p&gt;
+&lt;h2 id=&#34;そもそもusbが認識されなくなるって&#34;&gt;そもそもUSBが認識されなくなるって？&lt;/h2&gt;
+&lt;p&gt;こんな感じでPCがUSBデバイスを認識できなくなる現象が発生します。&lt;br&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;et&#34; dir=&#34;ltr&#34;&gt;ELE-L29 LineageOS 18.1 ～完～ &lt;a href=&#34;https://t.co/2srtsZziJg&#34;&gt;pic.twitter.com/2srtsZziJg&lt;/a&gt;&lt;/p&gt;&amp;mdash; j7b3y (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1447494835682758656?ref_src=twsrc%5Etfw&#34;&gt;October 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;問題が発生したのでこのデバイスは停止しました。 (コード 43)
+
+USB デバイスから無効な製品説明文字列記述子が返されました。
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;朝起きたら深夜に不在着信があった二件&#34;&gt;朝起きたら深夜に不在着信があった(二件)&lt;/h2&gt;
+&lt;p&gt;ちなみに自分が起きる前にxdaから関連の記事を拾ってきていた。有能&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://forum.xda-developers.com/t/huawei-p30-ele-l29-11-0-0-159-c431-test-point-and-downgrade-problem.4324535/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Huawei P30 (ELE-L29 11.0.0.159 C431) TEST POINT AND DOWNGRADE PROBLEM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;自分も過去に一度EMUI11に更新していたはずなのだがこのような現象には遭遇しなかったため認知していませんでした。&lt;/p&gt;
+&lt;p&gt;ちなみにGitHubでも報告されています。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/ProfessorJTJ/HISuite-Proxy/issues/128&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Fix for USB/Fast Boot/Fast Charging&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;この現象が発生する条件は&#34;&gt;この現象が発生する条件は？&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;過去にEMUI11にアップグレードした端末をダウングレードした&lt;/li&gt;
+&lt;li&gt;GSIをインストールした。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;の二つを確認しています。&lt;/p&gt;
+&lt;h2 id=&#34;過去にemui11にアップグレードした端末をダウングレードした&#34;&gt;過去にEMUI11にアップグレードした端末をダウングレードした&lt;/h2&gt;
+&lt;p&gt;一度でもEMUI11にアップグレードしたらダウングレードした際に発生します。&lt;br&gt;
+(おそらく11.0.0.159以降であると思われる)&lt;/p&gt;
+&lt;p&gt;再度EMUI11にアップグレードすると発生しなくなります。&lt;/p&gt;
+&lt;h2 id=&#34;gsiをインストールした&#34;&gt;GSIをインストールした。&lt;/h2&gt;
+&lt;p&gt;これは過去の記事で僕が言ってたやつですね。&lt;br&gt;
+GSIを使用している間、PC等がデバイスを認識できなくなります。&lt;br&gt;
+過去にEMUI11にアップグレードしていない端末はEMUI9.1~10に戻した時点で発生しなくなります。&lt;br&gt;
+更新履歴がある場合はおそらく11に戻すと発生しなくなります。&lt;/p&gt;
+&lt;h2 id=&#34;んで解決方法とかなんかないの&#34;&gt;んで解決方法とかなんかないの？&lt;/h2&gt;
+&lt;p&gt;自分は知り得ないです。&lt;br&gt;
+Harmony TP Cableなるものを使用すれば解決できるという話も聞きましたが、&lt;br&gt;
+使用できたという今のところは報告を見つけることができないので噂レベルに等しいです。&lt;br&gt;
+AliExpressで販売されているのを見つけたので現在購入を検討していますが、&lt;br&gt;
+PCやスマホを破壊してしまうかもしれないので迷っています。  &lt;del&gt;誰か人柱お願い🥺&lt;/del&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Harmony TP Cable
+&lt;figure&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/49002275/140633958-f6090a2b-cd5a-4636-bb3d-347bc1b37078.png&#34;/&gt;
+&lt;/figure&gt;
+&lt;br&gt;
+&lt;figure&gt;&lt;img src=&#34;https://user-images.githubusercontent.com/49002275/140633963-8c7d59c9-53f4-4733-bf09-78ba0d77108b.jpg&#34;/&gt;
+&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;AliExpressで販売されていたもの&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.aliexpress.com/item/1005003414526364.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;2022 New Cable For Harmony Tp Cable For Huawei&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;後書き&#34;&gt;後書き&lt;/h2&gt;
+&lt;p&gt;ユーザーの選択肢を狭めるような改悪で残念だねって話をセルビア人としました。&lt;br&gt;
+セルビア人は新しい端末を購入するつもりでOneplusを検討しているそうです。&lt;br&gt;
+Bootloaderのアンロックコードの発行停止は仕方が無いと思いますが、ダウングレードした端末に制限をかけるのは流石にやりすぎだと感じました。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>ダンスする時のシャオンちゃんを表情豊かにしてみた。</title>
         <link>https://blog.j7b3y.com/p/%E3%83%80%E3%83%B3%E3%82%B9%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%82%B7%E3%83%A3%E3%82%AA%E3%83%B3%E3%81%A1%E3%82%83%E3%82%93%E3%82%92%E8%A1%A8%E6%83%85%E8%B1%8A%E3%81%8B%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link>
         <pubDate>Fri, 25 Feb 2022 19:46:05 +0900</pubDate>

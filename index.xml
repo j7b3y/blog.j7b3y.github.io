@@ -6,7 +6,49 @@
         <description>Recent content on Nothing There</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 17 Mar 2022 17:51:56 +0900</lastBuildDate><atom:link href="https://blog.j7b3y.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 20 May 2022 21:38:21 +0900</lastBuildDate><atom:link href="https://blog.j7b3y.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>アバター改変のメモ書き的なお話(随時更新)</title>
+        <link>https://blog.j7b3y.com/p/%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC%E6%94%B9%E5%A4%89%E3%81%AE%E3%83%A1%E3%83%A2%E6%9B%B8%E3%81%8D%E7%9A%84%E3%81%AA%E3%81%8A%E8%A9%B1%E9%9A%8F%E6%99%82%E6%9B%B4%E6%96%B0/</link>
+        <pubDate>Fri, 20 May 2022 21:38:21 +0900</pubDate>
+        
+        <guid>https://blog.j7b3y.com/p/%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC%E6%94%B9%E5%A4%89%E3%81%AE%E3%83%A1%E3%83%A2%E6%9B%B8%E3%81%8D%E7%9A%84%E3%81%AA%E3%81%8A%E8%A9%B1%E9%9A%8F%E6%99%82%E6%9B%B4%E6%96%B0/</guid>
+        <description>&lt;img src="https://blog.j7b3y.com/site/thumbnail/2022-05-20-VRC-Avatar/600x200.webp" alt="Featured image of post アバター改変のメモ書き的なお話(随時更新)" /&gt;&lt;h2 id=&#34;うちのこ&#34;&gt;うちのこ&lt;/h2&gt;
+&lt;figure&gt;&lt;img src=&#34;https://drive.google.com/uc?export=view&amp;amp;id=1GxPwiU1ilqheZMgdy-sQkQkzmCXym_PU&#34;/&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;詳細&#34;&gt;詳細&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;部位&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;パーツ&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;髪&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://booth.pm/ja/items/3205288&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;MEKAKUREショート(QuQu)&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;顔&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://booth.pm/ja/items/2048231&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Shaon(くつした屋)&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;素体&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://booth.pm/ja/items/1484117&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;幽狐族のお姉様(FRIENDLY PLANET)&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Blenderで素体と顔をくっつけたよ(眠気と戦いながらやったので大変だったよ)&lt;/li&gt;
+&lt;li&gt;PhysBoneとコライダーはシャオンちゃんのを参考に自分で設定したのでガバガバ&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>EMUI11からダウングレードした端末が認識されなくなる問題</title>
         <link>https://blog.j7b3y.com/p/emui11%E3%81%8B%E3%82%89%E3%83%80%E3%82%A6%E3%83%B3%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%81%9F%E7%AB%AF%E6%9C%AB%E3%81%8C%E8%AA%8D%E8%AD%98%E3%81%95%E3%82%8C%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B%E5%95%8F%E9%A1%8C/</link>
         <pubDate>Thu, 17 Mar 2022 17:51:56 +0900</pubDate>
@@ -18,7 +60,7 @@
     &gt;Twitter&lt;/a&gt;にざっくりまとめてあります。&lt;/p&gt;
 &lt;h2 id=&#34;そもそもusbが認識されなくなるって&#34;&gt;そもそもUSBが認識されなくなるって？&lt;/h2&gt;
 &lt;p&gt;こんな感じでPCがUSBデバイスを認識できなくなる現象が発生します。&lt;br&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;et&#34; dir=&#34;ltr&#34;&gt;ELE-L29 LineageOS 18.1 ～完～ &lt;a href=&#34;https://t.co/2srtsZziJg&#34;&gt;pic.twitter.com/2srtsZziJg&lt;/a&gt;&lt;/p&gt;&amp;mdash; j7b3y (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1447494835682758656?ref_src=twsrc%5Etfw&#34;&gt;October 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;et&#34; dir=&#34;ltr&#34;&gt;ELE-L29 LineageOS 18.1 ～完～ &lt;a href=&#34;https://t.co/2srtsZziJg&#34;&gt;pic.twitter.com/2srtsZziJg&lt;/a&gt;&lt;/p&gt;&amp;mdash; なね (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1447494835682758656?ref_src=twsrc%5Etfw&#34;&gt;October 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;問題が発生したのでこのデバイスは停止しました。 (コード 43)
@@ -188,7 +230,7 @@ Magisk Canary 23018 &amp;amp; Zygisk&lt;/p&gt;
 &lt;p&gt;Settings &amp;gt; Float windowと進んでFloat Serviceにチェックを入れる。&lt;/p&gt;
 &lt;h2 id=&#34;使ってみよう&#34;&gt;使ってみよう&lt;/h2&gt;
 &lt;p&gt;音量ボタンを押すと左上に音量マークが出てくるのでそれをタップすると起動しているアプリの音量が0~100%で調整できる。&lt;br&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;うぃ &lt;a href=&#34;https://t.co/nH5eVCxTDq&#34;&gt;pic.twitter.com/nH5eVCxTDq&lt;/a&gt;&lt;/p&gt;&amp;mdash; j7b3y (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1485880208393908225?ref_src=twsrc%5Etfw&#34;&gt;January 25, 2022&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;うぃ &lt;a href=&#34;https://t.co/nH5eVCxTDq&#34;&gt;pic.twitter.com/nH5eVCxTDq&lt;/a&gt;&lt;/p&gt;&amp;mdash; なね (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1485880208393908225?ref_src=twsrc%5Etfw&#34;&gt;January 25, 2022&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;最後に&#34;&gt;最後に&lt;/h2&gt;
@@ -216,28 +258,16 @@ Magisk Canary 23016 &amp;amp; Zygisk&lt;/p&gt;
 &lt;h3 id=&#34;モジュール&#34;&gt;モジュール&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Asus 5z ZenUI 6&lt;br&gt;
-Z01RのTelegramコミュニティに転がってたもの。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/VR-25/acc/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Advanced Charging Controller&lt;/a&gt;
+充電周りを見直そうと思って入れた。&lt;br&gt;
+でもあまり触ってないので使いこなせていない。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.androidacy.com/downloads/?fm_rdme_links=&amp;amp;view=%2540Magisk-Modules%2540Busybox_for_Android_NDK&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Busybox for Android NDK&lt;/a&gt;&lt;br&gt;
-これが必要なアプリがいくつかあるので(後述)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.androidacy.com/downloads/?fm_rdme_links=&amp;amp;view=%2540Magisk-Modules%2540Font_Manager&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Font Manager&lt;/a&gt;&lt;br&gt;
-システムの絵文字をTwemojiに変更するのに使用。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/AndroPlus-org/magisk-module-koruri-font/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Koruri Font&lt;/a&gt;&lt;br&gt;
-見やすいので愛用しています。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/LSPosed/LSPosed/actions&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Zygisk - LSPosed&lt;/a&gt;&lt;br&gt;
-Xposedの後継。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Alcatraz323/audiohq_module&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;audiohq module&lt;/a&gt;&lt;br&gt;
+アプリ別音量をコントロールを可能にするモジュール。&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://blog.j7b3y.com/p/%e3%82%a2%e3%83%97%e3%83%aa%e5%88%a5%e9%9f%b3%e9%87%8f%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%ab%e3%82%92%e5%8f%af%e8%83%bd%e3%81%ab%e3%81%99%e3%82%8baudio-headquarter%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e3%81%bf%e3%81%9f/&#34; &gt;こちら&lt;/a&gt;に詳細書いてます。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Magisk-Modules-Repo/CloudflareDNS4Magisk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -245,20 +275,34 @@ Xposedの後継。&lt;/p&gt;
 気になったので使ってるだけ。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/kdrag0n/safetynet-fix/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Universal SafetyNet Fix&lt;/a&gt;&lt;br&gt;
-気が付いたらZygisk対応版が出てた。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/AndroPlus-org/magisk-module-koruri-font/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Koruri Font&lt;/a&gt;&lt;br&gt;
+見やすいので愛用しています。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.pling.com/p/1531390/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Dolby Atmos ZTE A2019 Pro Magisk Module&lt;/a&gt;&lt;br&gt;
-最近入れてみた。そこそこ良い。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/LSPosed/LSPosed.github.io/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Shamiko&lt;/a&gt;
+Magiskを隠すのに使用しています。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Alcatraz323/audiohq_module&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;audiohq module&lt;/a&gt;&lt;br&gt;
-アプリ別音量をコントロールを可能にするモジュール。&lt;br&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://blog.j7b3y.com/p/%e3%82%a2%e3%83%97%e3%83%aa%e5%88%a5%e9%9f%b3%e9%87%8f%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%ab%e3%82%92%e5%8f%af%e8%83%bd%e3%81%ab%e3%81%99%e3%82%8baudio-headquarter%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e3%81%bf%e3%81%9f/&#34; &gt;こちら&lt;/a&gt;に詳細書いてます。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Magisk-Modules-Alt-Repo/ttf-twemoji/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Twemoji replacer&lt;/a&gt;
+FontManager使うのやめました。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/nishuoshenme/UnityFPSUnlocker&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;UnityFPSUnlocker&lt;/a&gt;
+ウ*娘60FPS👊👊&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/AndroPlus-org/Zygisk-InternalBrowserRedirect&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Zygisk - InternalBrowserRedirect&lt;/a&gt;&lt;br&gt;
+Lineの内臓ブラウザが嫌いだからこれ使ってる。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/LSPosed/LSPosed/actions&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Zygisk - LSPosed&lt;/a&gt;&lt;br&gt;
+Xposedの後継。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;モジュールの管理&#34;&gt;モジュールの管理&lt;/h3&gt;
@@ -493,13 +537,13 @@ Developer modeをOnにしてからManage developer settingsをクリックして
 生のAndroidが動くってのはロマンがあるのですが逆にそれ以外は何もないな～と思いました。&lt;br&gt;
 Hyper-Vを有効にしたのでBS5 32bitやMemuが動作しなくなるのもかなり痛いし多分今後は使わないかな～というのが自分の結論です。&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;スクショ供養のコーナー&lt;/del&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;今日の進捗、後でMagisk更新しよ &lt;a href=&#34;https://t.co/cqAt3rqH6C&#34;&gt;pic.twitter.com/cqAt3rqH6C&lt;/a&gt;&lt;/p&gt;&amp;mdash; j7b3y (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1457247747153666049?ref_src=twsrc%5Etfw&#34;&gt;November 7, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;今日の進捗、後でMagisk更新しよ &lt;a href=&#34;https://t.co/cqAt3rqH6C&#34;&gt;pic.twitter.com/cqAt3rqH6C&lt;/a&gt;&lt;/p&gt;&amp;mdash; なね (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1457247747153666049?ref_src=twsrc%5Etfw&#34;&gt;November 7, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;pl&#34; dir=&#34;ltr&#34;&gt;CPU-Z &lt;a href=&#34;https://t.co/qmxjOIXidf&#34;&gt;pic.twitter.com/qmxjOIXidf&lt;/a&gt;&lt;/p&gt;&amp;mdash; j7b3y (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1457248305482592259?ref_src=twsrc%5Etfw&#34;&gt;November 7, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;pl&#34; dir=&#34;ltr&#34;&gt;CPU-Z &lt;a href=&#34;https://t.co/qmxjOIXidf&#34;&gt;pic.twitter.com/qmxjOIXidf&lt;/a&gt;&lt;/p&gt;&amp;mdash; なね (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1457248305482592259?ref_src=twsrc%5Etfw&#34;&gt;November 7, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;WSAの中身はA11だった &lt;a href=&#34;https://t.co/bc2y3L3tyI&#34;&gt;pic.twitter.com/bc2y3L3tyI&lt;/a&gt;&lt;/p&gt;&amp;mdash; j7b3y (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1457206889020723201?ref_src=twsrc%5Etfw&#34;&gt;November 7, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;WSAの中身はA11だった &lt;a href=&#34;https://t.co/bc2y3L3tyI&#34;&gt;pic.twitter.com/bc2y3L3tyI&lt;/a&gt;&lt;/p&gt;&amp;mdash; なね (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1457206889020723201?ref_src=twsrc%5Etfw&#34;&gt;November 7, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;参考にした記事&#34;&gt;参考にした記事&lt;/h2&gt;
@@ -568,12 +612,6 @@ Hide My Applistのアプリからインストールできるやつ。&lt;/p&gt;
 Xposedの後継。今後はZygisk版を使うかもしれない。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.androidacy.com/downloads/?fm_rdme_links=&amp;amp;view=%2540Magisk-Modules%2540Sony_Music_Player&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Sony Music Player&lt;/a&gt;&lt;br&gt;
-Sony Music Playerを使うために入れている。&lt;br&gt;
-でも最近はYoutube Musicを使っているので必要ないかもしれない。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/kdrag0n/safetynet-fix/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Universal SafetyNet Fix&lt;/a&gt;&lt;br&gt;
 おま環かもしれないがDotOSは初期状態でもSafetyNetが通るので必要ないと思うが一応。&lt;/p&gt;
@@ -584,13 +622,14 @@ Sony Music Playerを使うために入れている。&lt;br&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://vancedapp.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Vanced Manager&lt;/a&gt;&lt;br&gt;
 消されちまった😂&lt;br&gt;
-真面目な話広告ブロックは必要ないからその他の便利機能だけ詰め込んだやつが欲しい。&lt;/li&gt;
+真面目な話広告ブロックは必要ないからその他の便利機能だけ詰め込んだやつが欲しい。&lt;br&gt;
+結局オフライン再生の為にpremium使うしな～。&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://drive.google.com/file/d/1g6PZ_H1FlH92BRr5DCqwNAKUkhDczioA&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Pakage Disabler&lt;/a&gt;&lt;br&gt;
 邪魔なアプリは全部これで無効化している。&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.luckypatchers.com/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Lucky Patcher&lt;/a&gt;&lt;br&gt;
-万能Patcher。自分は主に邪魔な広告を&lt;del&gt;潰す&lt;/del&gt;消すのに使用している。&lt;/li&gt;
+万能Patcher。自分は主に邪魔な広告を&lt;del&gt;潰す&lt;/del&gt;消すのに使用している。(主にLINEのトークリスト広告ですね。現在は対策されています。)&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/oasisfeng/island/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Island&lt;/a&gt;&lt;br&gt;
 早い話EMUIで言うツインアプリだったりOne UIで言うデュアルメッセンジャーみたいなもの。&lt;/li&gt;
@@ -606,7 +645,7 @@ Sony Music Playerを使うために入れている。&lt;br&gt;
 XposedモジュールやLSPosed、LPを隠すのに使っています。&lt;/li&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/ppawel/twitter-ad-eater/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Twitter Ad Eater&lt;/a&gt;&lt;br&gt;
-プロモツイートを非表示にしてくれる。でもタイムラインがバグるのであまり使ってない。&lt;/li&gt;
+プロモツイートを非表示にしてくれる。&lt;del&gt;でもタイムラインがバグるのであまり使ってない&lt;/del&gt;解決しました。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;ブラウザ&#34;&gt;ブラウザ&lt;/h3&gt;
 &lt;ul&gt;
@@ -890,7 +929,7 @@ partedでsddを開きます。&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;リカバリーを起動してファクトリーリセットをしたらいよいよ起動！&lt;/p&gt;
 &lt;h2 id=&#34;いよいよ起動&#34;&gt;いよいよ起動&lt;/h2&gt;
 &lt;p&gt;まぁ普通に起動するはずです。&lt;br&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;P30にDotOS降臨&lt;br&gt;ばいばいP20lite😭 &lt;a href=&#34;https://t.co/iNxlIEgnJz&#34;&gt;pic.twitter.com/iNxlIEgnJz&lt;/a&gt;&lt;/p&gt;&amp;mdash; j7b3y (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1449644900442464258?ref_src=twsrc%5Etfw&#34;&gt;October 17, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;P30にDotOS降臨&lt;br&gt;ばいばいP20lite😭 &lt;a href=&#34;https://t.co/iNxlIEgnJz&#34;&gt;pic.twitter.com/iNxlIEgnJz&lt;/a&gt;&lt;/p&gt;&amp;mdash; なね (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1449644900442464258?ref_src=twsrc%5Etfw&#34;&gt;October 17, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;br&gt;
 後はmagiskを入れるなりなんなりで自由にやっちゃってください！&lt;br&gt;
@@ -940,11 +979,11 @@ partedでsddを開きます。&lt;/p&gt;
 追記&lt;br&gt;
 そもそもfastbootdに対応していなかったってオチでした。&lt;br&gt;
 &lt;del&gt;ちゃんと文章は読もうねというお話&lt;/del&gt;&lt;br&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;よく読め &lt;a href=&#34;https://t.co/HToiVz7lDm&#34;&gt;pic.twitter.com/HToiVz7lDm&lt;/a&gt;&lt;/p&gt;&amp;mdash; j7b3y (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1449012464603975681?ref_src=twsrc%5Etfw&#34;&gt;October 15, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;よく読め &lt;a href=&#34;https://t.co/HToiVz7lDm&#34;&gt;pic.twitter.com/HToiVz7lDm&lt;/a&gt;&lt;/p&gt;&amp;mdash; なね (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1449012464603975681?ref_src=twsrc%5Etfw&#34;&gt;October 15, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;/p&gt;
 &lt;p&gt;system領域は2.25GBくらいでした。
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;😩 &lt;a href=&#34;https://t.co/wyMwMLW1Wt&#34;&gt;pic.twitter.com/wyMwMLW1Wt&lt;/a&gt;&lt;/p&gt;&amp;mdash; j7b3y (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1449017523542708230?ref_src=twsrc%5Etfw&#34;&gt;October 15, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;😩 &lt;a href=&#34;https://t.co/wyMwMLW1Wt&#34;&gt;pic.twitter.com/wyMwMLW1Wt&lt;/a&gt;&lt;/p&gt;&amp;mdash; なね (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1449017523542708230?ref_src=twsrc%5Etfw&#34;&gt;October 15, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 &lt;/p&gt;
 &lt;p&gt;flashするROMの候補としては&lt;/p&gt;
@@ -976,7 +1015,7 @@ LineageOSが画面内指紋認証に対応していないようで&lt;br&gt;
 顔認証も使用出来ないようなので流石に厳しいってことで画面内指紋認証を採用している機種ではカスタムromは厳しいのかもしれないです。&lt;br&gt;
 もう1つは端末や環境との相性問題かもしれませんが&lt;br&gt;
 windowsとP30を接続しても認識されない問題が発生しました。&lt;/p&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;et&#34; dir=&#34;ltr&#34;&gt;ELE-L29 LineageOS 18.1 ～完～ &lt;a href=&#34;https://t.co/2srtsZziJg&#34;&gt;pic.twitter.com/2srtsZziJg&lt;/a&gt;&lt;/p&gt;&amp;mdash; j7b3y (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1447494835682758656?ref_src=twsrc%5Etfw&#34;&gt;October 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;et&#34; dir=&#34;ltr&#34;&gt;ELE-L29 LineageOS 18.1 ～完～ &lt;a href=&#34;https://t.co/2srtsZziJg&#34;&gt;pic.twitter.com/2srtsZziJg&lt;/a&gt;&lt;/p&gt;&amp;mdash; なね (@j7b3y) &lt;a href=&#34;https://twitter.com/j7b3y/status/1447494835682758656?ref_src=twsrc%5Etfw&#34;&gt;October 11, 2021&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;流石に&lt;del&gt;面倒になったので&lt;/del&gt;これは厳しいってことで一回休むことにしました😩。&lt;br&gt;

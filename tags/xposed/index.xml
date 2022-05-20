@@ -22,22 +22,23 @@ OS: Android11(EvolutionX 5.9)
 Magisk Canary 23016 &amp;amp; Zygisk
 Magisk関連 Magisk
 これがないと何も始まらない。
-モジュール   Asus 5z ZenUI 6
-Z01RのTelegramコミュニティに転がってたもの。
-  Busybox for Android NDK
-これが必要なアプリがいくつかあるので(後述)
-  Font Manager
-システムの絵文字をTwemojiに変更するのに使用。
-  Koruri Font
-見やすいので愛用しています。
-  Zygisk - LSPosed
-Xposedの後継。
+モジュール   Advanced Charging Controller 充電周りを見直そうと思って入れた。
+でもあまり触ってないので使いこなせていない。
+  audiohq module
+アプリ別音量をコントロールを可能にするモジュール。
+こちらに詳細書いてます。
   CloudflareDNS4Magisk
 気になったので使ってるだけ。
-  Universal SafetyNet Fix
-気が付いたらZygisk対応版が出てた。
-  Dolby Atmos ZTE A2019 Pro Magisk Module
-最近入れてみた。そこそこ良い。</description>
+  Koruri Font
+見やすいので愛用しています。
+  Shamiko Magiskを隠すのに使用しています。
+  Twemoji replacer FontManager使うのやめました。
+  UnityFPSUnlocker ウ*娘60FPS👊👊
+  Zygisk - InternalBrowserRedirect
+Lineの内臓ブラウザが嫌いだからこれ使ってる。
+  Zygisk - LSPosed
+Xposedの後継。
+  モジュールの管理  Fox&amp;rsquo;s Magisk Module Manager</description>
     </item>
     
     <item>

@@ -17,7 +17,7 @@
 Twitterにざっくりまとめてあります。
 そもそもUSBが認識されなくなるって？ こんな感じでPCがUSBデバイスを認識できなくなる現象が発生します。
 ELE-L29 LineageOS 18.1 ～完～ pic.twitter.com/2srtsZziJg
-&amp;mdash; j7b3y (@j7b3y) October 11, 2021  問題が発生したのでこのデバイスは停止しました。 (コード 43) USB デバイスから無効な製品説明文字列記述子が返されました。 朝起きたら深夜に不在着信があった(二件)  ちなみに自分が起きる前にxdaから関連の記事を拾ってきていた。有能
+&amp;mdash; なね (@j7b3y) October 11, 2021  問題が発生したのでこのデバイスは停止しました。 (コード 43) USB デバイスから無効な製品説明文字列記述子が返されました。 朝起きたら深夜に不在着信があった(二件)  ちなみに自分が起きる前にxdaから関連の記事を拾ってきていた。有能
  Huawei P30 (ELE-L29 11.0.0.159 C431) TEST POINT AND DOWNGRADE PROBLEM  自分も過去に一度EMUI11に更新していたはずなのだがこのような現象には遭遇しなかったため認知していませんでした。
 ちなみにGitHubでも報告されています。
  Fix for USB/Fast Boot/Fast Charging  この現象が発生する条件は？  過去にEMUI11にアップグレードした端末をダウングレードした GSIをインストールした。  の二つを確認しています。
@@ -60,7 +60,7 @@ Magisk Canary 23018 &amp;amp; Zygisk
 Settings &amp;gt; Float windowと進んでFloat Serviceにチェックを入れる。
 使ってみよう 音量ボタンを押すと左上に音量マークが出てくるのでそれをタップすると起動しているアプリの音量が0~100%で調整できる。
 うぃ pic.twitter.com/nH5eVCxTDq
-&amp;mdash; j7b3y (@j7b3y) January 25, 2022  最後に 多分一番お勧めできる神モジュール</description>
+&amp;mdash; なね (@j7b3y) January 25, 2022  最後に 多分一番お勧めできる神モジュール</description>
     </item>
     
     <item>
@@ -78,22 +78,23 @@ OS: Android11(EvolutionX 5.9)
 Magisk Canary 23016 &amp;amp; Zygisk
 Magisk関連 Magisk
 これがないと何も始まらない。
-モジュール   Asus 5z ZenUI 6
-Z01RのTelegramコミュニティに転がってたもの。
-  Busybox for Android NDK
-これが必要なアプリがいくつかあるので(後述)
-  Font Manager
-システムの絵文字をTwemojiに変更するのに使用。
-  Koruri Font
-見やすいので愛用しています。
-  Zygisk - LSPosed
-Xposedの後継。
+モジュール   Advanced Charging Controller 充電周りを見直そうと思って入れた。
+でもあまり触ってないので使いこなせていない。
+  audiohq module
+アプリ別音量をコントロールを可能にするモジュール。
+こちらに詳細書いてます。
   CloudflareDNS4Magisk
 気になったので使ってるだけ。
-  Universal SafetyNet Fix
-気が付いたらZygisk対応版が出てた。
-  Dolby Atmos ZTE A2019 Pro Magisk Module
-最近入れてみた。そこそこ良い。</description>
+  Koruri Font
+見やすいので愛用しています。
+  Shamiko Magiskを隠すのに使用しています。
+  Twemoji replacer FontManager使うのやめました。
+  UnityFPSUnlocker ウ*娘60FPS👊👊
+  Zygisk - InternalBrowserRedirect
+Lineの内臓ブラウザが嫌いだからこれ使ってる。
+  Zygisk - LSPosed
+Xposedの後継。
+  モジュールの管理  Fox&amp;rsquo;s Magisk Module Manager</description>
     </item>
     
     <item>
@@ -258,8 +259,8 @@ system領域の拡張が上手く行ったので近いうちにまとめまし�
 そもそもfastbootdに対応していなかったってオチでした。
 ちゃんと文章は読もうねというお話
 よく読め pic.twitter.com/HToiVz7lDm
-&amp;mdash; j7b3y (@j7b3y) October 15, 2021  system領域は2.25GBくらいでした。 😩 pic.twitter.com/wyMwMLW1Wt
-&amp;mdash; j7b3y (@j7b3y) October 15, 2021  flashするROMの候補としては
+&amp;mdash; なね (@j7b3y) October 15, 2021  system領域は2.25GBくらいでした。 😩 pic.twitter.com/wyMwMLW1Wt
+&amp;mdash; なね (@j7b3y) October 15, 2021  flashするROMの候補としては
  CAOS11 LineageOS 18.1 AOSP 11.0 v313(system-roar-arm64-ab-vndklite-vanilla.</description>
     </item>
     

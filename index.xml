@@ -12,11 +12,11 @@
         <pubDate>Fri, 20 May 2022 21:38:21 +0900</pubDate>
         
         <guid>https://blog.j7b3y.com/p/%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC%E6%94%B9%E5%A4%89%E3%81%AE%E3%83%A1%E3%83%A2%E6%9B%B8%E3%81%8D%E7%9A%84%E3%81%AA%E3%81%8A%E8%A9%B1%E9%9A%8F%E6%99%82%E6%9B%B4%E6%96%B0/</guid>
-        <description>&lt;img src="https://blog.j7b3y.com/site/thumbnail/2022-05-20-VRC-Avatar/600x200.webp" alt="Featured image of post アバター改変のメモ書き的なお話(随時更新)" /&gt;&lt;h2 id=&#34;うちのこ&#34;&gt;うちのこ&lt;/h2&gt;
+        <description>&lt;img src="https://blog.j7b3y.com/site/thumbnail/2022-05-20-VRC-Avatar/600x200.webp" alt="Featured image of post アバター改変のメモ書き的なお話(随時更新)" /&gt;&lt;h2 id=&#34;shaon_custom&#34;&gt;Shaon_Custom&lt;/h2&gt;
 &lt;figure&gt;&lt;img src=&#34;https://drive.google.com/uc?export=view&amp;amp;id=1GxPwiU1ilqheZMgdy-sQkQkzmCXym_PU&#34;/&gt;
 &lt;/figure&gt;
 
-&lt;h2 id=&#34;詳細&#34;&gt;詳細&lt;/h2&gt;
+&lt;h3 id=&#34;詳細&#34;&gt;詳細&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -45,6 +45,13 @@
 &lt;ul&gt;
 &lt;li&gt;Blenderで素体と顔をくっつけたよ(眠気と戦いながらやったので大変だったよ)&lt;/li&gt;
 &lt;li&gt;PhysBoneとコライダーはシャオンちゃんのを参考に自分で設定したのでガバガバ&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;今後やること&#34;&gt;今後やること&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;表情の設定&lt;/li&gt;
+&lt;li&gt;お出かけパーカーワンピに着せ替え&lt;/li&gt;
+&lt;li&gt;コライダージャンプ&lt;/li&gt;
+&lt;li&gt;Gamingシャオンちゃん&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         </item>
